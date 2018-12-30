@@ -1,0 +1,10 @@
+#Sun Dec 30 18:01:51 BDT 2018
+path.2=classes2.dex
+path.1=classes.dex
+path.0=classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.2=D\:\\Humane-Test-master-master\\Humane-Test-master-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+base.1=D\:\\Humane-Test-master-master\\Humane-Test-master-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+base.0=D\:\\Humane-Test-master-master\\Humane-Test-master-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0

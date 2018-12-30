@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "997152948668",
+    "firebase_url": "https://final-rev-app.firebaseio.com",
+    "project_id": "final-rev-app",
+    "storage_bucket": "final-rev-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997152948668:android:b41a880cda235dbf",
+        "android_client_info": {
+          "package_name": "com.thegorgeouscows.team.finalrev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997152948668-29ll6v3obmj15hv5fp4231o1v4d548as.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thegorgeouscows.team.finalrev",
+            "certificate_hash": "5d2b8fc9396c20db3fdb9f242584394ba95eb83a"
+          }
+        },
+        {
+          "client_id": "997152948668-5dvssnu474oo3gm4vrmc4jfp21i0gi59.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thegorgeouscows.team.finalrev",
+            "certificate_hash": "e0e92d2e8365230d905edd6d38ab78b264cc853e"
+          }
+        },
+        {
+          "client_id": "997152948668-kvmks84qjcg5stflmlkqlaicofffo3bo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4w-YR8GCHyHEWQdIsQqG4EwsTUg3mkpI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "997152948668-kvmks84qjcg5stflmlkqlaicofffo3bo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

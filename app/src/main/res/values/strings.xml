@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Humane_1.0</string>
+    <string name="dash_u">User Dashboard</string>
+    <string name="dash_o">Organization Dashboard</string>
+    <string name="dash_v">Volunteer Dashboard</string>
+    <string name="userdash">User Dashboard</string>
+    <string name="user_nav_title">User DashBoard</string>
+    <string name="title_activity_start_screen">StartScreen</string>
+    <string name="logout">LogOut</string>
+    <string name="sign_in">Sign In</string>
+    <string name="click_to_register">Click to Register</string>
+    <string name="password">Password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
