@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:1-51:12
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:1-50:12
 MERGED from [com.android.support:design:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-28.0.0-alpha1.aar\c4d2c815e6bb10db882d506d1f043f79\AndroidManifest.xml:17:1-24:12
 MERGED from [com.theartofdev.edmodo:android-image-cropper:2.5.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\android-image-cropper-2.5.1.aar\a80da11713d01077dae364cb4ee4f074\AndroidManifest.xml:2:1-12:12
 MERGED from [com.android.support:design-bottomappbar:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-bottomappbar-28.0.0-alpha1.aar\31adf946c0dfeef53b28610db41b6074\AndroidManifest.xml:17:1-24:12
@@ -90,20 +90,20 @@ MERGED from [com.google.firebase:firebase-database-collection:16.0.1] C:\Users\A
 MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\protolite-well-known-types-16.0.1.aar\cb5be0687154357f847c3667c55618ef\AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.16.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\grpc-android-1.16.1.aar\38076eb451899879d8618742572735cf\AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.support:exifinterface:26.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\exifinterface-26.1.0.aar\d6910ccc1c43a3e076a788a83183b80c\AndroidManifest.xml:17:1-28:12
-INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:1-50:12
 	package
 		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:3:5-48
 		INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml
-		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:1-51:12
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:1-50:12
 		INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml
-		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:1-51:12
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:1-50:12
 		INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:11-69
@@ -120,7 +120,7 @@ ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\A
 	android:name
 		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:7:22-78
 application
-ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:9:5-49:19
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:9:5-48:19
 MERGED from [com.android.support:design:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-28.0.0-alpha1.aar\c4d2c815e6bb10db882d506d1f043f79\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-28.0.0-alpha1.aar\c4d2c815e6bb10db882d506d1f043f79\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design-bottomappbar:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-bottomappbar-28.0.0-alpha1.aar\31adf946c0dfeef53b28610db41b6074\AndroidManifest.xml:22:5-20
@@ -245,66 +245,62 @@ activity#com.thegorgeouscows.team.finalrev.registerDonatorActivity
 ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:25:9-61
 	android:name
 		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:25:19-58
-activity#com.thegorgeouscows.team.finalrev.blood_donation_post
-ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:26:9-57
-	android:name
-		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:26:19-54
 activity#com.thegorgeouscows.team.finalrev.generalPage
-ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:27:9-49
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:26:9-49
 	android:name
-		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:27:19-46
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:26:19-46
 activity#com.thegorgeouscows.team.finalrev.LandingActivity
-ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:28:9-53
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:27:9-53
 	android:name
-		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:28:19-50
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:27:19-50
 activity#com.thegorgeouscows.team.finalrev.registerVolunteerActivity
-ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:29:9-63
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:28:9-63
 	android:name
-		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:29:19-60
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:28:19-60
 activity#com.thegorgeouscows.team.finalrev.registerOrganizationActivity
-ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:30:9-66
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:29:9-66
 	android:name
-		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:30:19-63
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:29:19-63
 activity#com.thegorgeouscows.team.finalrev.loginActivity
-ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:31:9-51
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:30:9-51
 	android:name
-		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:31:19-48
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:30:19-48
 activity#com.thegorgeouscows.team.finalrev.DonatorProfile
-ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:32:9-34:58
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:31:9-33:58
 	android:theme
-		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:34:13-55
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:33:13-55
 	android:name
-		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:33:13-43
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:32:13-43
 activity#com.thegorgeouscows.team.finalrev.OrganizationProfile
-ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:35:9-57
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:34:9-57
 	android:name
-		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:35:19-54
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:34:19-54
 activity#com.thegorgeouscows.team.finalrev.SlideActivity
-ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:36:9-38:49
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:35:9-37:49
 	android:theme
-		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:38:13-46
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:37:13-46
 	android:name
-		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:37:13-42
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:36:13-42
 meta-data#preloaded_fonts
-ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:40:9-42:57
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:39:9-41:57
 	android:resource
-		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:42:13-54
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:41:13-54
 	android:name
-		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:41:13-43
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:40:13-43
 activity#com.thegorgeouscows.team.finalrev.FoodPostForm
-ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:44:9-50
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:43:9-50
 	android:name
-		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:44:19-47
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:43:19-47
 activity#com.theartofdev.edmodo.cropper.CropImageActivity
-ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:45:9-47:59
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:44:9-46:59
 	android:theme
-		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:47:13-56
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:46:13-56
 	android:name
-		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:46:13-76
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:45:13-76
 activity#com.thegorgeouscows.team.finalrev.FeedBase
-ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:48:9-55
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:47:9-55
 	android:name
-		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:48:19-43
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:47:19-43
 uses-sdk
 INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml
