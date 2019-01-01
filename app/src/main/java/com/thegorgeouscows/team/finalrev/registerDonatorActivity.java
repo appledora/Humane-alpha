@@ -38,6 +38,7 @@ public class registerDonatorActivity extends AppCompatActivity {
     private EditText mNameEntry;
     private EditText mEmailEntry;
     private EditText mPasswordEntry;
+    private EditText mContact;
 
 
 
@@ -68,6 +69,7 @@ public class registerDonatorActivity extends AppCompatActivity {
         mNameEntry= (EditText) findViewById(R.id.entryName);
         mEmailEntry= (EditText) findViewById(R.id.entryEmail);
         mPasswordEntry= (EditText) findViewById(R.id.entryPassword);
+        mContact = (EditText) findViewById(R.id.reg_contact);
 
 
         mTestButton.setOnClickListener(new View.OnClickListener(){
@@ -85,6 +87,7 @@ public class registerDonatorActivity extends AppCompatActivity {
         final String name= mNameEntry.getText().toString().trim();
         final String email= mEmailEntry.getText().toString().trim();
         String password= mPasswordEntry.getText().toString().trim();
+        final String contact = mContact.getText().toString().trim();
 
 
         if(!TextUtils.isEmpty(name) && !TextUtils.isEmpty(password) && !TextUtils.isEmpty(email)){
@@ -105,6 +108,7 @@ public class registerDonatorActivity extends AppCompatActivity {
                         currentuserdata.child("Email").setValue(email);
                         currentuserdata.child("ID").setValue("Donator");
                         currentuserdata.child("Image").setValue("Default");
+                        currentuserdata.child("Contact").setValue(contact);
 
                         mProgress.dismiss();
 

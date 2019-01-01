@@ -29,21 +29,26 @@
          android:id="@+id/mainBottomNav"
          android:layout_width="0dp"
          android:layout_height="wrap_content"
-         app:itemBackground="@color/colorBlueJeans"
+         app:itemBackground="@color/colorPeyaj"
          app:layout_constraintBottom_toBottomOf="parent"
          app:layout_constraintEnd_toEndOf="parent"
          app:layout_constraintStart_toStartOf="parent"
-         app:menu="@menu/feed_bottom_nav" />
+         app:menu="@menu/feed_bottom_nav"
+         app:itemIconTint="@drawable/item_color_selector"
+         />
+
      <android.support.design.widget.BottomNavigationView
          android:id="@+id/topNav"
          android:layout_width="match_parent"
          android:layout_height="0dp"
          android:background="@color/colorPeyaj"
          app:itemBackground="@color/colorPeyaj"
+         app:itemIconTint="@drawable/item_color_selector"
          app:layout_constraintStart_toStartOf="parent"
          app:layout_constraintTop_toBottomOf="parent"
          app:layout_constraintTop_toTopOf="parent"
-         app:menu="@menu/top_items" />
+         app:menu="@menu/top_items"
+         />
 
 
      <FrameLayout

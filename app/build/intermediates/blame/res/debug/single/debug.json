@@ -1636,6 +1636,10 @@
         "source": "C:\\Users\\Appledora\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha1.aar\\b629a009bc0fa393e90a99c32df51fd5\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
+        "merged": "D:\\Humane-Test-master-master\\Humane-Test-master-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_popup_window.xml.flat",
+        "source": "D:\\Humane-Test-master-master\\Humane-Test-master-master\\app\\src\\main\\res\\layout\\popup_window.xml"
+    },
+    {
         "merged": "D:\\Humane-Test-master-master\\Humane-Test-master-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dish.png.flat",
         "source": "D:\\Humane-Test-master-master\\Humane-Test-master-master\\app\\src\\main\\res\\drawable\\dish.png"
     },
@@ -1994,6 +1998,10 @@
     {
         "merged": "D:\\Humane-Test-master-master\\Humane-Test-master-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dieta.png.flat",
         "source": "D:\\Humane-Test-master-master\\Humane-Test-master-master\\app\\src\\main\\res\\drawable\\dieta.png"
+    },
+    {
+        "merged": "D:\\Humane-Test-master-master\\Humane-Test-master-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_item_color_selector.xml.flat",
+        "source": "D:\\Humane-Test-master-master\\Humane-Test-master-master\\app\\src\\main\\res\\drawable\\item_color_selector.xml"
     },
     {
         "merged": "D:\\Humane-Test-master-master\\Humane-Test-master-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_photo_album_black_24dp.xml.flat",

@@ -9,6 +9,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -54,7 +55,7 @@ public class FoodPostForm extends AppCompatActivity implements View.OnClickListe
     private FirebaseFirestore firebaseFirestore;
     private FirebaseAuth firebaseAuth;
     private DatabaseReference ref;
-    private String currentUserID,nm,photoUri;
+    private String currentUserID,nm,photoUri,cn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +67,6 @@ public class FoodPostForm extends AppCompatActivity implements View.OnClickListe
         pickup_time = (EditText)findViewById(R.id.time);
         quantity = (EditText)findViewById(R.id.quantity);
         pickup_address = (EditText)findViewById(R.id.address);
-        contact_no = (EditText)findViewById(R.id.contact_number);
         post_button = (Button)findViewById(R.id.donate);
         selectPhoto = (ImageButton)findViewById(R.id.photoButton);
         storageReference = FirebaseStorage.getInstance().getReference();
@@ -86,6 +86,8 @@ public class FoodPostForm extends AppCompatActivity implements View.OnClickListe
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if (dataSnapshot.exists()){
                      nm = dataSnapshot.child("Name").getValue().toString();
+                     cn = dataSnapshot.child("Contact").getValue().toString();
+                     Log.i("my CONTACT: ",cn);
                      photoUri = dataSnapshot.child("Image").getValue().toString();
                 }
             }
@@ -166,10 +168,9 @@ public class FoodPostForm extends AppCompatActivity implements View.OnClickListe
         final String prod = production_date.getText().toString().trim();
         final String expi = expiration_date.getText().toString().trim();
         final String pick = pickup_address.getText().toString().trim();
-        final String cont = contact_no.getText().toString().trim();
         final String add = pickup_address.getText().toString().trim();
 
-        if(imageUri!= null && !TextUtils.isEmpty(quan) && !TextUtils.isEmpty(prod) && !TextUtils.isEmpty(expi) && !TextUtils.isEmpty(pick) && !TextUtils.isEmpty(cont) && !TextUtils.isEmpty(add) ){
+        if(imageUri!= null && !TextUtils.isEmpty(quan) && !TextUtils.isEmpty(prod) && !TextUtils.isEmpty(expi) && !TextUtils.isEmpty(pick)  && !TextUtils.isEmpty(add) ){
             String randomName = UUID.randomUUID().toString();
             final StorageReference filePath = storageReference.child("post_images").child(randomName + ".jpg");
 
@@ -189,7 +190,7 @@ public class FoodPostForm extends AppCompatActivity implements View.OnClickListe
                     postMap.put("expirationdate",expi);
                     postMap.put("pickuptime",pick);
                     postMap.put("address",add);
-                    postMap.put("contact",cont);
+                    postMap.put("contact",cn);
                     postMap.put("userid",nm);
                     postMap.put("timestamp", FieldValue.serverTimestamp());
                     postMap.put("profilePhoto",photoUri);

@@ -24,28 +24,25 @@ public class SliderAdapter extends PagerAdapter {
     public int[] slide_images = {
             R.drawable.dish,
             R.drawable.cloth,
-            R.drawable.drop
 
     };
 
     public int[] background = {
             R.drawable.background,
             R.drawable.background,
-            R.drawable.background
     };
 
     public String[] slide_headings = {
             "“If you want to eliminate hunger, everybody has to be involved.” ",
-            "“No one has ever become poor by giving.”",
             "“It's not how much we give but how much love we put into giving.” "
     };
 
     public String[] slide_descs = {
-            "BONO", "Anne Frank", "Mother Teresa"
+            "BONO", "Mother Teresa"
     };
 
     public String[] button_text = {
-            "Share food", "Share clothe", "Donate Blood"
+            "Share food", "Share clothe"
     };
 
 
@@ -87,8 +84,7 @@ public class SliderAdapter extends PagerAdapter {
                     Intent readMore = new Intent(v.getContext(), ClothPostForm.class);
                     v.getContext().startActivity(readMore);
                                   }
-                else if(position == 2) {
-                                   }
+
 
             }
         });

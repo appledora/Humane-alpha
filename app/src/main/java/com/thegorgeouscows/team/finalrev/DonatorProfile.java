@@ -21,6 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -49,8 +50,9 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class DonatorProfile extends AppCompatActivity {
     private TextView name ;
     private TextView email;
+    private TextView contact;
     private Button butt;
-    private Uri mImageUri = null;
+    private Uri mImageUri = null,imageUri;
 
     DatabaseReference ref,mDatabase;
     FirebaseAuth auth;
@@ -88,6 +90,7 @@ public class DonatorProfile extends AppCompatActivity {
 
         name = (TextView)findViewById(R.id.name_display);
         email = (TextView)findViewById(R.id.mail_display);
+        contact = (TextView) findViewById(R.id.contact_display);
         butt = (Button)findViewById(R.id.start_donation);
         profilePhoto = (CircleImageView) findViewById(R.id.main_dp);
         profilePhoto.setOnClickListener(new View.OnClickListener() {
@@ -104,6 +107,7 @@ public class DonatorProfile extends AppCompatActivity {
                 if(dataSnapshot.exists()){
                     String nm = dataSnapshot.child("Name").getValue().toString();
                     String em = dataSnapshot.child("Email").getValue(String.class);
+                    String cn = dataSnapshot.child("Contact").getValue().toString();
                     if(dataSnapshot.child("Image").getValue().toString() != "default"){
                         String photoadd = dataSnapshot.child("Image").getValue().toString();
                         Uri photoURI = Uri.parse(photoadd);
@@ -112,6 +116,7 @@ public class DonatorProfile extends AppCompatActivity {
 
                     name.setText(nm);
                     email.setText(em);
+                    contact.setText(cn);
 
                 }
             }
@@ -145,7 +150,7 @@ public class DonatorProfile extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
         if(requestCode == GALLERY_REQUEST && resultCode == RESULT_OK){
-            Uri imageUri = data.getData();
+            imageUri = data.getData();
             CropImage.activity(imageUri)
                     .setGuidelines(CropImageView.Guidelines.ON)
                     .setAspectRatio(1,1)
@@ -166,7 +171,11 @@ public class DonatorProfile extends AppCompatActivity {
     private void uploadImage() {
 
             if(mImageUri != null){
-                StorageReference filePath = mStorageImage.child(mImageUri.getLastPathSegment());
+                final ProgressDialog progressDialog = new ProgressDialog(this);
+                progressDialog.setTitle("Uploading...");
+                progressDialog.show();
+
+                /*StorageReference filePath = mStorageImage.child(mImageUri.getLastPathSegment());
                 filePath.putFile(mImageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
@@ -174,7 +183,31 @@ public class DonatorProfile extends AppCompatActivity {
                         String downloadUrl = urlTask.getResult().toString();
                         mUserDatabase.child("Image").setValue(downloadUrl);
                     }
-                });
+                }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        e.printStackTrace();
+                    }
+                });*/
+
+            final StorageReference photref = mStorageRef.child(imageUri.getLastPathSegment());
+            photref.putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                @Override
+                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                    Log.i("my: ","onSucces uploadTask");
+                    photref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                        @Override
+                        public void onSuccess(Uri uri) {
+                            Log.i("my: ","On success uri");
+                            mUserDatabase.child("Image").setValue(uri.toString());
+
+                        }
+                    });
+                }
+            });
+
+
+
 
             }
 

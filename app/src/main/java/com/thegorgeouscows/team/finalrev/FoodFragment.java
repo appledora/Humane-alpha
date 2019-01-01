@@ -4,6 +4,7 @@ package com.thegorgeouscows.team.finalrev;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -32,6 +33,7 @@ public class FoodFragment extends Fragment {
     List<Posts>posts_list;
     private FirebaseFirestore firebaseFirestore,db;
     private FoodRecyclerAdapter foodRecyclerAdapter;
+    CardView cardView;
 
 
     public FoodFragment() {
@@ -42,9 +44,9 @@ public class FoodFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
+        Log.i("my: ","FOOD FRAGMENT");
         View view = inflater.inflate(R.layout.fragment_feed,container,false);
-
+        cardView = view.findViewById(R.id.main_blog_post);
         post_list_view = (RecyclerView) view.findViewById(R.id.blog_list_view);
         posts_list = new ArrayList<>();
         foodRecyclerAdapter = new FoodRecyclerAdapter(posts_list);
@@ -60,14 +62,12 @@ public class FoodFragment extends Fragment {
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
                 if (task.isSuccessful()){
                     for (final QueryDocumentSnapshot document: task.getResult()){
-                        //Log.i("my",document.getId()+ "=>"+document.getData());
                         DocumentReference docRef = db.collection("POSTS").document(document.getId());
                         docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                             @Override
                             public void onSuccess(DocumentSnapshot documentSnapshot) {
                                 Posts post = documentSnapshot.toObject(Posts.class);
                                 posts_list.add(post);
-                                //System.out.println(Arrays.toString(posts_list.toArray()));
                                 foodRecyclerAdapter.notifyDataSetChanged();
                             }
                         });
@@ -81,8 +81,9 @@ public class FoodFragment extends Fragment {
             }
         });
 
-
         return view;
     }
+
+
 
 }

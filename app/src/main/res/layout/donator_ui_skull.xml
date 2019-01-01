@@ -172,9 +172,10 @@
                 android:id="@+id/bottomNavigation"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/colorMishti"
                 app:itemBackground="@color/colorMishti"
                 app:itemIconSize="34dp"
-                app:itemIconTint="@color/colorAccent"
+                app:itemIconTint="@drawable/item_color_selector"
                 app:menu="@menu/bottom_items"></android.support.design.widget.BottomNavigationView>
         </RelativeLayout>
     </LinearLayout>

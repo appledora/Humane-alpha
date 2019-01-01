@@ -1206,6 +1206,7 @@ drawable ic_settings_black_24dp
 drawable ic_settings_power_black_24dp
 drawable ic_slideshow_black_24dp
 drawable input_background
+drawable item_color_selector
 drawable lakeside_sunset
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1294,6 +1295,7 @@ id bottomNavigation
 id butt
 id button
 id buttonPanel
+id call_button
 id cancel_action
 id card_container
 id card_login
@@ -1317,7 +1319,6 @@ id cloth_user_name
 id clothe
 id collapseActionView
 id contact_display
-id contact_number
 id contact_number_cloth
 id container
 id content
@@ -1442,6 +1443,11 @@ id photoButton
 id photoButton_cloth
 id pickup_date_cloth
 id pin
+id pop_quit
+id pop_user_contact
+id pop_user_location
+id pop_user_name
+id popup_bg
 id production
 id progress_circular
 id progress_horizontal
@@ -1451,6 +1457,7 @@ id quote
 id quoter
 id radio
 id rectangle
+id reg_contact
 id registerButton
 id registerReq
 id right
@@ -1637,6 +1644,7 @@ layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout organization_ui_skull
+layout popup_window
 layout post_list_items
 layout select_dialog_item_material
 layout select_dialog_multichoice_material

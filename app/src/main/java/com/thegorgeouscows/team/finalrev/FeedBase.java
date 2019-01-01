@@ -9,6 +9,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -28,7 +29,6 @@ public class FeedBase extends AppCompatActivity {
 
     private FoodFragment foodFragment;
     private ClothFragment clothFragment;
-    FragmentTransaction transaction;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -106,6 +106,8 @@ public class FeedBase extends AppCompatActivity {
     }
 
     public void initializeFragment(){
+
+        Log.i("my: ","INITIALIZING FRAGMENT");
         FragmentTransaction trans = getSupportFragmentManager().beginTransaction();
         trans.add(R.id.main_container,foodFragment);
         trans.add(R.id.main_container,clothFragment);
