@@ -1406,6 +1406,7 @@ id logout_feed
 id mail_display
 id mainBottomNav
 id main_blog_post
+id main_blog_post_don
 id main_cloth_post
 id main_container
 id main_dp
@@ -1429,6 +1430,11 @@ id notification_main_column_container
 id off
 id on
 id onTouch
+id org_contact
+id org_entryEmail
+id org_entryName
+id org_entryPassword
+id org_testButton
 id organizationReg
 id outline
 id oval
@@ -1547,7 +1553,6 @@ id user_profile
 id view_offset_helper
 id visible
 id volunteer
-id volunteerReg
 id wide
 id withText
 id wrap
@@ -1646,6 +1651,7 @@ layout notification_template_part_time
 layout organization_ui_skull
 layout popup_window
 layout post_list_items
+layout post_list_items_don
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

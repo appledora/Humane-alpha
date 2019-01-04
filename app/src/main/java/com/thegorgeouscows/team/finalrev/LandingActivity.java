@@ -19,7 +19,7 @@ public class LandingActivity extends AppCompatActivity {
 
         mDonatorReg= (Button) findViewById(R.id.donatorReg);
         mOrganizationReg= (Button) findViewById(R.id.organizationReg);
-        mVolunteerReg= (Button) findViewById(R.id.volunteerReg);
+
 
         mDonatorReg.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,13 +28,7 @@ public class LandingActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-        mOrganizationReg.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i= new Intent(LandingActivity.this, registerVolunteerActivity.class);
-                startActivity(i);
-            }
-        });
+
         mOrganizationReg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

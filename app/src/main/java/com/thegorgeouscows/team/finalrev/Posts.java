@@ -1,7 +1,6 @@
 package com.thegorgeouscows.team.finalrev;
 
 import android.util.Log;
-import android.widget.ImageView;
 
 import java.util.Date;
 

@@ -34,19 +34,19 @@ public class registerOrganizationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register_donator);
+        setContentView(R.layout.activity_register_organization);
 
         mAuth = FirebaseAuth.getInstance();
         mDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
 
         mProgress = new ProgressDialog(this);
 
-        mTestButton = (Button) findViewById(R.id.testButton);
+        mTestButton = (Button) findViewById(R.id.org_testButton);
 
 
-        mNameEntry = (EditText) findViewById(R.id.entryName);
-        mEmailEntry = (EditText) findViewById(R.id.entryEmail);
-        mPasswordEntry = (EditText) findViewById(R.id.entryPassword);
+        mNameEntry = (EditText) findViewById(R.id.org_entryName);
+        mEmailEntry = (EditText) findViewById(R.id.org_entryEmail);
+        mPasswordEntry = (EditText) findViewById(R.id.org_entryPassword);
 
 
         mTestButton.setOnClickListener(new View.OnClickListener() {
@@ -78,7 +78,7 @@ public class registerOrganizationActivity extends AppCompatActivity {
                         DatabaseReference currentuserdata = mDatabase.child(userid);
                         currentuserdata.child("Name").setValue(name);
                         currentuserdata.child("Email").setValue(email);
-                        currentuserdata.child("Image").setValue("image");
+                        currentuserdata.child("Image").setValue("Default");
                         currentuserdata.child("ID").setValue("Organization");
                         mProgress.dismiss();
                         Intent i = new Intent(registerOrganizationActivity.this, OrganizationProfile.class);

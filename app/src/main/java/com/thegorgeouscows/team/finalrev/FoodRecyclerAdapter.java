@@ -1,13 +1,10 @@
 package com.thegorgeouscows.team.finalrev;
 
-import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
 import android.support.v7.widget.RecyclerView;
 import android.text.format.DateFormat;
 import android.util.Log;
@@ -109,7 +106,7 @@ public class FoodRecyclerAdapter extends RecyclerView.Adapter<FoodRecyclerAdapte
             Glide.with(context).load(profile_photo).into(blogphoto);
         }
 
-        public void setCallButton(final String contact_numb) {
+       public void setCallButton(final String contact_numb) {
             Log.i("my setting callButton: ",contact_numb);
             callButton = mView.findViewById(R.id.call_button);
             callButton.setOnClickListener(new View.OnClickListener() {

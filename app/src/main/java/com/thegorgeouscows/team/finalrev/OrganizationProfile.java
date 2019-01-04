@@ -7,7 +7,6 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
@@ -106,7 +105,8 @@ public class OrganizationProfile extends AppCompatActivity {
                     case R.id.current_profile:
                         Toast.makeText(OrganizationProfile.this,"HOME",Toast.LENGTH_SHORT).show();
                     case R.id.feed:
-                        Toast.makeText(OrganizationProfile.this,"ACHIEVEMENT",Toast.LENGTH_SHORT).show();
+                        Intent i = new Intent(OrganizationProfile.this,FeedBase.class);
+                        startActivity(i);
                 }
                 return true;
             }
