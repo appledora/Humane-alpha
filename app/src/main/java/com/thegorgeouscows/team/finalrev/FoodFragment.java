@@ -1,6 +1,7 @@
 package com.thegorgeouscows.team.finalrev;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -48,6 +49,7 @@ public class FoodFragment extends Fragment {
     CardView cardView;
 
 
+
     public FoodFragment() {
         // Required empty public constructor
     }
@@ -56,8 +58,9 @@ public class FoodFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, final ViewGroup container,
                              Bundle savedInstanceState) {
-        Log.i("my: ","FOOD FRAGMENT");
         final View view = inflater.inflate(R.layout.fragment_feed,container,false);
+
+
         posts_list = new ArrayList<>();
         auth = FirebaseAuth.getInstance();
         uid = auth.getCurrentUser().getUid();
@@ -66,7 +69,6 @@ public class FoodFragment extends Fragment {
         ref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                Log.i("my TAG in single:", "got here");
                     tag = dataSnapshot.child("ID").getValue(String.class);
 
 
@@ -114,6 +116,7 @@ public class FoodFragment extends Fragment {
                                     foodRecyclerAdapter.notifyDataSetChanged();
                                 }
                                 else if (tag.equals("Donator")){
+
                                     foodRecyclerAdapterDon.notifyDataSetChanged();
                                 }
                             }
@@ -127,9 +130,9 @@ public class FoodFragment extends Fragment {
 
             }
         });
-
         return view;
     }
+
 
 
 
