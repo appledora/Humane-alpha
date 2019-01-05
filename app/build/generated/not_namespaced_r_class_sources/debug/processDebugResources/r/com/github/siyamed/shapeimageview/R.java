@@ -33,11 +33,11 @@ public final class R {
         public static final int butt = 0x7f0a0036;
         public static final int fill = 0x7f0a0086;
         public static final int left = 0x7f0a00a1;
-        public static final int miter = 0x7f0a00b9;
-        public static final int right = 0x7f0a00ec;
-        public static final int round = 0x7f0a00ef;
-        public static final int square = 0x7f0a0113;
-        public static final int stroke = 0x7f0a011c;
+        public static final int miter = 0x7f0a00bb;
+        public static final int right = 0x7f0a00ee;
+        public static final int round = 0x7f0a00f1;
+        public static final int square = 0x7f0a0115;
+        public static final int stroke = 0x7f0a011e;
     }
     public static final class raw {
         private raw() {}

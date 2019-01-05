@@ -340,12 +340,12 @@
         "source": "C:\\Users\\Appledora\\.gradle\\caches\\transforms-1\\files-1.1\\design-textfield-28.0.0-alpha1.aar\\4873bb504b12a2db4f6f20922c5a1fb5\\res\\drawable-anydpi-v21\\design_ic_visibility.xml"
     },
     {
-        "merged": "D:\\Humane-Test-master-master\\Humane-Test-master-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_design_ic_visibility.png.flat",
-        "source": "C:\\Users\\Appledora\\.gradle\\caches\\transforms-1\\files-1.1\\design-textfield-28.0.0-alpha1.aar\\4873bb504b12a2db4f6f20922c5a1fb5\\res\\drawable-mdpi-v4\\design_ic_visibility.png"
-    },
-    {
         "merged": "D:\\Humane-Test-master-master\\Humane-Test-master-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_mode_bar.xml.flat",
         "source": "C:\\Users\\Appledora\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha1.aar\\b629a009bc0fa393e90a99c32df51fd5\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "D:\\Humane-Test-master-master\\Humane-Test-master-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_design_ic_visibility.png.flat",
+        "source": "C:\\Users\\Appledora\\.gradle\\caches\\transforms-1\\files-1.1\\design-textfield-28.0.0-alpha1.aar\\4873bb504b12a2db4f6f20922c5a1fb5\\res\\drawable-mdpi-v4\\design_ic_visibility.png"
     },
     {
         "merged": "D:\\Humane-Test-master-master\\Humane-Test-master-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
@@ -1526,6 +1526,10 @@
     {
         "merged": "D:\\Humane-Test-master-master\\Humane-Test-master-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Appledora\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha1.aar\\b629a009bc0fa393e90a99c32df51fd5\\res\\drawable-mdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\Humane-Test-master-master\\Humane-Test-master-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_feed_base_org.xml.flat",
+        "source": "D:\\Humane-Test-master-master\\Humane-Test-master-master\\app\\src\\main\\res\\layout\\activity_feed_base_org.xml"
     },
     {
         "merged": "D:\\Humane-Test-master-master\\Humane-Test-master-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_time.xml.flat",

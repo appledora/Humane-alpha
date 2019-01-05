@@ -34,84 +34,160 @@ public class FeedBase extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_feed_base);
-
-
         mAuth = FirebaseAuth.getInstance();
+        uid = mAuth.getCurrentUser().getUid();
+        ref = FirebaseDatabase.getInstance().getReference().child("Users").child(uid);
+        ref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                tag = dataSnapshot.child("ID").getValue(String.class);
+                if(tag.equals("Organization")){
+                    setContentView(R.layout.activity_feed_base_org);
+
+                    if(mAuth.getCurrentUser() != null){
+
+                        mainbottomNav = findViewById(R.id.mainBottomNav_org);
+                        maintopNav = findViewById(R.id.topNav_org);
+                        foodFragment = new FoodFragment();
+                        clothFragment = new ClothFragment();
 
 
-        if(mAuth.getCurrentUser() != null){
+                        initializeFragment();
 
-            mainbottomNav = findViewById(R.id.mainBottomNav);
-            maintopNav = findViewById(R.id.topNav);
-            foodFragment = new FoodFragment();
-            clothFragment = new ClothFragment();
+                        maintopNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+                            @Override
+                            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                                Fragment currentFragment = getSupportFragmentManager().findFragmentById(R.id.main_container_org);
+                                switch (item.getItemId()){
+                                    case R.id.foods:
+                                        replaceFragment(foodFragment,currentFragment);
+                                        return true;
+                                    case R.id.clothe:
+                                        replaceFragment(clothFragment,currentFragment);
+                                        return true;
+                                    default:
+                                        return false;
+                                }
+                            }
+                        });
+                        mainbottomNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+                            @Override
+                            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
 
-            initializeFragment();
+                                switch(item.getItemId()){
+                                    case R.id.home:
 
-            maintopNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-                @Override
-                public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-                    Fragment currentFragment = getSupportFragmentManager().findFragmentById(R.id.main_container);
-                    switch (item.getItemId()){
-                        case R.id.foods:
-                            replaceFragment(foodFragment,currentFragment);
-                            return true;
-                        case R.id.clothe:
-                            replaceFragment(clothFragment,currentFragment);
-                            return true;
-                        default:
-                             return false;
+                                        return true;
+                                    case R.id.user_profile:
+                                        Intent i = new Intent(FeedBase.this,DonatorProfile.class);
+                                        startActivity(i);
+                                        return true;
+                                    case R.id.logout_feed:
+                                        mAuth.signOut();
+                                        Intent intent = new Intent(FeedBase.this,loginActivity.class);
+                                        startActivity(intent);
+
+
+                                    default:
+                                        return false;
+                                }
+                            }
+                        });
+
+
+
+
                     }
                 }
-            });
-            mainbottomNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-                @Override
-                public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                else if (tag.equals("Donator")) {
+                    setContentView(R.layout.activity_feed_base);
+                    if(mAuth.getCurrentUser() != null){
+                    mainbottomNav = findViewById(R.id.mainBottomNav);
+                    maintopNav = findViewById(R.id.topNav);
+                        foodFragment = new FoodFragment();
+                        clothFragment = new ClothFragment();
+                     initializeFragment();
+                    maintopNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+                        @Override
+                        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                            Fragment currentFragment = getSupportFragmentManager().findFragmentById(R.id.main_container_org);
+                            switch (item.getItemId()) {
+                                case R.id.foods:
+                                    replaceFragment(foodFragment, currentFragment);
+                                    return true;
+                                case R.id.clothe:
+                                    replaceFragment(clothFragment, currentFragment);
+                                    return true;
+                                default:
+                                    return false;
+                            }
+                        }
+                    });
+                    mainbottomNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+                        @Override
+                        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
 
-                    switch(item.getItemId()){
-                        case R.id.home:
+                            switch (item.getItemId()) {
+                                case R.id.home:
 
 
-                            return true;
-                        case R.id.user_profile:
-                            Intent i = new Intent(FeedBase.this,DonatorProfile.class);
-                            startActivity(i);
-                            return true;
-                        case R.id.logout_feed:
-                            mAuth.signOut();
-                            Intent intent = new Intent(FeedBase.this,loginActivity.class);
+                                    return true;
+                                case R.id.user_profile:
+                                    Intent i = new Intent(FeedBase.this, DonatorProfile.class);
+                                    startActivity(i);
+                                    return true;
+                                case R.id.logout_feed:
+                                    mAuth.signOut();
+                                    Intent intent = new Intent(FeedBase.this, loginActivity.class);
+                                    startActivity(intent);
+
+
+                                default:
+                                    return false;
+                            }
+                        }
+                    });
+                    addPostBtn = findViewById(R.id.add_post_btn);
+                    addPostBtn.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent intent = new Intent(FeedBase.this, FoodPostForm.class);
                             startActivity(intent);
-
-
-                        default:
-                             return false;
-                    }
+                        }
+                    });
                 }
-            });
 
-
-
-            addPostBtn = findViewById(R.id.add_post_btn);
-            addPostBtn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(FeedBase.this,FoodPostForm.class);
-                    startActivity(intent);
                 }
-            });
-        }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+
     }
 
     public void initializeFragment(){
 
         Log.i("my: ","INITIALIZING FRAGMENT");
         FragmentTransaction trans = getSupportFragmentManager().beginTransaction();
-        trans.add(R.id.main_container,foodFragment);
-        trans.add(R.id.main_container,clothFragment);
+        if(tag.equals("Organization")) {
+            trans.add(R.id.main_container_org, foodFragment);
+            trans.add(R.id.main_container_org, clothFragment);
+        }
+
+        else if (tag.equals("Donator")){
+            trans.add(R.id.main_container,foodFragment);
+            trans.add(R.id.main_container,clothFragment);
+        }
 
         trans.hide(clothFragment);
         trans.commit();
