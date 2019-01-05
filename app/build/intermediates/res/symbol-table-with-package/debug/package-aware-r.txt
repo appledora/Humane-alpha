@@ -1296,6 +1296,7 @@ id butt
 id button
 id buttonPanel
 id call_button
+id call_button_cloth_org
 id cancel_action
 id card_container
 id card_login
@@ -1310,12 +1311,18 @@ id chronometer
 id clip_horizontal
 id clip_vertical
 id cloth_date
+id cloth_date_org
 id cloth_desc
+id cloth_desc_org
 id cloth_image
+id cloth_image_org
 id cloth_list_view
 id cloth_location
+id cloth_location_org
 id cloth_user_image
+id cloth_user_image_org
 id cloth_user_name
+id cloth_user_name_org
 id clothe
 id collapseActionView
 id contact_display
@@ -1408,6 +1415,7 @@ id mainBottomNav
 id main_blog_post
 id main_blog_post_don
 id main_cloth_post
+id main_cloth_post_org
 id main_container
 id main_dp
 id masked
@@ -1613,6 +1621,7 @@ layout activity_register_volunteer
 layout activity_slide
 layout cloth_donation_post
 layout cloth_list_items
+layout cloth_list_items_org
 layout crop_image_activity
 layout crop_image_view
 layout design_bottom_navigation_item

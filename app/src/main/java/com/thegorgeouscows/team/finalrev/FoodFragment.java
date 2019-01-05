@@ -39,7 +39,7 @@ import java.util.List;
 public class FoodFragment extends Fragment {
     private RecyclerView post_list_view;
     List<Posts>posts_list;
-    private FirebaseFirestore firebaseFirestore,db;
+    private FirebaseFirestore db;
     private DatabaseReference ref;
     private FirebaseAuth auth;
     private String uid,tag;
@@ -96,11 +96,6 @@ public class FoodFragment extends Fragment {
             }
         });
 
-
-
-        /*post_list_view.setLayoutManager(new LinearLayoutManager(container.getContext()));
-        post_list_view.setAdapter(foodRecyclerAdapter);
-        post_list_view.setHasFixedSize(true);*/
 
 
         db = FirebaseFirestore.getInstance();

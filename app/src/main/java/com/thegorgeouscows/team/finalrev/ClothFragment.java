@@ -4,6 +4,7 @@ package com.thegorgeouscows.team.finalrev;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -14,6 +15,12 @@ import android.view.ViewGroup;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -31,7 +38,12 @@ public class ClothFragment extends Fragment {
     private RecyclerView clothes_list_view;
     List<Clothes> clothes_list;
     private FirebaseFirestore db;
+    private DatabaseReference ref;
+    private FirebaseAuth auth;
+    private String uid,tag;
     private ClothRecyclerAdapter clothRecyclerAdapter;
+    private ClothRecyclerAdapterOrg clothRecyclerAdapterOrg;
+    private CardView cardView;
 
 
     public ClothFragment() {
@@ -40,18 +52,50 @@ public class ClothFragment extends Fragment {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(LayoutInflater inflater,final ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         Log.i("my","Got to CLOTHES FRAGMENT");
-        View view = inflater.inflate(R.layout.fragment_cloth,container,false);
-        clothes_list_view = (RecyclerView) view.findViewById(R.id.cloth_list_view);
+       final View view = inflater.inflate(R.layout.fragment_cloth,container,false);
         clothes_list = new ArrayList<>();
         clothRecyclerAdapter = new ClothRecyclerAdapter(clothes_list);
 
-        clothes_list_view.setLayoutManager(new LinearLayoutManager(container.getContext()));
-        clothes_list_view.setAdapter(clothRecyclerAdapter);
-        clothes_list_view.setHasFixedSize(true);
+        auth = FirebaseAuth.getInstance();
+        uid = auth.getCurrentUser().getUid();
+        ref = FirebaseDatabase.getInstance().getReference().child("Users").child(uid);
+        Log.i("my UID",uid);
+        ref.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                Log.i("my TAG in single:", "got here");
+                tag = dataSnapshot.child("ID").getValue(String.class);
+
+
+                if(tag.equals("Organization")){
+                    cardView = view.findViewById(R.id.main_cloth_post_org);
+                    clothes_list_view = view.findViewById(R.id.cloth_list_view);
+                    clothRecyclerAdapterOrg = new ClothRecyclerAdapterOrg(clothes_list);
+                    clothes_list_view.setLayoutManager(new LinearLayoutManager(container.getContext()));
+                   clothes_list_view.setAdapter(clothRecyclerAdapterOrg);
+                    clothes_list_view.setHasFixedSize(true);
+
+                }
+                else if (tag.equals("Donator")){
+                    cardView = view.findViewById(R.id.main_cloth_post);
+                    clothes_list_view = view.findViewById(R.id.cloth_list_view);
+                    clothRecyclerAdapter = new ClothRecyclerAdapter(clothes_list);
+                    clothes_list_view.setLayoutManager(new LinearLayoutManager(container.getContext()));
+                    clothes_list_view.setAdapter(clothRecyclerAdapter);
+                    clothes_list_view.setHasFixedSize(true);
+                }
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                Log.i("my TAG in single", "got here cancelled");
+            }
+        });
 
         db = FirebaseFirestore.getInstance();
         db.collection("ClothPosts").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {

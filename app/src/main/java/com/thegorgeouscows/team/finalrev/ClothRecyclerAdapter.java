@@ -21,6 +21,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class ClothRecyclerAdapter extends RecyclerView.Adapter<ClothRecyclerAdapter.ViewHolder> {
     public List<Clothes>clothes_list;
     public Context context;
+    String user_id,pickup_address,profile_photo,contact;
 
     public ClothRecyclerAdapter(List<Clothes>clothes_list){
         Log.i("my","CLOTH RECYCLER ADAPTER");
@@ -38,11 +39,11 @@ public class ClothRecyclerAdapter extends RecyclerView.Adapter<ClothRecyclerAdap
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        String user_id = clothes_list.get(position).getCuserid();
-        String pickup_address = clothes_list.get(position).getCaddress();
+        user_id = clothes_list.get(position).getCuserid();
+        pickup_address = clothes_list.get(position).getCaddress();
         String image_url = clothes_list.get(position).getCimage_url();
-        String profile_photo = clothes_list.get(position).getCprofilePhoto();
-        String contact = clothes_list.get(position).getCcontact();
+        profile_photo = clothes_list.get(position).getCprofilePhoto();
+        contact = clothes_list.get(position).getCcontact();
         long millisec = clothes_list.get(position).getCtimestamp().getTime();
         String dateString = DateFormat.format("MM/dd/yyyy", new Date(millisec)).toString();
 
@@ -51,6 +52,7 @@ public class ClothRecyclerAdapter extends RecyclerView.Adapter<ClothRecyclerAdap
         holder.setCimage(image_url);
         holder.setCprofilePhoto(profile_photo);
         holder.setCdate(dateString);
+       // holder.setCcard();
 
     }
 
@@ -99,5 +101,7 @@ public class ClothRecyclerAdapter extends RecyclerView.Adapter<ClothRecyclerAdap
             postDate.setText(dateString);
         }
 
+        /*public void setCcard() {
+        }*/
     }
 }

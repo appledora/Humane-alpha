@@ -91,6 +91,8 @@
                 app:layout_constraintStart_toEndOf="@+id/cloth_user_image"
                 app:layout_constraintTop_toBottomOf="@+id/cloth_date" />
 
+
+
         </android.support.constraint.ConstraintLayout>
     </android.support.v7.widget.CardView>
 
