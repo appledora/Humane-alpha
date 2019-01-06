@@ -24,26 +24,37 @@
                 android:background="@color/colorAquaDark"
                 android:orientation="vertical">
 
-                <com.github.siyamed.shapeimageview.CircularImageView
-                    android:id="@+id/dp"
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/dp_org"
                     android:layout_width="200dp"
-                    android:layout_height="100dp"
+                    android:layout_height="200dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="35dp"
-                    android:src="@drawable/person" />
+                    android:src="@drawable/person"
+                    app:civ_border="false"
+                    app:civ_shadow="true" />
 
                 <TextView
-                    android:id="@+id/name_display"
+                    android:id="@+id/name_display_org"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
                     android:fontFamily="@font/roboto_slab_bold"
+                    android:gravity="center_horizontal"
                     android:text="Name"
                     android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/mail_display_org"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto_slab_bold"
+                    android:gravity="center_horizontal"
+                    android:text="Email"
+                    android:textSize="20sp" />
 
 
             </LinearLayout>

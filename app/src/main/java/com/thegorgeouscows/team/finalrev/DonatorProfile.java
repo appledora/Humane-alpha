@@ -45,9 +45,8 @@ public class DonatorProfile extends AppCompatActivity {
     String uid;
     CircleImageView profilePhoto;
     FirebaseStorage storage;
-    StorageReference storageReference,mStorageImage;
+    StorageReference storageReference,mStorageRef,mStorageImage;
     DatabaseReference mUserDatabase;
-    StorageReference mStorageRef;
 
     ProgressDialog mProgress;
     FirebaseAuth mAuth;
@@ -158,21 +157,6 @@ public class DonatorProfile extends AppCompatActivity {
                 final ProgressDialog progressDialog = new ProgressDialog(this);
                 progressDialog.setTitle("Uploading...");
                 progressDialog.show();
-
-                /*StorageReference filePath = mStorageImage.child(mImageUri.getLastPathSegment());
-                filePath.putFile(mImageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                    @Override
-                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                        Task<Uri> urlTask =  taskSnapshot.getStorage().getDownloadUrl();
-                        String downloadUrl = urlTask.getResult().toString();
-                        mUserDatabase.child("Image").setValue(downloadUrl);
-                    }
-                }).addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        e.printStackTrace();
-                    }
-                });*/
 
             final StorageReference photref = mStorageRef.child(imageUri.getLastPathSegment());
             photref.putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {

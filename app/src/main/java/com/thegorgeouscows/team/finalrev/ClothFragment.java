@@ -43,7 +43,6 @@ public class ClothFragment extends Fragment {
     private String uid,tag;
     private ClothRecyclerAdapter clothRecyclerAdapter;
     private ClothRecyclerAdapterOrg clothRecyclerAdapterOrg;
-    private CardView cardView;
 
 
     public ClothFragment() {
@@ -72,7 +71,7 @@ public class ClothFragment extends Fragment {
 
 
                 if(tag.equals("Organization")){
-                    cardView = view.findViewById(R.id.main_cloth_post_org);
+
                     clothes_list_view = view.findViewById(R.id.cloth_list_view);
                     clothRecyclerAdapterOrg = new ClothRecyclerAdapterOrg(clothes_list);
                     clothes_list_view.setLayoutManager(new LinearLayoutManager(container.getContext()));
@@ -81,7 +80,7 @@ public class ClothFragment extends Fragment {
 
                 }
                 else if (tag.equals("Donator")){
-                    cardView = view.findViewById(R.id.main_cloth_post);
+
                     clothes_list_view = view.findViewById(R.id.cloth_list_view);
                     clothRecyclerAdapter = new ClothRecyclerAdapter(clothes_list);
                     clothes_list_view.setLayoutManager(new LinearLayoutManager(container.getContext()));
