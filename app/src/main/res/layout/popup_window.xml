@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
 
     <ImageView
         android:id="@+id/popup_bg"
@@ -13,7 +14,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="70dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="200dp"
+        android:layout_marginBottom="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -74,21 +75,20 @@
         app:layout_constraintStart_toStartOf="@+id/popup_bg"
         app:layout_constraintTop_toBottomOf="@+id/pop_user_name" />
 
-    <ImageButton
+    <Button
         android:id="@+id/pop_quit"
-        android:layout_width="42dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/bottom_navigation_color"
-        app:layout_constraintBottom_toBottomOf="@+id/popup_bg"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/rounded"
+        android:backgroundTint="@color/colorPeyaj"
+        android:text="Return"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.161"
-        app:srcCompat="@drawable/rounded"
-        tools:srcCompat="@drawable/ic_settings_power_black_24dp"
-        android:onClick="finishActivity"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pop_user_contact" />
+
 
 
 </android.support.constraint.ConstraintLayout>

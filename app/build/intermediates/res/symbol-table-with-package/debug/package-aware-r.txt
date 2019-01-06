@@ -1224,6 +1224,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable orgbg
 drawable person
+drawable pop_quit
 drawable profile
 drawable ripple_effect
 drawable rounded

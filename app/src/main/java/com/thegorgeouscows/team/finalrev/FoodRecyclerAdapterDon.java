@@ -28,7 +28,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class FoodRecyclerAdapterDon extends RecyclerView.Adapter<FoodRecyclerAdapterDon.ViewHolder> {
     public List<Posts> posts_lists;
     public Context context;
-    String user_id,pickup_address,contact_num;
+    String user_id,pickup_address,contact_num, profile_photo;
 
 
     public FoodRecyclerAdapterDon(List<Posts> posts_list) {
@@ -52,7 +52,7 @@ public class FoodRecyclerAdapterDon extends RecyclerView.Adapter<FoodRecyclerAda
          user_id = posts_lists.get(position).getUserid();
          pickup_address = posts_lists.get(position).getAddress();
         String image_url = posts_lists.get(position).getImage_url();
-        String profile_photo = posts_lists.get(position).getProfilePhoto();
+         profile_photo = posts_lists.get(position).getProfilePhoto();
         long millisec = posts_lists.get(position).getTimestamp().getTime();
         String dateString = DateFormat.format("MM/dd/yyyy", new Date(millisec)).toString();        //Log.i("my","recieved address: "+user_id);
         contact_num = posts_lists.get(position).getContact();
@@ -91,6 +91,7 @@ public class FoodRecyclerAdapterDon extends RecyclerView.Adapter<FoodRecyclerAda
                     i.putExtra("location",pickup_address);
                     i.putExtra("contact_num",contact_num);
                     i.putExtra("id","Food");
+                    i.putExtra("dp",profile_photo);
                     context.startActivity(i);
                 }
             });
@@ -128,14 +129,7 @@ public class FoodRecyclerAdapterDon extends RecyclerView.Adapter<FoodRecyclerAda
 
 
     }
-        public String getUserID(){
-        return user_id;
-        }
         public String getLocation(){
         return pickup_address;
-        }
-
-        public String getContacts(){
-        return contact_num;
         }
 }

@@ -25,6 +25,8 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class ClothRecyclerAdapterOrg extends RecyclerView.Adapter<ClothRecyclerAdapterOrg.ViewHolder> {
     public List<Clothes>clothes_list;
     public Context context;
+    String user_id,pickup_address,profile_photo,contact;
+
 
     public ClothRecyclerAdapterOrg(List<Clothes>clothes_list){
         Log.i("my","CLOTH RECYCLER ADAPTER");
@@ -42,11 +44,11 @@ public class ClothRecyclerAdapterOrg extends RecyclerView.Adapter<ClothRecyclerA
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        String user_id = clothes_list.get(position).getCuserid();
-        String pickup_address = clothes_list.get(position).getCaddress();
+        user_id = clothes_list.get(position).getCuserid();
+        pickup_address = clothes_list.get(position).getCaddress();
         String image_url = clothes_list.get(position).getCimage_url();
-        String profile_photo = clothes_list.get(position).getCprofilePhoto();
-        String contact = clothes_list.get(position).getCcontact();
+        profile_photo = clothes_list.get(position).getCprofilePhoto();
+        contact = clothes_list.get(position).getCcontact();
         long millisec = clothes_list.get(position).getCtimestamp().getTime();
         String dateString = DateFormat.format("MM/dd/yyyy", new Date(millisec)).toString();
 
@@ -78,6 +80,19 @@ public class ClothRecyclerAdapterOrg extends RecyclerView.Adapter<ClothRecyclerA
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             mView = itemView;
+            mView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    Intent i = new Intent(context,PopUpActivity.class);
+                    i.putExtra("username",user_id);
+                    i.putExtra("location",pickup_address);
+                    i.putExtra("contact_num",contact);
+                    i.putExtra("id","Food");
+                    i.putExtra("dp",profile_photo);
+                    context.startActivity(i);
+                }
+            });
         }
 
         public void setCname(String user_id) {

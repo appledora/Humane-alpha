@@ -30,6 +30,8 @@ public class FoodRecyclerAdapter extends RecyclerView.Adapter<FoodRecyclerAdapte
     }
 
     public Context context;
+    String user_id,pickup_address,contact_numb, profile_photo;
+
 
 
     @NonNull
@@ -43,11 +45,11 @@ public class FoodRecyclerAdapter extends RecyclerView.Adapter<FoodRecyclerAdapte
 
     public void onBindViewHolder(ViewHolder holder, int position) {
         //Log.i("my","ViewHolder Binding");
-        String user_id = posts_lists.get(position).getUserid();
-        String pickup_address = posts_lists.get(position).getAddress();
+         user_id = posts_lists.get(position).getUserid();
+         pickup_address = posts_lists.get(position).getAddress();
         String image_url = posts_lists.get(position).getImage_url();
-        String contact_numb = posts_lists.get(position).getContact();
-        String profile_photo = posts_lists.get(position).getProfilePhoto();
+         contact_numb = posts_lists.get(position).getContact();
+        profile_photo = posts_lists.get(position).getProfilePhoto();
         long millisec = posts_lists.get(position).getTimestamp().getTime();
         String dateString = DateFormat.format("MM/dd/yyyy", new Date(millisec)).toString();        //Log.i("my","recieved address: "+user_id);
         holder.setName(user_id);
@@ -75,6 +77,19 @@ public class FoodRecyclerAdapter extends RecyclerView.Adapter<FoodRecyclerAdapte
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             mView = itemView;
+            mView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    Intent i = new Intent(context,PopUpActivity.class);
+                    i.putExtra("username",user_id);
+                    i.putExtra("location",pickup_address);
+                    i.putExtra("contact_num",contact_numb);
+                    i.putExtra("id","Food");
+                    i.putExtra("dp",profile_photo);
+                    context.startActivity(i);
+                }
+            });
         }
 
         public void setName(String text) {

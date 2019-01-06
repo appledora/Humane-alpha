@@ -5451,15 +5451,16 @@ public final class R {
     public static final int notify_panel_notification_icon_bg=0x7f0800af;
     public static final int orgbg=0x7f0800b0;
     public static final int person=0x7f0800b1;
-    public static final int profile=0x7f0800b2;
-    public static final int ripple_effect=0x7f0800b3;
-    public static final int rounded=0x7f0800b4;
-    public static final int tasks=0x7f0800b5;
-    public static final int tooltip_frame_dark=0x7f0800b6;
-    public static final int tooltip_frame_light=0x7f0800b7;
-    public static final int userbg=0x7f0800b8;
-    public static final int verification=0x7f0800b9;
-    public static final int volbg=0x7f0800ba;
+    public static final int pop_quit=0x7f0800b2;
+    public static final int profile=0x7f0800b3;
+    public static final int ripple_effect=0x7f0800b4;
+    public static final int rounded=0x7f0800b5;
+    public static final int tasks=0x7f0800b6;
+    public static final int tooltip_frame_dark=0x7f0800b7;
+    public static final int tooltip_frame_light=0x7f0800b8;
+    public static final int userbg=0x7f0800b9;
+    public static final int verification=0x7f0800ba;
+    public static final int volbg=0x7f0800bb;
   }
   public static final class font {
     public static final int roboto_condensed_regular=0x7f090000;

@@ -1,6 +1,7 @@
 package com.thegorgeouscows.team.finalrev;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.text.format.DateFormat;
@@ -52,7 +53,6 @@ public class ClothRecyclerAdapter extends RecyclerView.Adapter<ClothRecyclerAdap
         holder.setCimage(image_url);
         holder.setCprofilePhoto(profile_photo);
         holder.setCdate(dateString);
-       // holder.setCcard();
 
     }
 
@@ -74,6 +74,19 @@ public class ClothRecyclerAdapter extends RecyclerView.Adapter<ClothRecyclerAdap
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             mView = itemView;
+            mView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    Intent i = new Intent(context,PopUpActivity.class);
+                    i.putExtra("username",user_id);
+                    i.putExtra("location",pickup_address);
+                    i.putExtra("contact_num",contact);
+                    i.putExtra("id","Food");
+                    i.putExtra("dp",profile_photo);
+                    context.startActivity(i);
+                }
+            });
         }
 
         public void setCname(String user_id) {
@@ -101,7 +114,6 @@ public class ClothRecyclerAdapter extends RecyclerView.Adapter<ClothRecyclerAdap
             postDate.setText(dateString);
         }
 
-        /*public void setCcard() {
-        }*/
+
     }
 }
