@@ -83,12 +83,14 @@ public class OrganizationProfile extends AppCompatActivity {
                 if(dataSnapshot.exists()){
                     String nm = dataSnapshot.child("Name").getValue().toString();
                     String em = dataSnapshot.child("Email").getValue().toString();
+                    Log.i("my TAG:",dataSnapshot.child("Image").getValue().toString());
 
                     if(dataSnapshot.child("Image").getValue().toString() != "default"){
                         String photoadd = dataSnapshot.child("Image").getValue().toString();
                         Uri photoURI = Uri.parse(photoadd);
                         Glide.with(OrganizationProfile.this).load(photoURI).into(profilePhoto);
                     }
+
                     name.setText(nm);
                     email.setText(em);
 
@@ -121,6 +123,8 @@ public class OrganizationProfile extends AppCompatActivity {
         volunteerList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent i = new Intent(OrganizationProfile.this,VolunteerListFeedBase.class);
+                startActivity(i);
                 Toast.makeText(OrganizationProfile.this,"Volunteer",Toast.LENGTH_SHORT).show();
 
             }
@@ -170,11 +174,9 @@ public class OrganizationProfile extends AppCompatActivity {
             photref.putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                 @Override
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                    Log.i("my: ","onSucces uploadTask");
                     photref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                         @Override
                         public void onSuccess(Uri uri) {
-                            Log.i("my: ","On success uri");
                             mUserDatabase.child("Image").setValue(uri.toString());
 
                         }

@@ -69,6 +69,8 @@ public class FoodPostForm extends AppCompatActivity implements View.OnClickListe
         pickup_address = (EditText)findViewById(R.id.address);
         post_button = (Button)findViewById(R.id.donate);
         selectPhoto = (ImageButton)findViewById(R.id.photoButton);
+
+
         storageReference = FirebaseStorage.getInstance().getReference();
         firebaseFirestore = FirebaseFirestore.getInstance();
         firebaseAuth = FirebaseAuth.getInstance();

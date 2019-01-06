@@ -78,7 +78,7 @@ public class registerOrganizationActivity extends AppCompatActivity {
                         DatabaseReference currentuserdata = mDatabase.child(userid);
                         currentuserdata.child("Name").setValue(name);
                         currentuserdata.child("Email").setValue(email);
-                        currentuserdata.child("Image").setValue("Default");
+                        currentuserdata.child("Image").setValue("https://firebasestorage.googleapis.com/v0/b/final-rev-app.appspot.com/o/post_images%2Fperson.png?alt=media&token=fafa0ebd-2114-4622-b391-79712b84ff7a");
                         currentuserdata.child("ID").setValue("Organization");
                         mProgress.dismiss();
                         Intent i = new Intent(registerOrganizationActivity.this, OrganizationProfile.class);

@@ -46,7 +46,8 @@
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
         <activity android:name=".FeedBase" />
-        <activity android:name=".PopUpActivity"></activity>
+        <activity android:name=".PopUpActivity" />
+        <activity android:name=".VolunteerListFeedBase"></activity>
     </application>
 
 </manifest>

@@ -1240,6 +1240,7 @@ font roboto_slab_bold
 font roboto_slab_light
 font roboto_thin
 id ALT
+id Bloodbank
 id CTRL
 id CropOverlayView
 id CropProgressBar
@@ -1270,6 +1271,7 @@ id actions
 id activity_chooser_view_content
 id add
 id add_post_btn
+id add_vol_btn
 id address
 id address_cloth
 id adjust_height
@@ -1362,9 +1364,12 @@ id end
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
+id entryAddress_vol
 id entryEmail
 id entryEmailLog
+id entryEmail_vol
 id entryName
+id entryName_vol
 id entryPassword
 id entryPasswordLog
 id exitUntilCollapsed
@@ -1415,12 +1420,14 @@ id mail_display
 id mail_display_org
 id mainBottomNav
 id mainBottomNav_org
+id mainBottomNav_vol
 id main_blog_post
 id main_blog_post_don
 id main_cloth_post
 id main_cloth_post_org
 id main_container
 id main_container_org
+id main_container_vol
 id main_dp
 id masked
 id media_actions
@@ -1457,6 +1464,7 @@ id parent
 id parentPanel
 id parent_matrix
 id pending
+id pending_tasks
 id percent
 id photoButton
 id photoButton_cloth
@@ -1477,6 +1485,8 @@ id quoter
 id radio
 id rectangle
 id reg_contact
+id reg_contact_vol
+id reg_volunteer
 id registerButton
 id registerReq
 id right
@@ -1567,6 +1577,7 @@ id user_profile
 id view_offset_helper
 id visible
 id volunteer
+id volunteer_list
 id wide
 id withText
 id wrap
@@ -1626,6 +1637,7 @@ layout activity_register_donator
 layout activity_register_organization
 layout activity_register_volunteer
 layout activity_slide
+layout activity_volunteer_list_feed_base
 layout cloth_donation_post
 layout cloth_list_items
 layout cloth_list_items_org

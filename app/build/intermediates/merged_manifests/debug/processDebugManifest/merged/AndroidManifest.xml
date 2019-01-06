@@ -58,6 +58,7 @@
             android:theme="@style/Base.Theme.AppCompat" />
         <activity android:name="com.thegorgeouscows.team.finalrev.FeedBase" />
         <activity android:name="com.thegorgeouscows.team.finalrev.PopUpActivity" />
+        <activity android:name="com.thegorgeouscows.team.finalrev.VolunteerListFeedBase" />
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
             android:excludeFromRecents="true"

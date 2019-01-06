@@ -53,8 +53,6 @@ public class ClothFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater,final ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        Log.i("my","Got to CLOTHES FRAGMENT");
        final View view = inflater.inflate(R.layout.fragment_cloth,container,false);
         clothes_list = new ArrayList<>();
         clothRecyclerAdapter = new ClothRecyclerAdapter(clothes_list);
@@ -62,11 +60,9 @@ public class ClothFragment extends Fragment {
         auth = FirebaseAuth.getInstance();
         uid = auth.getCurrentUser().getUid();
         ref = FirebaseDatabase.getInstance().getReference().child("Users").child(uid);
-        Log.i("my UID",uid);
         ref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                Log.i("my TAG in single:", "got here");
                 tag = dataSnapshot.child("ID").getValue(String.class);
 
 
@@ -92,7 +88,6 @@ public class ClothFragment extends Fragment {
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                Log.i("my TAG in single", "got here cancelled");
             }
         });
 
@@ -102,15 +97,12 @@ public class ClothFragment extends Fragment {
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
                 if (task.isSuccessful()){
                     for (final QueryDocumentSnapshot document: task.getResult()){
-                        //Log.i("my",document.getId()+ "=>"+document.getData());
                         DocumentReference docRef = db.collection("ClothPosts").document(document.getId());
                         docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                             @Override
                             public void onSuccess(DocumentSnapshot documentSnapshot) {
                                 Clothes cloth = documentSnapshot.toObject(Clothes.class);
                                 clothes_list.add(cloth);
-                                Log.i("my","passed cloth as object and added to feed");
-                                //System.out.println(Arrays.toString(posts_list.toArray()));
                                 clothRecyclerAdapter.notifyDataSetChanged();
                             }
                         });

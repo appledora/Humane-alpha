@@ -95,7 +95,7 @@ public class registerDonatorActivity extends AppCompatActivity {
                                                                                                     currentuserdata.child("Name").setValue(name);
                                                                                                     currentuserdata.child("Email").setValue(email);
                                                                                                     currentuserdata.child("ID").setValue("Donator");
-                                                                                                    currentuserdata.child("Image").setValue("Default");
+                                                                                                    currentuserdata.child("Image").setValue("https://firebasestorage.googleapis.com/v0/b/final-rev-app.appspot.com/o/post_images%2Fperson.png?alt=media&token=fafa0ebd-2114-4622-b391-79712b84ff7a");
                                                                                                     currentuserdata.child("Contact").setValue(contact);
 
                                                                                                     mProgress.dismiss();

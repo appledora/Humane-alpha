@@ -97,6 +97,7 @@ public class DonatorProfile extends AppCompatActivity {
                         Glide.with(DonatorProfile.this).load(photoURI).into(profilePhoto);
                     }
 
+
                     name.setText(nm);
                     email.setText(em);
                     contact.setText(cn);
@@ -162,11 +163,9 @@ public class DonatorProfile extends AppCompatActivity {
             photref.putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                 @Override
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                    Log.i("my: ","onSucces uploadTask");
                     photref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                         @Override
                         public void onSuccess(Uri uri) {
-                            Log.i("my: ","On success uri");
                             mUserDatabase.child("Image").setValue(uri.toString());
 
                         }
