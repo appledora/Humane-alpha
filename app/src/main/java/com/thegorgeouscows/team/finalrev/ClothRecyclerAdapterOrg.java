@@ -121,7 +121,6 @@ public class ClothRecyclerAdapterOrg extends RecyclerView.Adapter<ClothRecyclerA
         }
 
         public void setCallButton(final String contact) {
-            Log.i("my setting callButton: ",contact);
             callButton = mView.findViewById(R.id.call_button_cloth_org);
             callButton.setOnClickListener(new View.OnClickListener() {
                 @SuppressLint("MissingPermission")

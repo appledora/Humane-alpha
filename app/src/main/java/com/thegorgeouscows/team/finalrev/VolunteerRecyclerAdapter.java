@@ -30,11 +30,8 @@ public class VolunteerRecyclerAdapter extends RecyclerView.Adapter<VolunteerRecy
     @Override
     public void onBindViewHolder(@NonNull VolunteerRecyclerAdapter.ViewHolder holder, int position) {
         vol_id = volunteer_list.get(position).getVusername();
-        Log.i("my vol_id",vol_id);
         vol_address = volunteer_list.get(position).getVaddress();
-        Log.i("my vol_address",vol_address);
         vol_contact = volunteer_list.get(position).getVcontact();
-        Log.i("my vol_contact",vol_contact);
 
         holder.setVname(vol_id);
         holder.setVaddress(vol_address);
@@ -58,37 +55,21 @@ public class VolunteerRecyclerAdapter extends RecyclerView.Adapter<VolunteerRecy
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             mView = itemView;
-/*            mView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                    Intent i = new Intent(context,PopUpActivity.class);
-                    i.putExtra("username",user_id);
-                    i.putExtra("location",pickup_address);
-                    i.putExtra("contact_num",contact);
-                    i.putExtra("id","Food");
-                    i.putExtra("dp",profile_photo);
-                    context.startActivity(i);
-                }
-            });*/
         }
 
         public void setVname(String user_id) {
             nameText = mView.findViewById(R.id.vol_user_name);
-            Log.i("my name:  ",user_id);
             nameText.setText(user_id);
         }
 
         public void setVaddress(String pickup_address) {
             addressText = mView.findViewById(R.id.vol_location);
-            Log.i("my address: ",pickup_address);
             addressText.setText(pickup_address);
         }
 
 
         public void setVcontact(String vol_contact) {
             contactText = mView.findViewById(R.id.vol_contact_no);
-            Log.i("my number: ",vol_contact);
             contactText.setText(vol_contact);
         }
     }
