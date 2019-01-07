@@ -21,9 +21,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:foreground="?android:attr/selectableItemBackground"
-            card_view:cardBackgroundColor="#ffffff"
-            card_view:cardCornerRadius="4dp"
-            card_view:cardElevation="0dp"
+            card_view:cardBackgroundColor="#29000000"
+            card_view:cardCornerRadius="0dp"
+            card_view:cardElevation="25dp"
             card_view:cardUseCompatPadding="false">
 
             <LinearLayout
@@ -37,10 +37,11 @@
                     android:id="@+id/entryEmailLog"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Login"
+                    android:hint="@string/email"
                     android:inputType="textEmailAddress"
-                    android:textColor="@color/colorAqua"
-                    android:textColorHint="@color/colorRipple" />
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorGrey"
+                    android:textSize="15dp" />
 
                 <EditText
                     android:id="@+id/entryPasswordLog"
@@ -49,16 +50,16 @@
                     android:hint="@string/password"
                     android:inputType="textPassword"
                     android:singleLine="true"
-                    android:textColor="@color/colorAqua"
-                    android:textColorHint="@color/colorRipple" />
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorGrey"
+                    android:textSize="15dp" />
 
                 <Button
                     android:id="@+id/login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:background="@drawable/rounded"
-                    android:backgroundTint="@color/colorBegun"
+                    android:backgroundTint="@color/colorWhite"
                     android:text="@string/sign_in" />
 
                 <Button
@@ -68,20 +69,23 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
                     android:text="@string/click_to_register"
-                    android:textColor="@color/colorBlueJeansDark" />
+                    android:textColor="@color/colorGrey" />
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
-        <com.mikhaellopez.circularimageview.CircularImageView
-            android:layout_width="96dp"
-            android:layout_height="96dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:src="@mipmap/splashlogo" />
 
     </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="0dp"
+        card_view:srcCompat="@drawable/mainlogo" />
 </RelativeLayout>

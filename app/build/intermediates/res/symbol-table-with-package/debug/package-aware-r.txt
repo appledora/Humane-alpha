@@ -711,6 +711,7 @@ color colorGrapeFruit
 color colorGrapeFruitDark
 color colorGrass
 color colorGrassDark
+color colorGrey
 color colorLavander
 color colorLavanderDark
 color colorMint
@@ -725,6 +726,7 @@ color colorPrimary2
 color colorPrimaryDark
 color colorPrimaryDark1
 color colorPrimaryDark2
+color colorPrimaryMedium
 color colorPurple
 color colorRipple
 color colorTeal
@@ -1208,6 +1210,7 @@ drawable ic_slideshow_black_24dp
 drawable input_background
 drawable item_color_selector
 drawable lakeside_sunset
+drawable mainlogo
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
 drawable notification_action_background
@@ -1399,6 +1402,7 @@ id ifRoom
 id image
 id imageView
 id imageView2
+id imageView4
 id info
 id invisible
 id italic
@@ -1550,7 +1554,6 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
-id textView
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1697,7 +1700,6 @@ menu bottom_items
 menu crop_image_menu
 menu feed_bottom_nav
 menu top_items
-mipmap gg
 mipmap ic_launcher
 mipmap ic_launcher_round
 mipmap splashlogo
@@ -1771,6 +1773,7 @@ string dash_o
 string dash_u
 string dash_v
 string default_web_client_id
+string email
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string firebase_database_url
@@ -1984,6 +1987,7 @@ style Base_Widget_MaterialComponents_TextInputLayout
 style CardView
 style CardView_Dark
 style CardView_Light
+style MyButton
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_MaterialComponents
@@ -2125,6 +2129,7 @@ style Theme_AppCompat_Light_Dialog_MinWidth
 style Theme_AppCompat_Light_DialogWhenLarge
 style Theme_AppCompat_Light_NoActionBar
 style Theme_AppCompat_NoActionBar
+style Theme_AppCompat_NoActionBar_FullScreen
 style Theme_Design
 style Theme_Design_BottomSheetDialog
 style Theme_Design_Light
