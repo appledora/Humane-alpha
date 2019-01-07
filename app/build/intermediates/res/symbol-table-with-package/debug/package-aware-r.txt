@@ -1429,6 +1429,7 @@ id main_container
 id main_container_org
 id main_container_vol
 id main_dp
+id main_vol_post
 id masked
 id media_actions
 id message
@@ -1576,6 +1577,11 @@ id useLogo
 id user_profile
 id view_offset_helper
 id visible
+id vol_contact_no
+id vol_list_view
+id vol_location
+id vol_user_image
+id vol_user_name
 id volunteer
 id volunteer_list
 id wide
@@ -1661,6 +1667,7 @@ layout donator_ui_skull
 layout food_donation_post
 layout fragment_cloth
 layout fragment_feed
+layout fragment_volunteer
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -1685,6 +1692,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout slide_layout
 layout support_simple_spinner_dropdown_item
+layout vol_list_items
 menu bottom_items
 menu crop_image_menu
 menu feed_bottom_nav

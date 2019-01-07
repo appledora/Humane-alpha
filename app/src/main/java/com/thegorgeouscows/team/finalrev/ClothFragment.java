@@ -55,7 +55,7 @@ public class ClothFragment extends Fragment {
                              Bundle savedInstanceState) {
        final View view = inflater.inflate(R.layout.fragment_cloth,container,false);
         clothes_list = new ArrayList<>();
-        clothRecyclerAdapter = new ClothRecyclerAdapter(clothes_list);
+        //clothRecyclerAdapter = new ClothRecyclerAdapter(clothes_list);
 
         auth = FirebaseAuth.getInstance();
         uid = auth.getCurrentUser().getUid();

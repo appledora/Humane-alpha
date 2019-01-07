@@ -181,7 +181,7 @@ public class FoodPostForm extends AppCompatActivity implements View.OnClickListe
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
 
                   Task<Uri> urlTask =  taskSnapshot.getStorage().getDownloadUrl();
-                    while (!urlTask.isSuccessful());
+                   // while (!urlTask.isSuccessful());
                     String downloadUrl = urlTask.getResult().toString();
                     progress.dismiss();
 

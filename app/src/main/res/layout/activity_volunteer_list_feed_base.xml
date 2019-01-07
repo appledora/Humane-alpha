@@ -7,10 +7,13 @@
     tools:context=".MainActivity">
 
 
-
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/add_vol_btn"
@@ -30,21 +33,24 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:itemBackground="@color/colorPeyaj"
+            app:itemIconTint="@drawable/item_color_selector"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:menu="@menu/feed_bottom_nav"
-            app:itemIconTint="@drawable/item_color_selector"
-            />
+            app:menu="@menu/feed_bottom_nav" />
 
 
         <FrameLayout
             android:id="@+id/main_container_vol"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintBottom_toTopOf="@+id/mainBottomNav"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorFlowerDark"
+            app:layout_constraintBottom_toTopOf="@+id/mainBottomNav_vol"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
         </FrameLayout>
     </android.support.constraint.ConstraintLayout>

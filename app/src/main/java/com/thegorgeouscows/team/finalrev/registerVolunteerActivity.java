@@ -27,6 +27,7 @@ import java.util.Map;
 
 public class registerVolunteerActivity extends AppCompatActivity {
     private EditText volName,volContact,volAddress,volEmail;
+    EditText vusername,vaddress,vcontact,vemail;
     private Button register;
     DatabaseReference ref;
     String currentUserID;
@@ -37,10 +38,10 @@ public class registerVolunteerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_volunteer);
-        volName = findViewById(R.id.entryName_vol);
-        volAddress = findViewById(R.id.entryAddress_vol);
-        volEmail = findViewById(R.id.entryEmail_vol);
-        volContact = findViewById(R.id.reg_contact_vol);
+        vusername = findViewById(R.id.entryName_vol);
+        vaddress = findViewById(R.id.entryAddress_vol);
+        vemail = findViewById(R.id.entryEmail_vol);
+        vcontact = findViewById(R.id.reg_contact_vol);
         register = findViewById(R.id.reg_volunteer);
         register.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,18 +71,20 @@ public class registerVolunteerActivity extends AppCompatActivity {
     }
 
     private void startRegister() {
-        String name = volName.getText().toString().trim();
-        String email = volEmail.getText().toString().trim();
-        String address = volAddress.getText().toString().trim();
-        String  contact = volContact.getText().toString().trim();
+        String name = vusername.getText().toString().trim();
+        String email = vemail.getText().toString().trim();
+        String address = vaddress.getText().toString().trim();
+        String  contact = vcontact.getText().toString().trim();
 
         if(!TextUtils.isEmpty(name) && !TextUtils.isEmpty(email) && !TextUtils.isEmpty(address) && !TextUtils.isEmpty(contact)){
 
             Map<String,Object> volCred = new HashMap<>();
-            volCred.put("Name",name);
-            volCred.put("Email",email);
-            volCred.put("Address",address);
-            volCred.put("Contact",contact);
+            volCred.put("vusername",name);
+            volCred.put("vemail",email);
+            volCred.put("vaddress",address);
+            volCred.put("vcontact",contact);
+            volCred.put("ID","Volunteer");
+            volCred.put("Organization",orgName);
 
         Log.i("my: ","went past MAPPING");
         FirebaseFirestore rootref = FirebaseFirestore.getInstance();

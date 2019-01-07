@@ -11,19 +11,19 @@ public class Posts {
 
     public Posts(String user_name, String production_date, String expiration_date, String pickup_address, String contact, String image_url, String quantity,Date timestamp,String profilePhoto){
         this.userid = user_name;
-        Log.i("my","got User name from model: "+user_name);
+        //Log.i("my","got User name from model: "+user_name);
         this.productiondate = production_date;
-        Log.i("my","got  from model: "+production_date);
+       // Log.i("my","got  from model: "+production_date);
         this.expirationdate = expiration_date;
-        Log.i("my","got  from model: "+expiration_date);
+        //Log.i("my","got  from model: "+expiration_date);
         this.address = pickup_address;
-        Log.i("my","got  from model: "+pickup_address);
+        //Log.i("my","got  from model: "+pickup_address);
         this.contact= contact;
-        Log.i("my","got  from model: "+contact);
+        //Log.i("my","got  from model: "+contact);
         this.imageurl = image_url;
-        Log.i("my","got from model: "+image_url);
+        //Log.i("my","got from model: "+image_url);
         this.quantity = quantity;
-        Log.i("my","got from model: "+quantity);
+        //Log.i("my","got from model: "+quantity);
         this.timestamp = timestamp;
         this.profilePhoto= profilePhoto;
 
