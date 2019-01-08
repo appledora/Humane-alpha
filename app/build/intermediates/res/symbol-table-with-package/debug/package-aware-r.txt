@@ -1246,6 +1246,7 @@ font roboto_slab_bold
 font roboto_slab_light
 font roboto_thin
 id ALT
+id BloodGroupSearch
 id BloodGroupSelector
 id Bloodbank
 id CTRL
@@ -1256,6 +1257,7 @@ id ImageView_image
 id META
 id SHIFT
 id SYM
+id Search_blood
 id action0
 id action_bar
 id action_bar_activity_content

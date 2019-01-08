@@ -34,6 +34,7 @@ public class BloodFragment extends Fragment {
     List<Blood> bloodList;
     private FirebaseFirestore db;
     private BloodRecyclerAdapter bloodRecyclerAdapter;
+    String groupName = null;
 
 
     public BloodFragment() {
@@ -45,6 +46,9 @@ public class BloodFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        if (getArguments() != null){
+            groupName = getArguments().getString("blood");
+        }
         final View view =  inflater.inflate(R.layout.fragment_blood, container, false);
         bloodList = new ArrayList<>();
         bloods_list_view = view.findViewById(R.id.blood_list_view);
