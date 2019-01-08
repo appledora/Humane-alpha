@@ -30,7 +30,7 @@ public class FoodRecyclerAdapter extends RecyclerView.Adapter<FoodRecyclerAdapte
     }
 
     public Context context;
-    String user_id,pickup_address,contact_numb, profile_photo;
+    String user_id,pickup_address,contact_numb, profile_photo,exp_date;
 
 
 
@@ -44,12 +44,12 @@ public class FoodRecyclerAdapter extends RecyclerView.Adapter<FoodRecyclerAdapte
     }
 
     public void onBindViewHolder(ViewHolder holder, int position) {
-        //Log.i("my","ViewHolder Binding");
          user_id = posts_lists.get(position).getUserid();
          pickup_address = posts_lists.get(position).getAddress();
         String image_url = posts_lists.get(position).getImage_url();
          contact_numb = posts_lists.get(position).getContact();
         profile_photo = posts_lists.get(position).getProfilePhoto();
+        exp_date = posts_lists.get(position).getExpirationdate();
         long millisec = posts_lists.get(position).getTimestamp().getTime();
         String dateString = DateFormat.format("MM/dd/yyyy", new Date(millisec)).toString();        //Log.i("my","recieved address: "+user_id);
         holder.setName(user_id);
@@ -57,7 +57,9 @@ public class FoodRecyclerAdapter extends RecyclerView.Adapter<FoodRecyclerAdapte
         holder.setBlogImage(image_url);
         holder.setTime(dateString);
         holder.setProfilePhoto(profile_photo);
+        holder.setExpireDate(exp_date);
         holder.setCallButton(contact_numb);
+
     }
 
     @Override
@@ -67,7 +69,7 @@ public class FoodRecyclerAdapter extends RecyclerView.Adapter<FoodRecyclerAdapte
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView addressText, postDate;
+        private TextView addressText, postDate,expDate;
         private View mView;
         private ImageView blogImage;
         private CircleImageView blogphoto;
@@ -134,6 +136,11 @@ public class FoodRecyclerAdapter extends RecyclerView.Adapter<FoodRecyclerAdapte
                 }
             });
 
+        }
+
+        public void setExpireDate(String exp_date) {
+            expDate = mView.findViewById(R.id.expire_date);
+            expDate.setText(exp_date);
         }
     }
 }

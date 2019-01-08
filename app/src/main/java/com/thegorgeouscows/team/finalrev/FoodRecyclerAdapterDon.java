@@ -28,7 +28,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class FoodRecyclerAdapterDon extends RecyclerView.Adapter<FoodRecyclerAdapterDon.ViewHolder> {
     public List<Posts> posts_lists;
     public Context context;
-    String user_id,pickup_address,contact_num, profile_photo;
+    String user_id,pickup_address,contact_num, profile_photo,expire_date;
 
 
     public FoodRecyclerAdapterDon(List<Posts> posts_list) {
@@ -53,6 +53,7 @@ public class FoodRecyclerAdapterDon extends RecyclerView.Adapter<FoodRecyclerAda
          pickup_address = posts_lists.get(position).getAddress();
         String image_url = posts_lists.get(position).getImage_url();
          profile_photo = posts_lists.get(position).getProfilePhoto();
+         expire_date = posts_lists.get(position).getExpirationdate();
         long millisec = posts_lists.get(position).getTimestamp().getTime();
         String dateString = DateFormat.format("MM/dd/yyyy", new Date(millisec)).toString();        //Log.i("my","recieved address: "+user_id);
         contact_num = posts_lists.get(position).getContact();
@@ -61,6 +62,7 @@ public class FoodRecyclerAdapterDon extends RecyclerView.Adapter<FoodRecyclerAda
         holder.setBlogImage(image_url);
         holder.setTime(dateString);
         holder.setProfilePhoto(profile_photo);
+        holder.setExpirationDate(expire_date);
 
     }
 
@@ -73,7 +75,7 @@ public class FoodRecyclerAdapterDon extends RecyclerView.Adapter<FoodRecyclerAda
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView addressText, postDate;
+        private TextView addressText, postDate,expDate;
         private View mView;
         private ImageView blogImage;
         private CircleImageView blogphoto;
@@ -127,9 +129,13 @@ public class FoodRecyclerAdapterDon extends RecyclerView.Adapter<FoodRecyclerAda
         }
 
 
-
-    }
-        public String getLocation(){
-        return pickup_address;
+        public void setExpirationDate(String expire_date) {
+            expDate = mView.findViewById(R.id.expire_date);
+            expDate.setText(expire_date);
         }
+    }
+      /*  public String getLocation(){
+
+        return pickup_address;
+        }*/
 }

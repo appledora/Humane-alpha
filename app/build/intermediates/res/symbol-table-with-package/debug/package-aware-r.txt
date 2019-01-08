@@ -1295,7 +1295,6 @@ id beginning
 id bevel
 id blocking
 id blog_date
-id blog_desc
 id blog_image
 id blog_list_view
 id blog_user_image
@@ -1327,8 +1326,6 @@ id clip_horizontal
 id clip_vertical
 id cloth_date
 id cloth_date_org
-id cloth_desc
-id cloth_desc_org
 id cloth_image
 id cloth_image_org
 id cloth_list_view

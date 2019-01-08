@@ -34,21 +34,21 @@ import org.w3c.dom.Text;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class DonatorProfile extends AppCompatActivity {
-    private TextView name ;
+    private TextView name;
     private TextView email;
     private TextView contact;
     private TextView blood;
     private Button butt;
-    private Uri mImageUri = null,imageUri;
+    private Uri mImageUri = null, imageUri;
 
-    DatabaseReference ref,mDatabase;
+    DatabaseReference ref, mDatabase;
     FirebaseAuth auth;
 
 
     String uid;
     CircleImageView profilePhoto;
     FirebaseStorage storage;
-    StorageReference storageReference,mStorageRef,mStorageImage;
+    StorageReference storageReference, mStorageRef, mStorageImage;
     DatabaseReference mUserDatabase;
 
     ProgressDialog mProgress;
@@ -66,19 +66,18 @@ public class DonatorProfile extends AppCompatActivity {
         storage = FirebaseStorage.getInstance();
         storageReference = storage.getReference();
         mStorageImage = storage.getReference().child("profile_images");
-        mDatabase= FirebaseDatabase.getInstance().getReference().child("Users");
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
         mAuth = FirebaseAuth.getInstance();
         mProgress = new ProgressDialog(this);
         mUserDatabase = FirebaseDatabase.getInstance().getReference().child("Users").child(uid);
         mStorageRef = FirebaseStorage.getInstance().getReference();
 
 
-
-        name = (TextView)findViewById(R.id.name_display);
-        email = (TextView)findViewById(R.id.mail_display);
+        name = (TextView) findViewById(R.id.name_display);
+        email = (TextView) findViewById(R.id.mail_display);
         contact = (TextView) findViewById(R.id.contact_display);
         blood = (TextView) findViewById(R.id.blood_group);
-        butt = (Button)findViewById(R.id.start_donation);
+        butt = (Button) findViewById(R.id.start_donation);
         profilePhoto = (CircleImageView) findViewById(R.id.main_dp);
         profilePhoto.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -91,12 +90,12 @@ public class DonatorProfile extends AppCompatActivity {
         ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if(dataSnapshot.exists()){
+                if (dataSnapshot.exists()) {
                     String nm = dataSnapshot.child("Name").getValue().toString();
                     String em = dataSnapshot.child("Email").getValue(String.class);
                     String cn = dataSnapshot.child("Contact").getValue().toString();
                     String bl = dataSnapshot.child("Bloodgroups").getValue().toString();
-                    if(dataSnapshot.child("Image").getValue().toString() != "default"){
+                    if (dataSnapshot.child("Image").getValue().toString() != "default") {
                         String photoadd = dataSnapshot.child("Image").getValue().toString();
                         Uri photoURI = Uri.parse(photoadd);
                         Glide.with(DonatorProfile.this).load(photoURI).into(profilePhoto);
@@ -120,37 +119,37 @@ public class DonatorProfile extends AppCompatActivity {
         butt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(DonatorProfile.this, SlideActivity.class);
+                Intent intent = new Intent(DonatorProfile.this, SlideActivity.class);
                 startActivity(intent);
             }
         });
         setupBottomNavigationView();
 
-        }
+    }
 
     private void selectPhoto() {
         Intent galleryIntent = new Intent();
         galleryIntent.setAction(Intent.ACTION_GET_CONTENT);
         galleryIntent.setType("image/*");
-        startActivityForResult(galleryIntent,GALLERY_REQUEST);
+        startActivityForResult(galleryIntent, GALLERY_REQUEST);
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if(requestCode == GALLERY_REQUEST && resultCode == RESULT_OK){
+        if (requestCode == GALLERY_REQUEST && resultCode == RESULT_OK) {
             imageUri = data.getData();
             CropImage.activity(imageUri)
                     .setGuidelines(CropImageView.Guidelines.ON)
-                    .setAspectRatio(1,1)
+                    .setAspectRatio(1, 1)
                     .start(this);
         }
         if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
 
             CropImage.ActivityResult result = CropImage.getActivityResult(data);
 
-            if (resultCode == RESULT_OK){
+            if (resultCode == RESULT_OK) {
                 mImageUri = result.getUri();
                 Glide.with(this).load(mImageUri).into(profilePhoto);
                 uploadImage();
@@ -160,10 +159,10 @@ public class DonatorProfile extends AppCompatActivity {
 
     private void uploadImage() {
 
-            if(mImageUri != null){
-                final ProgressDialog progressDialog = new ProgressDialog(this);
-                progressDialog.setTitle("Uploading...");
-                progressDialog.show();
+        if (mImageUri != null) {
+            final ProgressDialog progressDialog = new ProgressDialog(this);
+            progressDialog.setTitle("Uploading...");
+            progressDialog.show();
 
             final StorageReference photref = mStorageRef.child(imageUri.getLastPathSegment());
             photref.putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
@@ -180,9 +179,7 @@ public class DonatorProfile extends AppCompatActivity {
             });
 
 
-
-
-            }
+        }
 
     }
 
@@ -194,13 +191,13 @@ public class DonatorProfile extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.logout:
                         auth.signOut();
-                        Intent intent = new Intent(DonatorProfile.this,loginActivity.class);
+                        Intent intent = new Intent(DonatorProfile.this, loginActivity.class);
                         startActivity(intent);
                     case R.id.current_profile:
-                        Toast.makeText(DonatorProfile.this,"HOME",Toast.LENGTH_SHORT).show();
+                        return true;
                     case R.id.feed:
 
-                        Intent i = new Intent(DonatorProfile.this,FeedBase.class);
+                        Intent i = new Intent(DonatorProfile.this, FeedBase.class);
                         startActivity(i);
                 }
                 return true;

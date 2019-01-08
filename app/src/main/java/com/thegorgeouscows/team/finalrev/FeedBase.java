@@ -77,8 +77,6 @@ public class FeedBase extends AppCompatActivity {
 
                                 switch (item.getItemId()) {
                                     case R.id.home:
-
-
                                         return true;
                                     case R.id.user_profile:
                                         Intent i = new Intent(FeedBase.this, DonatorProfile.class);
