@@ -71,8 +71,8 @@ public class ClothFragment extends Fragment {
                     clothes_list_view = view.findViewById(R.id.cloth_list_view);
                     clothRecyclerAdapterOrg = new ClothRecyclerAdapterOrg(clothes_list);
                     clothes_list_view.setLayoutManager(new LinearLayoutManager(container.getContext()));
-                   clothes_list_view.setAdapter(clothRecyclerAdapterOrg);
-                    clothes_list_view.setHasFixedSize(true);
+                     clothes_list_view.setAdapter(clothRecyclerAdapterOrg);
+                    //clothes_list_view.setHasFixedSize(true);
 
                 }
                 else if (tag.equals("Donator")){
@@ -103,7 +103,13 @@ public class ClothFragment extends Fragment {
                             public void onSuccess(DocumentSnapshot documentSnapshot) {
                                 Clothes cloth = documentSnapshot.toObject(Clothes.class);
                                 clothes_list.add(cloth);
-                                clothRecyclerAdapter.notifyDataSetChanged();
+                                if (tag.equals("Organization")) {
+                                    clothRecyclerAdapterOrg.notifyDataSetChanged();
+                                }
+                                else if (tag.equals("Donator")){
+
+                                    clothRecyclerAdapter.notifyDataSetChanged();
+                                }
                             }
                         });
 

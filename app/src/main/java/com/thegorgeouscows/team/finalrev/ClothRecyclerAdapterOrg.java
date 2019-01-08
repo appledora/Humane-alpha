@@ -29,7 +29,7 @@ public class ClothRecyclerAdapterOrg extends RecyclerView.Adapter<ClothRecyclerA
 
 
     public ClothRecyclerAdapterOrg(List<Clothes>clothes_list){
-        Log.i("my","CLOTH RECYCLER ADAPTER");
+        Log.i("my","CLOTH RECYCLER ADAPTER ORG");
         this.clothes_list = clothes_list;
     }
 
@@ -65,7 +65,11 @@ public class ClothRecyclerAdapterOrg extends RecyclerView.Adapter<ClothRecyclerA
 
     @Override
     public int getItemCount() {
-        return clothes_list.size();
+        if(clothes_list!=null){
+            return clothes_list.size();
+        } else{
+            return 0;
+        }
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
