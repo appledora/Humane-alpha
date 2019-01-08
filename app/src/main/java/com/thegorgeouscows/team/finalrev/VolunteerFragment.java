@@ -50,11 +50,8 @@ public class VolunteerFragment extends Fragment {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         orgName = getArguments().getString("org");
-        Log.i("my ORGA: ",orgName);
         final View view = inflater.inflate(R.layout.fragment_volunteer, container, false);
         volunteerList = new ArrayList<>();
         vols_list_view = view.findViewById(R.id.vol_list_view);

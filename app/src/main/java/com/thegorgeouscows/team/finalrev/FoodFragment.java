@@ -63,7 +63,6 @@ public class FoodFragment extends Fragment {
         auth = FirebaseAuth.getInstance();
         uid = auth.getCurrentUser().getUid();
         ref = FirebaseDatabase.getInstance().getReference().child("Users").child(uid);
-        Log.i("my UID",uid);
         ref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

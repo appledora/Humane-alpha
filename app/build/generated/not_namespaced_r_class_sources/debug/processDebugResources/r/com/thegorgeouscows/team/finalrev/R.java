@@ -819,12 +819,14 @@ public final class R {
      */
     public static final int buttonTintMode=0x7f040061;
     /**
+     * Background color for CardView.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int cardBackgroundColor=0x7f040062;
     /**
+     * Corner radius for CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -833,6 +835,7 @@ public final class R {
      */
     public static final int cardCornerRadius=0x7f040063;
     /**
+     * Elevation for CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -841,6 +844,7 @@ public final class R {
      */
     public static final int cardElevation=0x7f040064;
     /**
+     * Maximum Elevation for CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -849,11 +853,13 @@ public final class R {
      */
     public static final int cardMaxElevation=0x7f040065;
     /**
+     * Add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int cardPreventCornerOverlap=0x7f040066;
     /**
+     * Add padding in API v21+ as well to have the same measurements with previous versions.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -1501,6 +1507,7 @@ public final class R {
      */
     public static final int contentInsetStartWithNavigation=0x7f0400c5;
     /**
+     * Inner padding between the edges of the Card and children of the CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1509,6 +1516,7 @@ public final class R {
      */
     public static final int contentPadding=0x7f0400c6;
     /**
+     * Inner padding between the bottom edge of the Card and children of the CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1517,6 +1525,7 @@ public final class R {
      */
     public static final int contentPaddingBottom=0x7f0400c7;
     /**
+     * Inner padding between the left edge of the Card and children of the CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1525,6 +1534,7 @@ public final class R {
      */
     public static final int contentPaddingLeft=0x7f0400c8;
     /**
+     * Inner padding between the right edge of the Card and children of the CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1533,6 +1543,7 @@ public final class R {
      */
     public static final int contentPaddingRight=0x7f0400c9;
     /**
+     * Inner padding between the top edge of the Card and children of the CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2152,6 +2163,8 @@ public final class R {
      */
     public static final int floatingActionButtonStyle=0x7f04011e;
     /**
+     * The reference to the font file to be used. This should be a file in the res/font folder
+     * and should therefore have an R reference value. E.g. @font/myfont
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2164,11 +2177,17 @@ public final class R {
      */
     public static final int fontFamily=0x7f040120;
     /**
+     * The authority of the Font Provider to be used for the request.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int fontProviderAuthority=0x7f040121;
     /**
+     * The sets of hashes for the certificates the provider should be signed with. This is
+     * used to verify the identity of the provider, and is only required if the provider is not
+     * part of the system image. This value may point to one list or a list of lists, where each
+     * individual list represents one collection of signature hashes. Refer to your font provider's
+     * documentation for these values.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2176,18 +2195,34 @@ public final class R {
      */
     public static final int fontProviderCerts=0x7f040122;
     /**
+     * The strategy to be used when fetching font data from a font provider in XML layouts.
+     * This attribute is ignored when the resource is loaded from code, as it is equivalent to the
+     * choice of API between {@link
+     * androidx.core.content.res.ResourcesCompat#getFont(Context, int)} (blocking) and
+     * {@link
+     * androidx.core.content.res.ResourcesCompat#getFont(Context, int, FontCallback, Handler)}
+     * (async).
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>async</td><td>1</td><td></td></tr>
-     * <tr><td>blocking</td><td>0</td><td></td></tr>
+     * <tr><td>async</td><td>1</td><td>The async font fetch works as follows.
+     * First, check the local cache, then if the requeted font is not cached, trigger a
+     * request the font and continue with layout inflation. Once the font fetch succeeds, the
+     * target text view will be refreshed with the downloaded font data. The
+     * fontProviderFetchTimeout will be ignored if async loading is specified.</td></tr>
+     * <tr><td>blocking</td><td>0</td><td>The blocking font fetch works as follows.
+     * First, check the local cache, then if the requested font is not cached, request the
+     * font from the provider and wait until it is finished.  You can change the length of
+     * the timeout by modifying fontProviderFetchTimeout.  If the timeout happens, the
+     * default typeface will be used instead.</td></tr>
      * </table>
      */
     public static final int fontProviderFetchStrategy=0x7f040123;
     /**
+     * The length of the timeout during fetching.
      * <p>May be an integer value, such as "<code>100</code>".
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2195,21 +2230,29 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
+     * <tr><td>forever</td><td>ffffffff</td><td>A special value for the timeout. In this case, the blocking font fetching will not
+     * timeout and wait until a reply is received from the font provider.</td></tr>
      * </table>
      */
     public static final int fontProviderFetchTimeout=0x7f040124;
     /**
+     * The package for the Font Provider to be used for the request. This is used to verify
+     * the identity of the provider.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int fontProviderPackage=0x7f040125;
     /**
+     * The query to be sent over to the provider. Refer to your font provider's documentation
+     * on the format of this string.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int fontProviderQuery=0x7f040126;
     /**
+     * The style of the given font file. This will be used when the font is being loaded into
+     * the font stack and will override any style information in the font's header tables. If
+     * unspecified, the value in the font's header tables will be used.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -2222,11 +2265,20 @@ public final class R {
      */
     public static final int fontStyle=0x7f040127;
     /**
+     * The variation settings to be applied to the font. The string should be in the following
+     * format: "'tag1' value1, 'tag2' value2, ...". If the default variation settings should be
+     * used, or the font used does not support variation settings, this attribute needs not be
+     * specified.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int fontVariationSettings=0x7f040128;
     /**
+     * The weight of the given font file. This will be used when the font is being loaded into
+     * the font stack and will override any weight information in the font's header tables. Must
+     * be a positive number, a multiple of 100, and between 100 and 900, inclusive. The most
+     * common values are 400 for regular weight and 700 for bold weight. If unspecified, the value
+     * in the font's header tables will be used.
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int fontWeight=0x7f040129;
@@ -2520,6 +2572,11 @@ public final class R {
      */
     public static final int itemTextColor=0x7f040152;
     /**
+     * A reference to an array of integers representing the
+     * locations of horizontal keylines in dp from the starting edge.
+     * Child views can refer to these keylines for alignment using
+     * layout_keyline="index" where index is a 0-based index into
+     * this array.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2548,11 +2605,21 @@ public final class R {
      */
     public static final int layout=0x7f040155;
     /**
+     * Class name of the Layout Manager to be used.
+     * <p/>
+     * The class must extandroidx.recyclerview.widget.RecyclerViewView$LayoutManager
+     * and have either a default constructor or constructor with the signature
+     * (android.content.Context, android.util.AttributeSet, int, int).
+     * <p/>
+     * If the name starts with a '.', application package is prefixed.
+     * Else, if the name contains a '.', the classname is assumed to be a full class name.
+     * Else, the recycler view package naandroidx.appcompat.widgetdget) is prefixed.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int layoutManager=0x7f040156;
     /**
+     * The id of an anchor view that this view should position relative to.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2560,30 +2627,40 @@ public final class R {
      */
     public static final int layout_anchor=0x7f040157;
     /**
+     * Specifies how an object should position relative to an anchor, on both the X and Y axes,
+     * within its parent's bounds.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>center</td><td>11</td><td></td></tr>
-     * <tr><td>center_horizontal</td><td>1</td><td></td></tr>
-     * <tr><td>center_vertical</td><td>10</td><td></td></tr>
-     * <tr><td>clip_horizontal</td><td>8</td><td></td></tr>
-     * <tr><td>clip_vertical</td><td>80</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
-     * <tr><td>fill</td><td>77</td><td></td></tr>
-     * <tr><td>fill_horizontal</td><td>7</td><td></td></tr>
-     * <tr><td>fill_vertical</td><td>70</td><td></td></tr>
-     * <tr><td>left</td><td>3</td><td></td></tr>
-     * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
+     * <tr><td>bottom</td><td>50</td><td>Push object to the bottom of its container, not changing its size.</td></tr>
+     * <tr><td>center</td><td>11</td><td>Place the object in the center of its container in both the vertical and horizontal axis, not changing its size.</td></tr>
+     * <tr><td>center_horizontal</td><td>1</td><td>Place object in the horizontal center of its container, not changing its size.</td></tr>
+     * <tr><td>center_vertical</td><td>10</td><td>Place object in the vertical center of its container, not changing its size.</td></tr>
+     * <tr><td>clip_horizontal</td><td>8</td><td>Additional option that can be set to have the left and/or right edges of
+     * the child clipped to its container's bounds.
+     * The clip will be based on the horizontal gravity: a left gravity will clip the right
+     * edge, a right gravity will clip the left edge, and neither will clip both edges.</td></tr>
+     * <tr><td>clip_vertical</td><td>80</td><td>Additional option that can be set to have the top and/or bottom edges of
+     * the child clipped to its container's bounds.
+     * The clip will be based on the vertical gravity: a top gravity will clip the bottom
+     * edge, a bottom gravity will clip the top edge, and neither will clip both edges.</td></tr>
+     * <tr><td>end</td><td>800005</td><td>Push object to the end of its container, not changing its size.</td></tr>
+     * <tr><td>fill</td><td>77</td><td>Grow the horizontal and vertical size of the object if needed so it completely fills its container.</td></tr>
+     * <tr><td>fill_horizontal</td><td>7</td><td>Grow the horizontal size of the object if needed so it completely fills its container.</td></tr>
+     * <tr><td>fill_vertical</td><td>70</td><td>Grow the vertical size of the object if needed so it completely fills its container.</td></tr>
+     * <tr><td>left</td><td>3</td><td>Push object to the left of its container, not changing its size.</td></tr>
+     * <tr><td>right</td><td>5</td><td>Push object to the right of its container, not changing its size.</td></tr>
+     * <tr><td>start</td><td>800003</td><td>Push object to the beginning of its container, not changing its size.</td></tr>
+     * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
      * </table>
      */
     public static final int layout_anchorGravity=0x7f040158;
     /**
+     * The class name of a Behavior class defining special runtime behavior
+     * for this child view.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
@@ -3015,20 +3092,21 @@ public final class R {
      */
     public static final int layout_constraintWidth_percent=0x7f040184;
     /**
+     * Specifies how this view dodges the inset edges of the CoordinatorLayout.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>all</td><td>77</td><td></td></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
-     * <tr><td>left</td><td>3</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
+     * <tr><td>all</td><td>77</td><td>Dodge all the inset edges.</td></tr>
+     * <tr><td>bottom</td><td>50</td><td>Dodge the bottom inset edge.</td></tr>
+     * <tr><td>end</td><td>800005</td><td>Dodge the end inset edge.</td></tr>
+     * <tr><td>left</td><td>3</td><td>Dodge the left inset edge.</td></tr>
+     * <tr><td>none</td><td>0</td><td>Don't dodge any edges</td></tr>
+     * <tr><td>right</td><td>5</td><td>Dodge the right inset edge.</td></tr>
+     * <tr><td>start</td><td>800003</td><td>Dodge the start inset edge.</td></tr>
+     * <tr><td>top</td><td>30</td><td>Dodge the top inset edge.</td></tr>
      * </table>
      */
     public static final int layout_dodgeInsetEdges=0x7f040185;
@@ -3112,23 +3190,28 @@ public final class R {
      */
     public static final int layout_goneMarginTop=0x7f040190;
     /**
+     * Specifies how this view insets the CoordinatorLayout and make some other views
+     * dodge it.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
-     * <tr><td>left</td><td>3</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
+     * <tr><td>bottom</td><td>50</td><td>Inset the bottom edge.</td></tr>
+     * <tr><td>end</td><td>800005</td><td>Inset the end edge.</td></tr>
+     * <tr><td>left</td><td>3</td><td>Inset the left edge.</td></tr>
+     * <tr><td>none</td><td>0</td><td>Don't inset.</td></tr>
+     * <tr><td>right</td><td>5</td><td>Inset the right edge.</td></tr>
+     * <tr><td>start</td><td>800003</td><td>Inset the start edge.</td></tr>
+     * <tr><td>top</td><td>30</td><td>Inset the top edge.</td></tr>
      * </table>
      */
     public static final int layout_insetEdge=0x7f040191;
     /**
+     * The index of a keyline this view should position relative to.
+     * android:layout_gravity will affect how the view aligns to the
+     * specified keyline.
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int layout_keyline=0x7f040192;
@@ -3174,7 +3257,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td></td></tr>
+     * <tr><td>direct</td><td>1</td><td>direct, barriers, chains</td></tr>
      * <tr><td>groups</td><td>20</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>7</td><td></td></tr>
@@ -3920,6 +4003,7 @@ public final class R {
      */
     public static final int state_collapsible=0x7f0401fb;
     /**
+     * Drawable to display behind the status bar when the view is set to draw behind it.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4670,6 +4754,8 @@ public final class R {
      */
     public static final int trackTintMode=0x7f04025c;
     /**
+     * The index of the font in the tcc font file. If the font file referenced is not in the
+     * tcc format, this attribute needs not be specified.
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int ttcIndex=0x7f04025d;
@@ -5433,326 +5519,332 @@ public final class R {
     public static final int always=0x7f0a0028;
     public static final int async=0x7f0a0029;
     public static final int auto=0x7f0a002a;
-    public static final int available=0x7f0a002b;
-    public static final int barrier=0x7f0a002c;
-    public static final int beginning=0x7f0a002d;
-    public static final int bevel=0x7f0a002e;
-    public static final int blocking=0x7f0a002f;
-    public static final int blog_date=0x7f0a0030;
-    public static final int blog_desc=0x7f0a0031;
-    public static final int blog_image=0x7f0a0032;
-    public static final int blog_list_view=0x7f0a0033;
-    public static final int blog_user_image=0x7f0a0034;
-    public static final int blog_user_name=0x7f0a0035;
-    public static final int blood_group=0x7f0a0036;
-    public static final int bottom=0x7f0a0037;
-    public static final int bottomNavigation=0x7f0a0038;
-    public static final int butt=0x7f0a0039;
-    public static final int button=0x7f0a003a;
-    public static final int buttonPanel=0x7f0a003b;
-    public static final int call_button=0x7f0a003c;
-    public static final int call_button_cloth_org=0x7f0a003d;
-    public static final int cancel_action=0x7f0a003e;
-    public static final int card_login=0x7f0a003f;
-    public static final int center=0x7f0a0040;
-    public static final int centerCrop=0x7f0a0041;
-    public static final int centerInside=0x7f0a0042;
-    public static final int center_horizontal=0x7f0a0043;
-    public static final int center_vertical=0x7f0a0044;
-    public static final int chains=0x7f0a0045;
-    public static final int checkbox=0x7f0a0046;
-    public static final int chronometer=0x7f0a0047;
-    public static final int clip_horizontal=0x7f0a0048;
-    public static final int clip_vertical=0x7f0a0049;
-    public static final int cloth_date=0x7f0a004a;
-    public static final int cloth_date_org=0x7f0a004b;
-    public static final int cloth_desc=0x7f0a004c;
-    public static final int cloth_desc_org=0x7f0a004d;
-    public static final int cloth_image=0x7f0a004e;
-    public static final int cloth_image_org=0x7f0a004f;
-    public static final int cloth_list_view=0x7f0a0050;
-    public static final int cloth_location=0x7f0a0051;
-    public static final int cloth_location_org=0x7f0a0052;
-    public static final int cloth_user_image=0x7f0a0053;
-    public static final int cloth_user_image_org=0x7f0a0054;
-    public static final int cloth_user_name=0x7f0a0055;
-    public static final int cloth_user_name_org=0x7f0a0056;
-    public static final int clothe=0x7f0a0057;
-    public static final int collapseActionView=0x7f0a0058;
-    public static final int contact_display=0x7f0a0059;
-    public static final int contact_number_cloth=0x7f0a005a;
-    public static final int container=0x7f0a005b;
-    public static final int content=0x7f0a005c;
-    public static final int contentPanel=0x7f0a005d;
-    public static final int coordinator=0x7f0a005e;
-    public static final int cropImageView=0x7f0a005f;
-    public static final int crop_image_menu_crop=0x7f0a0060;
-    public static final int crop_image_menu_flip=0x7f0a0061;
-    public static final int crop_image_menu_flip_horizontally=0x7f0a0062;
-    public static final int crop_image_menu_flip_vertically=0x7f0a0063;
-    public static final int crop_image_menu_rotate_left=0x7f0a0064;
-    public static final int crop_image_menu_rotate_right=0x7f0a0065;
-    public static final int current_profile=0x7f0a0066;
-    public static final int custom=0x7f0a0067;
-    public static final int customPanel=0x7f0a0068;
-    public static final int dark=0x7f0a0069;
-    public static final int decor_content_parent=0x7f0a006a;
-    public static final int default_activity_button=0x7f0a006b;
-    public static final int design_bottom_sheet=0x7f0a006c;
-    public static final int design_menu_item_action_area=0x7f0a006d;
-    public static final int design_menu_item_action_area_stub=0x7f0a006e;
-    public static final int design_menu_item_text=0x7f0a006f;
-    public static final int design_navigation_view=0x7f0a0070;
-    public static final int dimensions=0x7f0a0071;
-    public static final int direct=0x7f0a0072;
-    public static final int disableHome=0x7f0a0073;
-    public static final int donate=0x7f0a0074;
-    public static final int donate_cloth=0x7f0a0075;
-    public static final int donatorReg=0x7f0a0076;
-    public static final int dp_org=0x7f0a0077;
-    public static final int edit_query=0x7f0a0078;
-    public static final int end=0x7f0a0079;
-    public static final int end_padder=0x7f0a007a;
-    public static final int enterAlways=0x7f0a007b;
-    public static final int enterAlwaysCollapsed=0x7f0a007c;
-    public static final int entryAddress_vol=0x7f0a007d;
-    public static final int entryEmail=0x7f0a007e;
-    public static final int entryEmailLog=0x7f0a007f;
-    public static final int entryEmail_vol=0x7f0a0080;
-    public static final int entryName=0x7f0a0081;
-    public static final int entryName_vol=0x7f0a0082;
-    public static final int entryPassword=0x7f0a0083;
-    public static final int entryPasswordLog=0x7f0a0084;
-    public static final int exitUntilCollapsed=0x7f0a0085;
-    public static final int expand_activities_button=0x7f0a0086;
-    public static final int expanded_menu=0x7f0a0087;
-    public static final int expiration_date=0x7f0a0088;
-    public static final int expire_date=0x7f0a0089;
-    public static final int feed=0x7f0a008a;
-    public static final int fill=0x7f0a008b;
-    public static final int fill_horizontal=0x7f0a008c;
-    public static final int fill_vertical=0x7f0a008d;
-    public static final int filled=0x7f0a008e;
-    public static final int fitCenter=0x7f0a008f;
-    public static final int fixed=0x7f0a0090;
-    public static final int foods=0x7f0a0091;
-    public static final int forever=0x7f0a0092;
-    public static final int forgetpassword=0x7f0a0093;
-    public static final int ghost_view=0x7f0a0094;
-    public static final int gone=0x7f0a0095;
-    public static final int group_divider=0x7f0a0096;
-    public static final int groups=0x7f0a0097;
-    public static final int home=0x7f0a0098;
-    public static final int homeAsUp=0x7f0a0099;
-    public static final int icon=0x7f0a009a;
-    public static final int icon_group=0x7f0a009b;
-    public static final int icon_only=0x7f0a009c;
-    public static final int ifRoom=0x7f0a009d;
-    public static final int image=0x7f0a009e;
-    public static final int imageView=0x7f0a009f;
-    public static final int imageView2=0x7f0a00a0;
-    public static final int imageView3=0x7f0a00a1;
-    public static final int imageView4=0x7f0a00a2;
-    public static final int info=0x7f0a00a3;
-    public static final int invisible=0x7f0a00a4;
-    public static final int italic=0x7f0a00a5;
-    public static final int item_touch_helper_previous_elevation=0x7f0a00a6;
-    public static final int labeled=0x7f0a00a7;
-    public static final int largeLabel=0x7f0a00a8;
-    public static final int left=0x7f0a00a9;
-    public static final int light=0x7f0a00aa;
-    public static final int line1=0x7f0a00ab;
-    public static final int line3=0x7f0a00ac;
-    public static final int listMode=0x7f0a00ad;
-    public static final int list_item=0x7f0a00ae;
-    public static final int ll=0x7f0a00af;
-    public static final int location=0x7f0a00b0;
-    public static final int login=0x7f0a00b1;
-    public static final int logout=0x7f0a00b2;
-    public static final int logout_feed=0x7f0a00b3;
-    public static final int mail_display=0x7f0a00b4;
-    public static final int mail_display_org=0x7f0a00b5;
-    public static final int mainBottomNav=0x7f0a00b6;
-    public static final int mainBottomNav_org=0x7f0a00b7;
-    public static final int mainBottomNav_vol=0x7f0a00b8;
-    public static final int main_blog_post=0x7f0a00b9;
-    public static final int main_blog_post_don=0x7f0a00ba;
-    public static final int main_cloth_post=0x7f0a00bb;
-    public static final int main_cloth_post_org=0x7f0a00bc;
-    public static final int main_container=0x7f0a00bd;
-    public static final int main_container_org=0x7f0a00be;
-    public static final int main_container_vol=0x7f0a00bf;
-    public static final int main_dp=0x7f0a00c0;
-    public static final int main_vol_post=0x7f0a00c1;
-    public static final int masked=0x7f0a00c2;
-    public static final int media_actions=0x7f0a00c3;
-    public static final int message=0x7f0a00c4;
-    public static final int middle=0x7f0a00c5;
-    public static final int mini=0x7f0a00c6;
-    public static final int miter=0x7f0a00c7;
-    public static final int mtrl_child_content_container=0x7f0a00c8;
-    public static final int mtrl_internal_children_alpha_tag=0x7f0a00c9;
-    public static final int multiply=0x7f0a00ca;
-    public static final int name_display=0x7f0a00cb;
-    public static final int name_display_org=0x7f0a00cc;
-    public static final int navigation_header_container=0x7f0a00cd;
-    public static final int never=0x7f0a00ce;
-    public static final int none=0x7f0a00cf;
-    public static final int normal=0x7f0a00d0;
-    public static final int notification_background=0x7f0a00d1;
-    public static final int notification_main_column=0x7f0a00d2;
-    public static final int notification_main_column_container=0x7f0a00d3;
-    public static final int off=0x7f0a00d4;
-    public static final int on=0x7f0a00d5;
-    public static final int onTouch=0x7f0a00d6;
-    public static final int org_contact=0x7f0a00d7;
-    public static final int org_entryEmail=0x7f0a00d8;
-    public static final int org_entryName=0x7f0a00d9;
-    public static final int org_entryPassword=0x7f0a00da;
-    public static final int org_testButton=0x7f0a00db;
-    public static final int organizationReg=0x7f0a00dc;
-    public static final int outline=0x7f0a00dd;
-    public static final int oval=0x7f0a00de;
-    public static final int packed=0x7f0a00df;
-    public static final int parallax=0x7f0a00e0;
-    public static final int parent=0x7f0a00e1;
-    public static final int parentPanel=0x7f0a00e2;
-    public static final int parent_matrix=0x7f0a00e3;
-    public static final int pending=0x7f0a00e4;
-    public static final int pending_tasks=0x7f0a00e5;
-    public static final int percent=0x7f0a00e6;
-    public static final int photoButton=0x7f0a00e7;
-    public static final int photoButton_cloth=0x7f0a00e8;
-    public static final int pickup_date_cloth=0x7f0a00e9;
-    public static final int pin=0x7f0a00ea;
-    public static final int pop_quit=0x7f0a00eb;
-    public static final int pop_user_contact=0x7f0a00ec;
-    public static final int pop_user_location=0x7f0a00ed;
-    public static final int pop_user_name=0x7f0a00ee;
-    public static final int popup_bg=0x7f0a00ef;
-    public static final int production=0x7f0a00f0;
-    public static final int progress_circular=0x7f0a00f1;
-    public static final int progress_horizontal=0x7f0a00f2;
-    public static final int quantity=0x7f0a00f3;
-    public static final int quantity_cloth=0x7f0a00f4;
-    public static final int quote=0x7f0a00f5;
-    public static final int quoter=0x7f0a00f6;
-    public static final int radio=0x7f0a00f7;
-    public static final int rectangle=0x7f0a00f8;
-    public static final int reg_contact=0x7f0a00f9;
-    public static final int reg_contact_vol=0x7f0a00fa;
-    public static final int reg_volunteer=0x7f0a00fb;
-    public static final int registerButton=0x7f0a00fc;
-    public static final int registerReq=0x7f0a00fd;
-    public static final int resetButton=0x7f0a00fe;
-    public static final int resetEmail=0x7f0a00ff;
-    public static final int right=0x7f0a0100;
-    public static final int right_icon=0x7f0a0101;
-    public static final int right_side=0x7f0a0102;
-    public static final int round=0x7f0a0103;
-    public static final int save_image_matrix=0x7f0a0104;
-    public static final int save_non_transition_alpha=0x7f0a0105;
-    public static final int save_scale_type=0x7f0a0106;
-    public static final int screen=0x7f0a0107;
-    public static final int scroll=0x7f0a0108;
-    public static final int scrollIndicatorDown=0x7f0a0109;
-    public static final int scrollIndicatorUp=0x7f0a010a;
-    public static final int scrollView=0x7f0a010b;
-    public static final int scrollable=0x7f0a010c;
-    public static final int search_badge=0x7f0a010d;
-    public static final int search_bar=0x7f0a010e;
-    public static final int search_button=0x7f0a010f;
-    public static final int search_close_btn=0x7f0a0110;
-    public static final int search_edit_frame=0x7f0a0111;
-    public static final int search_go_btn=0x7f0a0112;
-    public static final int search_mag_icon=0x7f0a0113;
-    public static final int search_plate=0x7f0a0114;
-    public static final int search_src_text=0x7f0a0115;
-    public static final int search_voice_btn=0x7f0a0116;
-    public static final int select_dialog_listview=0x7f0a0117;
-    public static final int selected=0x7f0a0118;
-    public static final int shortcut=0x7f0a0119;
-    public static final int showCustom=0x7f0a011a;
-    public static final int showHome=0x7f0a011b;
-    public static final int showTitle=0x7f0a011c;
-    public static final int slidelinearlayout=0x7f0a011d;
-    public static final int slideviewpager=0x7f0a011e;
-    public static final int smallLabel=0x7f0a011f;
-    public static final int snackbar_action=0x7f0a0120;
-    public static final int snackbar_text=0x7f0a0121;
-    public static final int snap=0x7f0a0122;
-    public static final int spacer=0x7f0a0123;
-    public static final int split_action_bar=0x7f0a0124;
-    public static final int spread=0x7f0a0125;
-    public static final int spread_inside=0x7f0a0126;
-    public static final int square=0x7f0a0127;
-    public static final int src_atop=0x7f0a0128;
-    public static final int src_in=0x7f0a0129;
-    public static final int src_over=0x7f0a012a;
-    public static final int standard=0x7f0a012b;
-    public static final int start=0x7f0a012c;
-    public static final int start_donation=0x7f0a012d;
-    public static final int status_bar_latest_event_content=0x7f0a012e;
-    public static final int stretch=0x7f0a012f;
-    public static final int stroke=0x7f0a0130;
-    public static final int submenuarrow=0x7f0a0131;
-    public static final int submit_area=0x7f0a0132;
-    public static final int tabMode=0x7f0a0133;
-    public static final int tag_transition_group=0x7f0a0134;
-    public static final int tag_unhandled_key_event_manager=0x7f0a0135;
-    public static final int tag_unhandled_key_listeners=0x7f0a0136;
-    public static final int testButton=0x7f0a0137;
-    public static final int text=0x7f0a0138;
-    public static final int text2=0x7f0a0139;
-    public static final int text34=0x7f0a013a;
-    public static final int textInputLayout=0x7f0a013b;
-    public static final int textInputLayout3=0x7f0a013c;
-    public static final int textSpacerNoButtons=0x7f0a013d;
-    public static final int textSpacerNoTitle=0x7f0a013e;
-    public static final int textView=0x7f0a013f;
-    public static final int textView2=0x7f0a0140;
-    public static final int textView3=0x7f0a0141;
-    public static final int textView4=0x7f0a0142;
-    public static final int textView5=0x7f0a0143;
-    public static final int textView6=0x7f0a0144;
-    public static final int text_input_password_toggle=0x7f0a0145;
-    public static final int textinput_counter=0x7f0a0146;
-    public static final int textinput_error=0x7f0a0147;
-    public static final int textinput_helper_text=0x7f0a0148;
-    public static final int time=0x7f0a0149;
-    public static final int time_cloth=0x7f0a014a;
-    public static final int title=0x7f0a014b;
-    public static final int titleDividerNoCustom=0x7f0a014c;
-    public static final int title_template=0x7f0a014d;
-    public static final int top=0x7f0a014e;
-    public static final int topNav=0x7f0a014f;
-    public static final int topNav_org=0x7f0a0150;
-    public static final int topPanel=0x7f0a0151;
-    public static final int touch_outside=0x7f0a0152;
-    public static final int transition_current_scene=0x7f0a0153;
-    public static final int transition_layout_save=0x7f0a0154;
-    public static final int transition_position=0x7f0a0155;
-    public static final int transition_scene_layoutid_cache=0x7f0a0156;
-    public static final int transition_transform=0x7f0a0157;
-    public static final int uniform=0x7f0a0158;
-    public static final int unlabeled=0x7f0a0159;
-    public static final int up=0x7f0a015a;
-    public static final int useLogo=0x7f0a015b;
-    public static final int user_profile=0x7f0a015c;
-    public static final int view_offset_helper=0x7f0a015d;
-    public static final int visible=0x7f0a015e;
-    public static final int vol_contact_no=0x7f0a015f;
-    public static final int vol_list_view=0x7f0a0160;
-    public static final int vol_location=0x7f0a0161;
-    public static final int vol_user_image=0x7f0a0162;
-    public static final int vol_user_name=0x7f0a0163;
-    public static final int volunteer=0x7f0a0164;
-    public static final int volunteer_list=0x7f0a0165;
-    public static final int wide=0x7f0a0166;
-    public static final int withText=0x7f0a0167;
-    public static final int wrap=0x7f0a0168;
-    public static final int wrap_content=0x7f0a0169;
-    public static final int xoxo=0x7f0a016a;
+    public static final int barrier=0x7f0a002b;
+    public static final int beginning=0x7f0a002c;
+    public static final int bevel=0x7f0a002d;
+    public static final int blocking=0x7f0a002e;
+    public static final int blog_date=0x7f0a002f;
+    public static final int blog_desc=0x7f0a0030;
+    public static final int blog_image=0x7f0a0031;
+    public static final int blog_list_view=0x7f0a0032;
+    public static final int blog_user_image=0x7f0a0033;
+    public static final int blog_user_name=0x7f0a0034;
+    public static final int blood_bank=0x7f0a0035;
+    public static final int blood_bank_card=0x7f0a0036;
+    public static final int blood_group=0x7f0a0037;
+    public static final int blood_list_view=0x7f0a0038;
+    public static final int blood_user_name=0x7f0a0039;
+    public static final int bottom=0x7f0a003a;
+    public static final int bottomNavigation=0x7f0a003b;
+    public static final int butt=0x7f0a003c;
+    public static final int button=0x7f0a003d;
+    public static final int buttonPanel=0x7f0a003e;
+    public static final int call_blood=0x7f0a003f;
+    public static final int call_button=0x7f0a0040;
+    public static final int call_button_cloth_org=0x7f0a0041;
+    public static final int cancel_action=0x7f0a0042;
+    public static final int card_login=0x7f0a0043;
+    public static final int center=0x7f0a0044;
+    public static final int centerCrop=0x7f0a0045;
+    public static final int centerInside=0x7f0a0046;
+    public static final int center_horizontal=0x7f0a0047;
+    public static final int center_vertical=0x7f0a0048;
+    public static final int chains=0x7f0a0049;
+    public static final int checkbox=0x7f0a004a;
+    public static final int chronometer=0x7f0a004b;
+    public static final int clip_horizontal=0x7f0a004c;
+    public static final int clip_vertical=0x7f0a004d;
+    public static final int cloth_date=0x7f0a004e;
+    public static final int cloth_date_org=0x7f0a004f;
+    public static final int cloth_desc=0x7f0a0050;
+    public static final int cloth_desc_org=0x7f0a0051;
+    public static final int cloth_image=0x7f0a0052;
+    public static final int cloth_image_org=0x7f0a0053;
+    public static final int cloth_list_view=0x7f0a0054;
+    public static final int cloth_location=0x7f0a0055;
+    public static final int cloth_location_org=0x7f0a0056;
+    public static final int cloth_user_image=0x7f0a0057;
+    public static final int cloth_user_image_org=0x7f0a0058;
+    public static final int cloth_user_name=0x7f0a0059;
+    public static final int cloth_user_name_org=0x7f0a005a;
+    public static final int clothe=0x7f0a005b;
+    public static final int collapseActionView=0x7f0a005c;
+    public static final int contact_display=0x7f0a005d;
+    public static final int contact_number_cloth=0x7f0a005e;
+    public static final int container=0x7f0a005f;
+    public static final int content=0x7f0a0060;
+    public static final int contentPanel=0x7f0a0061;
+    public static final int coordinator=0x7f0a0062;
+    public static final int cropImageView=0x7f0a0063;
+    public static final int crop_image_menu_crop=0x7f0a0064;
+    public static final int crop_image_menu_flip=0x7f0a0065;
+    public static final int crop_image_menu_flip_horizontally=0x7f0a0066;
+    public static final int crop_image_menu_flip_vertically=0x7f0a0067;
+    public static final int crop_image_menu_rotate_left=0x7f0a0068;
+    public static final int crop_image_menu_rotate_right=0x7f0a0069;
+    public static final int current_profile=0x7f0a006a;
+    public static final int custom=0x7f0a006b;
+    public static final int customPanel=0x7f0a006c;
+    public static final int dark=0x7f0a006d;
+    public static final int decor_content_parent=0x7f0a006e;
+    public static final int default_activity_button=0x7f0a006f;
+    public static final int design_bottom_sheet=0x7f0a0070;
+    public static final int design_menu_item_action_area=0x7f0a0071;
+    public static final int design_menu_item_action_area_stub=0x7f0a0072;
+    public static final int design_menu_item_text=0x7f0a0073;
+    public static final int design_navigation_view=0x7f0a0074;
+    public static final int dimensions=0x7f0a0075;
+    public static final int direct=0x7f0a0076;
+    public static final int disableHome=0x7f0a0077;
+    public static final int donate=0x7f0a0078;
+    public static final int donate_cloth=0x7f0a0079;
+    public static final int donatorReg=0x7f0a007a;
+    public static final int dp_org=0x7f0a007b;
+    public static final int edit_query=0x7f0a007c;
+    public static final int end=0x7f0a007d;
+    public static final int end_padder=0x7f0a007e;
+    public static final int enterAlways=0x7f0a007f;
+    public static final int enterAlwaysCollapsed=0x7f0a0080;
+    public static final int entryAddress_vol=0x7f0a0081;
+    public static final int entryEmail=0x7f0a0082;
+    public static final int entryEmailLog=0x7f0a0083;
+    public static final int entryEmail_vol=0x7f0a0084;
+    public static final int entryName=0x7f0a0085;
+    public static final int entryName_vol=0x7f0a0086;
+    public static final int entryPassword=0x7f0a0087;
+    public static final int entryPasswordLog=0x7f0a0088;
+    public static final int exitUntilCollapsed=0x7f0a0089;
+    public static final int expand_activities_button=0x7f0a008a;
+    public static final int expanded_menu=0x7f0a008b;
+    public static final int expiration_date=0x7f0a008c;
+    public static final int expire_date=0x7f0a008d;
+    public static final int feed=0x7f0a008e;
+    public static final int fill=0x7f0a008f;
+    public static final int fill_horizontal=0x7f0a0090;
+    public static final int fill_vertical=0x7f0a0091;
+    public static final int filled=0x7f0a0092;
+    public static final int fitCenter=0x7f0a0093;
+    public static final int fixed=0x7f0a0094;
+    public static final int foods=0x7f0a0095;
+    public static final int forever=0x7f0a0096;
+    public static final int forgetpassword=0x7f0a0097;
+    public static final int ghost_view=0x7f0a0098;
+    public static final int gone=0x7f0a0099;
+    public static final int group_divider=0x7f0a009a;
+    public static final int groups=0x7f0a009b;
+    public static final int home=0x7f0a009c;
+    public static final int homeAsUp=0x7f0a009d;
+    public static final int icon=0x7f0a009e;
+    public static final int icon_group=0x7f0a009f;
+    public static final int icon_only=0x7f0a00a0;
+    public static final int ifRoom=0x7f0a00a1;
+    public static final int image=0x7f0a00a2;
+    public static final int imageView=0x7f0a00a3;
+    public static final int imageView2=0x7f0a00a4;
+    public static final int imageView3=0x7f0a00a5;
+    public static final int imageView4=0x7f0a00a6;
+    public static final int info=0x7f0a00a7;
+    public static final int invisible=0x7f0a00a8;
+    public static final int italic=0x7f0a00a9;
+    public static final int item_touch_helper_previous_elevation=0x7f0a00aa;
+    public static final int labeled=0x7f0a00ab;
+    public static final int largeLabel=0x7f0a00ac;
+    public static final int left=0x7f0a00ad;
+    public static final int light=0x7f0a00ae;
+    public static final int line1=0x7f0a00af;
+    public static final int line3=0x7f0a00b0;
+    public static final int listMode=0x7f0a00b1;
+    public static final int list_item=0x7f0a00b2;
+    public static final int ll=0x7f0a00b3;
+    public static final int location=0x7f0a00b4;
+    public static final int login=0x7f0a00b5;
+    public static final int logout=0x7f0a00b6;
+    public static final int logout_feed=0x7f0a00b7;
+    public static final int mail_display=0x7f0a00b8;
+    public static final int mail_display_org=0x7f0a00b9;
+    public static final int mainBottomNav=0x7f0a00ba;
+    public static final int mainBottomNav_blood=0x7f0a00bb;
+    public static final int mainBottomNav_org=0x7f0a00bc;
+    public static final int mainBottomNav_vol=0x7f0a00bd;
+    public static final int main_blog_post=0x7f0a00be;
+    public static final int main_blog_post_don=0x7f0a00bf;
+    public static final int main_cloth_post=0x7f0a00c0;
+    public static final int main_cloth_post_org=0x7f0a00c1;
+    public static final int main_container=0x7f0a00c2;
+    public static final int main_container_blood=0x7f0a00c3;
+    public static final int main_container_org=0x7f0a00c4;
+    public static final int main_container_vol=0x7f0a00c5;
+    public static final int main_dp=0x7f0a00c6;
+    public static final int main_vol_post=0x7f0a00c7;
+    public static final int masked=0x7f0a00c8;
+    public static final int media_actions=0x7f0a00c9;
+    public static final int message=0x7f0a00ca;
+    public static final int middle=0x7f0a00cb;
+    public static final int mini=0x7f0a00cc;
+    public static final int miter=0x7f0a00cd;
+    public static final int mtrl_child_content_container=0x7f0a00ce;
+    public static final int mtrl_internal_children_alpha_tag=0x7f0a00cf;
+    public static final int multiply=0x7f0a00d0;
+    public static final int name_display=0x7f0a00d1;
+    public static final int name_display_org=0x7f0a00d2;
+    public static final int navigation_header_container=0x7f0a00d3;
+    public static final int never=0x7f0a00d4;
+    public static final int none=0x7f0a00d5;
+    public static final int normal=0x7f0a00d6;
+    public static final int notification_background=0x7f0a00d7;
+    public static final int notification_main_column=0x7f0a00d8;
+    public static final int notification_main_column_container=0x7f0a00d9;
+    public static final int off=0x7f0a00da;
+    public static final int on=0x7f0a00db;
+    public static final int onTouch=0x7f0a00dc;
+    public static final int org_contact=0x7f0a00dd;
+    public static final int org_entryEmail=0x7f0a00de;
+    public static final int org_entryName=0x7f0a00df;
+    public static final int org_entryPassword=0x7f0a00e0;
+    public static final int org_testButton=0x7f0a00e1;
+    public static final int organizationReg=0x7f0a00e2;
+    public static final int outline=0x7f0a00e3;
+    public static final int oval=0x7f0a00e4;
+    public static final int packed=0x7f0a00e5;
+    public static final int parallax=0x7f0a00e6;
+    public static final int parent=0x7f0a00e7;
+    public static final int parentPanel=0x7f0a00e8;
+    public static final int parent_matrix=0x7f0a00e9;
+    public static final int pending_tasks=0x7f0a00ea;
+    public static final int pending_tasks_card=0x7f0a00eb;
+    public static final int percent=0x7f0a00ec;
+    public static final int photoButton=0x7f0a00ed;
+    public static final int photoButton_cloth=0x7f0a00ee;
+    public static final int pickup_date_cloth=0x7f0a00ef;
+    public static final int pin=0x7f0a00f0;
+    public static final int pop_quit=0x7f0a00f1;
+    public static final int pop_user_contact=0x7f0a00f2;
+    public static final int pop_user_location=0x7f0a00f3;
+    public static final int pop_user_name=0x7f0a00f4;
+    public static final int popup_bg=0x7f0a00f5;
+    public static final int production=0x7f0a00f6;
+    public static final int progress_circular=0x7f0a00f7;
+    public static final int progress_horizontal=0x7f0a00f8;
+    public static final int quantity=0x7f0a00f9;
+    public static final int quantity_cloth=0x7f0a00fa;
+    public static final int quote=0x7f0a00fb;
+    public static final int quoter=0x7f0a00fc;
+    public static final int radio=0x7f0a00fd;
+    public static final int rectangle=0x7f0a00fe;
+    public static final int reg_contact=0x7f0a00ff;
+    public static final int reg_contact_vol=0x7f0a0100;
+    public static final int reg_volunteer=0x7f0a0101;
+    public static final int registerButton=0x7f0a0102;
+    public static final int registerReq=0x7f0a0103;
+    public static final int resetButton=0x7f0a0104;
+    public static final int resetEmail=0x7f0a0105;
+    public static final int right=0x7f0a0106;
+    public static final int right_icon=0x7f0a0107;
+    public static final int right_side=0x7f0a0108;
+    public static final int round=0x7f0a0109;
+    public static final int save_image_matrix=0x7f0a010a;
+    public static final int save_non_transition_alpha=0x7f0a010b;
+    public static final int save_scale_type=0x7f0a010c;
+    public static final int screen=0x7f0a010d;
+    public static final int scroll=0x7f0a010e;
+    public static final int scrollIndicatorDown=0x7f0a010f;
+    public static final int scrollIndicatorUp=0x7f0a0110;
+    public static final int scrollView=0x7f0a0111;
+    public static final int scrollable=0x7f0a0112;
+    public static final int search_badge=0x7f0a0113;
+    public static final int search_bar=0x7f0a0114;
+    public static final int search_button=0x7f0a0115;
+    public static final int search_close_btn=0x7f0a0116;
+    public static final int search_edit_frame=0x7f0a0117;
+    public static final int search_go_btn=0x7f0a0118;
+    public static final int search_mag_icon=0x7f0a0119;
+    public static final int search_plate=0x7f0a011a;
+    public static final int search_src_text=0x7f0a011b;
+    public static final int search_voice_btn=0x7f0a011c;
+    public static final int select_dialog_listview=0x7f0a011d;
+    public static final int selected=0x7f0a011e;
+    public static final int shortcut=0x7f0a011f;
+    public static final int showCustom=0x7f0a0120;
+    public static final int showHome=0x7f0a0121;
+    public static final int showTitle=0x7f0a0122;
+    public static final int slidelinearlayout=0x7f0a0123;
+    public static final int slideviewpager=0x7f0a0124;
+    public static final int smallLabel=0x7f0a0125;
+    public static final int snackbar_action=0x7f0a0126;
+    public static final int snackbar_text=0x7f0a0127;
+    public static final int snap=0x7f0a0128;
+    public static final int spacer=0x7f0a0129;
+    public static final int split_action_bar=0x7f0a012a;
+    public static final int spread=0x7f0a012b;
+    public static final int spread_inside=0x7f0a012c;
+    public static final int square=0x7f0a012d;
+    public static final int src_atop=0x7f0a012e;
+    public static final int src_in=0x7f0a012f;
+    public static final int src_over=0x7f0a0130;
+    public static final int standard=0x7f0a0131;
+    public static final int start=0x7f0a0132;
+    public static final int start_donation=0x7f0a0133;
+    public static final int status_bar_latest_event_content=0x7f0a0134;
+    public static final int stretch=0x7f0a0135;
+    public static final int stroke=0x7f0a0136;
+    public static final int submenuarrow=0x7f0a0137;
+    public static final int submit_area=0x7f0a0138;
+    public static final int tabMode=0x7f0a0139;
+    public static final int tag_transition_group=0x7f0a013a;
+    public static final int tag_unhandled_key_event_manager=0x7f0a013b;
+    public static final int tag_unhandled_key_listeners=0x7f0a013c;
+    public static final int testButton=0x7f0a013d;
+    public static final int text=0x7f0a013e;
+    public static final int text2=0x7f0a013f;
+    public static final int text34=0x7f0a0140;
+    public static final int textInputLayout=0x7f0a0141;
+    public static final int textInputLayout3=0x7f0a0142;
+    public static final int textSpacerNoButtons=0x7f0a0143;
+    public static final int textSpacerNoTitle=0x7f0a0144;
+    public static final int textView=0x7f0a0145;
+    public static final int textView2=0x7f0a0146;
+    public static final int textView3=0x7f0a0147;
+    public static final int textView4=0x7f0a0148;
+    public static final int textView5=0x7f0a0149;
+    public static final int textView6=0x7f0a014a;
+    public static final int text_input_password_toggle=0x7f0a014b;
+    public static final int textinput_counter=0x7f0a014c;
+    public static final int textinput_error=0x7f0a014d;
+    public static final int textinput_helper_text=0x7f0a014e;
+    public static final int time=0x7f0a014f;
+    public static final int time_cloth=0x7f0a0150;
+    public static final int title=0x7f0a0151;
+    public static final int titleDividerNoCustom=0x7f0a0152;
+    public static final int title_template=0x7f0a0153;
+    public static final int top=0x7f0a0154;
+    public static final int topNav=0x7f0a0155;
+    public static final int topNav_org=0x7f0a0156;
+    public static final int topPanel=0x7f0a0157;
+    public static final int touch_outside=0x7f0a0158;
+    public static final int transition_current_scene=0x7f0a0159;
+    public static final int transition_layout_save=0x7f0a015a;
+    public static final int transition_position=0x7f0a015b;
+    public static final int transition_scene_layoutid_cache=0x7f0a015c;
+    public static final int transition_transform=0x7f0a015d;
+    public static final int uniform=0x7f0a015e;
+    public static final int unlabeled=0x7f0a015f;
+    public static final int up=0x7f0a0160;
+    public static final int useLogo=0x7f0a0161;
+    public static final int user_profile=0x7f0a0162;
+    public static final int view_offset_helper=0x7f0a0163;
+    public static final int visible=0x7f0a0164;
+    public static final int vol_contact_no=0x7f0a0165;
+    public static final int vol_list_view=0x7f0a0166;
+    public static final int vol_location=0x7f0a0167;
+    public static final int vol_user_image=0x7f0a0168;
+    public static final int vol_user_name=0x7f0a0169;
+    public static final int volunteer=0x7f0a016a;
+    public static final int volunteer_list=0x7f0a016b;
+    public static final int wide=0x7f0a016c;
+    public static final int withText=0x7f0a016d;
+    public static final int wrap=0x7f0a016e;
+    public static final int wrap_content=0x7f0a016f;
+    public static final int xoxo=0x7f0a0170;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f0b0000;
@@ -5804,67 +5896,70 @@ public final class R {
     public static final int abc_search_view=0x7f0d0018;
     public static final int abc_select_dialog_material=0x7f0d0019;
     public static final int abc_tooltip=0x7f0d001a;
-    public static final int activity_feed_base=0x7f0d001b;
-    public static final int activity_feed_base_org=0x7f0d001c;
-    public static final int activity_general_page=0x7f0d001d;
-    public static final int activity_landing=0x7f0d001e;
-    public static final int activity_login_card=0x7f0d001f;
-    public static final int activity_main=0x7f0d0020;
-    public static final int activity_register_donator=0x7f0d0021;
-    public static final int activity_register_organization=0x7f0d0022;
-    public static final int activity_register_volunteer=0x7f0d0023;
-    public static final int activity_reset_password=0x7f0d0024;
-    public static final int activity_slide=0x7f0d0025;
-    public static final int activity_volunteer_list_feed_base=0x7f0d0026;
-    public static final int cloth_donation_post=0x7f0d0027;
-    public static final int cloth_list_items=0x7f0d0028;
-    public static final int cloth_list_items_org=0x7f0d0029;
-    public static final int crop_image_activity=0x7f0d002a;
-    public static final int crop_image_view=0x7f0d002b;
-    public static final int design_bottom_navigation_item=0x7f0d002c;
-    public static final int design_bottom_sheet_dialog=0x7f0d002d;
-    public static final int design_layout_snackbar=0x7f0d002e;
-    public static final int design_layout_snackbar_include=0x7f0d002f;
-    public static final int design_layout_tab_icon=0x7f0d0030;
-    public static final int design_layout_tab_text=0x7f0d0031;
-    public static final int design_menu_item_action_area=0x7f0d0032;
-    public static final int design_navigation_item=0x7f0d0033;
-    public static final int design_navigation_item_header=0x7f0d0034;
-    public static final int design_navigation_item_separator=0x7f0d0035;
-    public static final int design_navigation_item_subheader=0x7f0d0036;
-    public static final int design_navigation_menu=0x7f0d0037;
-    public static final int design_navigation_menu_item=0x7f0d0038;
-    public static final int design_text_input_password_icon=0x7f0d0039;
-    public static final int donator_ui_skull=0x7f0d003a;
-    public static final int food_donation_post=0x7f0d003b;
-    public static final int fragment_cloth=0x7f0d003c;
-    public static final int fragment_feed=0x7f0d003d;
-    public static final int fragment_volunteer=0x7f0d003e;
-    public static final int notification_action=0x7f0d003f;
-    public static final int notification_action_tombstone=0x7f0d0040;
-    public static final int notification_media_action=0x7f0d0041;
-    public static final int notification_media_cancel_action=0x7f0d0042;
-    public static final int notification_template_big_media=0x7f0d0043;
-    public static final int notification_template_big_media_custom=0x7f0d0044;
-    public static final int notification_template_big_media_narrow=0x7f0d0045;
-    public static final int notification_template_big_media_narrow_custom=0x7f0d0046;
-    public static final int notification_template_custom_big=0x7f0d0047;
-    public static final int notification_template_icon_group=0x7f0d0048;
-    public static final int notification_template_lines_media=0x7f0d0049;
-    public static final int notification_template_media=0x7f0d004a;
-    public static final int notification_template_media_custom=0x7f0d004b;
-    public static final int notification_template_part_chronometer=0x7f0d004c;
-    public static final int notification_template_part_time=0x7f0d004d;
-    public static final int organization_ui_skull=0x7f0d004e;
-    public static final int popup_window=0x7f0d004f;
-    public static final int post_list_items=0x7f0d0050;
-    public static final int post_list_items_don=0x7f0d0051;
-    public static final int select_dialog_item_material=0x7f0d0052;
-    public static final int select_dialog_multichoice_material=0x7f0d0053;
-    public static final int select_dialog_singlechoice_material=0x7f0d0054;
-    public static final int slide_layout=0x7f0d0055;
-    public static final int support_simple_spinner_dropdown_item=0x7f0d0056;
-    public static final int vol_list_items=0x7f0d0057;
+    public static final int activity_blood_feed_base=0x7f0d001b;
+    public static final int activity_feed_base=0x7f0d001c;
+    public static final int activity_feed_base_org=0x7f0d001d;
+    public static final int activity_general_page=0x7f0d001e;
+    public static final int activity_landing=0x7f0d001f;
+    public static final int activity_login_card=0x7f0d0020;
+    public static final int activity_main=0x7f0d0021;
+    public static final int activity_register_donator=0x7f0d0022;
+    public static final int activity_register_organization=0x7f0d0023;
+    public static final int activity_register_volunteer=0x7f0d0024;
+    public static final int activity_reset_password=0x7f0d0025;
+    public static final int activity_slide=0x7f0d0026;
+    public static final int activity_volunteer_list_feed_base=0x7f0d0027;
+    public static final int blood_list_item=0x7f0d0028;
+    public static final int cloth_donation_post=0x7f0d0029;
+    public static final int cloth_list_items=0x7f0d002a;
+    public static final int cloth_list_items_org=0x7f0d002b;
+    public static final int crop_image_activity=0x7f0d002c;
+    public static final int crop_image_view=0x7f0d002d;
+    public static final int design_bottom_navigation_item=0x7f0d002e;
+    public static final int design_bottom_sheet_dialog=0x7f0d002f;
+    public static final int design_layout_snackbar=0x7f0d0030;
+    public static final int design_layout_snackbar_include=0x7f0d0031;
+    public static final int design_layout_tab_icon=0x7f0d0032;
+    public static final int design_layout_tab_text=0x7f0d0033;
+    public static final int design_menu_item_action_area=0x7f0d0034;
+    public static final int design_navigation_item=0x7f0d0035;
+    public static final int design_navigation_item_header=0x7f0d0036;
+    public static final int design_navigation_item_separator=0x7f0d0037;
+    public static final int design_navigation_item_subheader=0x7f0d0038;
+    public static final int design_navigation_menu=0x7f0d0039;
+    public static final int design_navigation_menu_item=0x7f0d003a;
+    public static final int design_text_input_password_icon=0x7f0d003b;
+    public static final int donator_ui_skull=0x7f0d003c;
+    public static final int food_donation_post=0x7f0d003d;
+    public static final int fragment_blood=0x7f0d003e;
+    public static final int fragment_cloth=0x7f0d003f;
+    public static final int fragment_feed=0x7f0d0040;
+    public static final int fragment_volunteer=0x7f0d0041;
+    public static final int notification_action=0x7f0d0042;
+    public static final int notification_action_tombstone=0x7f0d0043;
+    public static final int notification_media_action=0x7f0d0044;
+    public static final int notification_media_cancel_action=0x7f0d0045;
+    public static final int notification_template_big_media=0x7f0d0046;
+    public static final int notification_template_big_media_custom=0x7f0d0047;
+    public static final int notification_template_big_media_narrow=0x7f0d0048;
+    public static final int notification_template_big_media_narrow_custom=0x7f0d0049;
+    public static final int notification_template_custom_big=0x7f0d004a;
+    public static final int notification_template_icon_group=0x7f0d004b;
+    public static final int notification_template_lines_media=0x7f0d004c;
+    public static final int notification_template_media=0x7f0d004d;
+    public static final int notification_template_media_custom=0x7f0d004e;
+    public static final int notification_template_part_chronometer=0x7f0d004f;
+    public static final int notification_template_part_time=0x7f0d0050;
+    public static final int organization_ui_skull=0x7f0d0051;
+    public static final int popup_window=0x7f0d0052;
+    public static final int post_list_items=0x7f0d0053;
+    public static final int post_list_items_don=0x7f0d0054;
+    public static final int select_dialog_item_material=0x7f0d0055;
+    public static final int select_dialog_multichoice_material=0x7f0d0056;
+    public static final int select_dialog_singlechoice_material=0x7f0d0057;
+    public static final int slide_layout=0x7f0d0058;
+    public static final int support_simple_spinner_dropdown_item=0x7f0d0059;
+    public static final int vol_list_items=0x7f0d005a;
   }
   public static final class menu {
     public static final int bottom_items=0x7f0e0000;
@@ -9972,17 +10067,17 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CardView_android_minWidth android:minWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #CardView_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardBackgroundColor com.thegorgeouscows.team.finalrev:cardBackgroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardCornerRadius com.thegorgeouscows.team.finalrev:cardCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardElevation com.thegorgeouscows.team.finalrev:cardElevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardMaxElevation com.thegorgeouscows.team.finalrev:cardMaxElevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.thegorgeouscows.team.finalrev:cardPreventCornerOverlap}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardUseCompatPadding com.thegorgeouscows.team.finalrev:cardUseCompatPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPadding com.thegorgeouscows.team.finalrev:contentPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingBottom com.thegorgeouscows.team.finalrev:contentPaddingBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingLeft com.thegorgeouscows.team.finalrev:contentPaddingLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingRight com.thegorgeouscows.team.finalrev:contentPaddingRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingTop com.thegorgeouscows.team.finalrev:contentPaddingTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardBackgroundColor com.thegorgeouscows.team.finalrev:cardBackgroundColor}</code></td><td>Background color for CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_cardCornerRadius com.thegorgeouscows.team.finalrev:cardCornerRadius}</code></td><td>Corner radius for CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_cardElevation com.thegorgeouscows.team.finalrev:cardElevation}</code></td><td>Elevation for CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_cardMaxElevation com.thegorgeouscows.team.finalrev:cardMaxElevation}</code></td><td>Maximum Elevation for CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.thegorgeouscows.team.finalrev:cardPreventCornerOverlap}</code></td><td>Add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.</td></tr>
+     * <tr><td><code>{@link #CardView_cardUseCompatPadding com.thegorgeouscows.team.finalrev:cardUseCompatPadding}</code></td><td>Add padding in API v21+ as well to have the same measurements with previous versions.</td></tr>
+     * <tr><td><code>{@link #CardView_contentPadding com.thegorgeouscows.team.finalrev:contentPadding}</code></td><td>Inner padding between the edges of the Card and children of the CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingBottom com.thegorgeouscows.team.finalrev:contentPaddingBottom}</code></td><td>Inner padding between the bottom edge of the Card and children of the CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingLeft com.thegorgeouscows.team.finalrev:contentPaddingLeft}</code></td><td>Inner padding between the left edge of the Card and children of the CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingRight com.thegorgeouscows.team.finalrev:contentPaddingRight}</code></td><td>Inner padding between the right edge of the Card and children of the CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingTop com.thegorgeouscows.team.finalrev:contentPaddingTop}</code></td><td>Inner padding between the top edge of the Card and children of the CardView.</td></tr>
      * </table>
      * @see #CardView_android_minWidth
      * @see #CardView_android_minHeight
@@ -10005,8 +10100,9 @@ public final class R {
       0x7f0400ca
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#minWidth}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Workaround to read user defined minimum width
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10018,8 +10114,9 @@ public final class R {
      */
     public static final int CardView_android_minWidth=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#minHeight}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Workaround to read user defined minimum height
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10031,8 +10128,9 @@ public final class R {
      */
     public static final int CardView_android_minHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#cardBackgroundColor}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Background color for CardView.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -10042,8 +10140,9 @@ public final class R {
      */
     public static final int CardView_cardBackgroundColor=2;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#cardCornerRadius}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Corner radius for CardView.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10055,8 +10154,9 @@ public final class R {
      */
     public static final int CardView_cardCornerRadius=3;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#cardElevation}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Elevation for CardView.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10068,8 +10168,9 @@ public final class R {
      */
     public static final int CardView_cardElevation=4;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#cardMaxElevation}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Maximum Elevation for CardView.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10081,8 +10182,9 @@ public final class R {
      */
     public static final int CardView_cardMaxElevation=5;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#cardPreventCornerOverlap}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -10091,8 +10193,9 @@ public final class R {
      */
     public static final int CardView_cardPreventCornerOverlap=6;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#cardUseCompatPadding}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Add padding in API v21+ as well to have the same measurements with previous versions.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -10101,8 +10204,9 @@ public final class R {
      */
     public static final int CardView_cardUseCompatPadding=7;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#contentPadding}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Inner padding between the edges of the Card and children of the CardView.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10114,8 +10218,9 @@ public final class R {
      */
     public static final int CardView_contentPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#contentPaddingBottom}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Inner padding between the bottom edge of the Card and children of the CardView.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10127,8 +10232,9 @@ public final class R {
      */
     public static final int CardView_contentPaddingBottom=9;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#contentPaddingLeft}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Inner padding between the left edge of the Card and children of the CardView.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10140,8 +10246,9 @@ public final class R {
      */
     public static final int CardView_contentPaddingLeft=10;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#contentPaddingRight}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Inner padding between the right edge of the Card and children of the CardView.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10153,8 +10260,9 @@ public final class R {
      */
     public static final int CardView_contentPaddingRight=11;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#contentPaddingTop}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Inner padding between the top edge of the Card and children of the CardView.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12296,7 +12404,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td></td></tr>
+     * <tr><td>direct</td><td>1</td><td>direct, barriers, chains</td></tr>
      * <tr><td>groups</td><td>20</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>7</td><td></td></tr>
@@ -13672,8 +13780,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_keylines com.thegorgeouscows.team.finalrev:keylines}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.thegorgeouscows.team.finalrev:statusBarBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_keylines com.thegorgeouscows.team.finalrev:keylines}</code></td><td>A reference to an array of integers representing the
+     * locations of horizontal keylines in dp from the starting edge.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.thegorgeouscows.team.finalrev:statusBarBackground}</code></td><td>Drawable to display behind the status bar when the view is set to draw behind it.</td></tr>
      * </table>
      * @see #CoordinatorLayout_keylines
      * @see #CoordinatorLayout_statusBarBackground
@@ -13682,8 +13791,13 @@ public final class R {
       0x7f040153, 0x7f0401fc
     };
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#keylines}
-     * attribute's value can be found in the {@link #CoordinatorLayout} array.
+     * <p>
+     * @attr description
+     * A reference to an array of integers representing the
+     * locations of horizontal keylines in dp from the starting edge.
+     * Child views can refer to these keylines for alignment using
+     * layout_keyline="index" where index is a 0-based index into
+     * this array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13694,8 +13808,9 @@ public final class R {
      */
     public static final int CoordinatorLayout_keylines=0;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#statusBarBackground}
-     * attribute's value can be found in the {@link #CoordinatorLayout} array.
+     * <p>
+     * @attr description
+     * Drawable to display behind the status bar when the view is set to draw behind it.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13716,12 +13831,15 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CoordinatorLayout_Layout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.thegorgeouscows.team.finalrev:layout_anchor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.thegorgeouscows.team.finalrev:layout_anchorGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.thegorgeouscows.team.finalrev:layout_behavior}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.thegorgeouscows.team.finalrev:layout_dodgeInsetEdges}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.thegorgeouscows.team.finalrev:layout_insetEdge}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.thegorgeouscows.team.finalrev:layout_keyline}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.thegorgeouscows.team.finalrev:layout_anchor}</code></td><td>The id of an anchor view that this view should position relative to.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.thegorgeouscows.team.finalrev:layout_anchorGravity}</code></td><td>Specifies how an object should position relative to an anchor, on both the X and Y axes,
+     * within its parent's bounds.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.thegorgeouscows.team.finalrev:layout_behavior}</code></td><td>The class name of a Behavior class defining special runtime behavior
+     * for this child view.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.thegorgeouscows.team.finalrev:layout_dodgeInsetEdges}</code></td><td>Specifies how this view dodges the inset edges of the CoordinatorLayout.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.thegorgeouscows.team.finalrev:layout_insetEdge}</code></td><td>Specifies how this view insets the CoordinatorLayout and make some other views
+     * dodge it.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.thegorgeouscows.team.finalrev:layout_keyline}</code></td><td>The index of a keyline this view should position relative to.</td></tr>
      * </table>
      * @see #CoordinatorLayout_Layout_android_layout_gravity
      * @see #CoordinatorLayout_Layout_layout_anchor
@@ -13765,8 +13883,9 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_android_layout_gravity=0;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#layout_anchor}
-     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
+     * <p>
+     * @attr description
+     * The id of an anchor view that this view should position relative to.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13777,8 +13896,10 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_layout_anchor=1;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#layout_anchorGravity}
-     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
+     * <p>
+     * @attr description
+     * Specifies how an object should position relative to an anchor, on both the X and Y axes,
+     * within its parent's bounds.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -13786,28 +13907,36 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>center</td><td>11</td><td></td></tr>
-     * <tr><td>center_horizontal</td><td>1</td><td></td></tr>
-     * <tr><td>center_vertical</td><td>10</td><td></td></tr>
-     * <tr><td>clip_horizontal</td><td>8</td><td></td></tr>
-     * <tr><td>clip_vertical</td><td>80</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
-     * <tr><td>fill</td><td>77</td><td></td></tr>
-     * <tr><td>fill_horizontal</td><td>7</td><td></td></tr>
-     * <tr><td>fill_vertical</td><td>70</td><td></td></tr>
-     * <tr><td>left</td><td>3</td><td></td></tr>
-     * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
+     * <tr><td>bottom</td><td>50</td><td>Push object to the bottom of its container, not changing its size.</td></tr>
+     * <tr><td>center</td><td>11</td><td>Place the object in the center of its container in both the vertical and horizontal axis, not changing its size.</td></tr>
+     * <tr><td>center_horizontal</td><td>1</td><td>Place object in the horizontal center of its container, not changing its size.</td></tr>
+     * <tr><td>center_vertical</td><td>10</td><td>Place object in the vertical center of its container, not changing its size.</td></tr>
+     * <tr><td>clip_horizontal</td><td>8</td><td>Additional option that can be set to have the left and/or right edges of
+     * the child clipped to its container's bounds.
+     * The clip will be based on the horizontal gravity: a left gravity will clip the right
+     * edge, a right gravity will clip the left edge, and neither will clip both edges.</td></tr>
+     * <tr><td>clip_vertical</td><td>80</td><td>Additional option that can be set to have the top and/or bottom edges of
+     * the child clipped to its container's bounds.
+     * The clip will be based on the vertical gravity: a top gravity will clip the bottom
+     * edge, a bottom gravity will clip the top edge, and neither will clip both edges.</td></tr>
+     * <tr><td>end</td><td>800005</td><td>Push object to the end of its container, not changing its size.</td></tr>
+     * <tr><td>fill</td><td>77</td><td>Grow the horizontal and vertical size of the object if needed so it completely fills its container.</td></tr>
+     * <tr><td>fill_horizontal</td><td>7</td><td>Grow the horizontal size of the object if needed so it completely fills its container.</td></tr>
+     * <tr><td>fill_vertical</td><td>70</td><td>Grow the vertical size of the object if needed so it completely fills its container.</td></tr>
+     * <tr><td>left</td><td>3</td><td>Push object to the left of its container, not changing its size.</td></tr>
+     * <tr><td>right</td><td>5</td><td>Push object to the right of its container, not changing its size.</td></tr>
+     * <tr><td>start</td><td>800003</td><td>Push object to the beginning of its container, not changing its size.</td></tr>
+     * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
      * </table>
      *
      * @attr name com.thegorgeouscows.team.finalrev:layout_anchorGravity
      */
     public static final int CoordinatorLayout_Layout_layout_anchorGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#layout_behavior}
-     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
+     * <p>
+     * @attr description
+     * The class name of a Behavior class defining special runtime behavior
+     * for this child view.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -13816,8 +13945,9 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_layout_behavior=3;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#layout_dodgeInsetEdges}
-     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
+     * <p>
+     * @attr description
+     * Specifies how this view dodges the inset edges of the CoordinatorLayout.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -13825,22 +13955,24 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>all</td><td>77</td><td></td></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
-     * <tr><td>left</td><td>3</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
+     * <tr><td>all</td><td>77</td><td>Dodge all the inset edges.</td></tr>
+     * <tr><td>bottom</td><td>50</td><td>Dodge the bottom inset edge.</td></tr>
+     * <tr><td>end</td><td>800005</td><td>Dodge the end inset edge.</td></tr>
+     * <tr><td>left</td><td>3</td><td>Dodge the left inset edge.</td></tr>
+     * <tr><td>none</td><td>0</td><td>Don't dodge any edges</td></tr>
+     * <tr><td>right</td><td>5</td><td>Dodge the right inset edge.</td></tr>
+     * <tr><td>start</td><td>800003</td><td>Dodge the start inset edge.</td></tr>
+     * <tr><td>top</td><td>30</td><td>Dodge the top inset edge.</td></tr>
      * </table>
      *
      * @attr name com.thegorgeouscows.team.finalrev:layout_dodgeInsetEdges
      */
     public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges=4;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#layout_insetEdge}
-     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
+     * <p>
+     * @attr description
+     * Specifies how this view insets the CoordinatorLayout and make some other views
+     * dodge it.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -13848,21 +13980,24 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
-     * <tr><td>left</td><td>3</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
+     * <tr><td>bottom</td><td>50</td><td>Inset the bottom edge.</td></tr>
+     * <tr><td>end</td><td>800005</td><td>Inset the end edge.</td></tr>
+     * <tr><td>left</td><td>3</td><td>Inset the left edge.</td></tr>
+     * <tr><td>none</td><td>0</td><td>Don't inset.</td></tr>
+     * <tr><td>right</td><td>5</td><td>Inset the right edge.</td></tr>
+     * <tr><td>start</td><td>800003</td><td>Inset the start edge.</td></tr>
+     * <tr><td>top</td><td>30</td><td>Inset the top edge.</td></tr>
      * </table>
      *
      * @attr name com.thegorgeouscows.team.finalrev:layout_insetEdge
      */
     public static final int CoordinatorLayout_Layout_layout_insetEdge=5;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#layout_keyline}
-     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
+     * <p>
+     * @attr description
+     * The index of a keyline this view should position relative to.
+     * android:layout_gravity will affect how the view aligns to the
+     * specified keyline.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -14865,12 +15000,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.thegorgeouscows.team.finalrev:fontProviderAuthority}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.thegorgeouscows.team.finalrev:fontProviderCerts}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.thegorgeouscows.team.finalrev:fontProviderFetchStrategy}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.thegorgeouscows.team.finalrev:fontProviderFetchTimeout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.thegorgeouscows.team.finalrev:fontProviderPackage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.thegorgeouscows.team.finalrev:fontProviderQuery}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.thegorgeouscows.team.finalrev:fontProviderAuthority}</code></td><td>The authority of the Font Provider to be used for the request.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.thegorgeouscows.team.finalrev:fontProviderCerts}</code></td><td>The sets of hashes for the certificates the provider should be signed with.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.thegorgeouscows.team.finalrev:fontProviderFetchStrategy}</code></td><td>The strategy to be used when fetching font data from a font provider in XML layouts.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.thegorgeouscows.team.finalrev:fontProviderFetchTimeout}</code></td><td>The length of the timeout during fetching.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.thegorgeouscows.team.finalrev:fontProviderPackage}</code></td><td>The package for the Font Provider to be used for the request.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.thegorgeouscows.team.finalrev:fontProviderQuery}</code></td><td>The query to be sent over to the provider.</td></tr>
      * </table>
      * @see #FontFamily_fontProviderAuthority
      * @see #FontFamily_fontProviderCerts
@@ -14884,8 +15019,9 @@ public final class R {
       0x7f040125, 0x7f040126
     };
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#fontProviderAuthority}
-     * attribute's value can be found in the {@link #FontFamily} array.
+     * <p>
+     * @attr description
+     * The authority of the Font Provider to be used for the request.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -14894,8 +15030,13 @@ public final class R {
      */
     public static final int FontFamily_fontProviderAuthority=0;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#fontProviderCerts}
-     * attribute's value can be found in the {@link #FontFamily} array.
+     * <p>
+     * @attr description
+     * The sets of hashes for the certificates the provider should be signed with. This is
+     * used to verify the identity of the provider, and is only required if the provider is not
+     * part of the system image. This value may point to one list or a list of lists, where each
+     * individual list represents one collection of signature hashes. Refer to your font provider's
+     * documentation for these values.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -14906,8 +15047,15 @@ public final class R {
      */
     public static final int FontFamily_fontProviderCerts=1;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#fontProviderFetchStrategy}
-     * attribute's value can be found in the {@link #FontFamily} array.
+     * <p>
+     * @attr description
+     * The strategy to be used when fetching font data from a font provider in XML layouts.
+     * This attribute is ignored when the resource is loaded from code, as it is equivalent to the
+     * choice of API between {@link
+     * androidx.core.content.res.ResourcesCompat#getFont(Context, int)} (blocking) and
+     * {@link
+     * androidx.core.content.res.ResourcesCompat#getFont(Context, int, FontCallback, Handler)}
+     * (async).
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -14915,16 +15063,25 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>async</td><td>1</td><td></td></tr>
-     * <tr><td>blocking</td><td>0</td><td></td></tr>
+     * <tr><td>async</td><td>1</td><td>The async font fetch works as follows.
+     * First, check the local cache, then if the requeted font is not cached, trigger a
+     * request the font and continue with layout inflation. Once the font fetch succeeds, the
+     * target text view will be refreshed with the downloaded font data. The
+     * fontProviderFetchTimeout will be ignored if async loading is specified.</td></tr>
+     * <tr><td>blocking</td><td>0</td><td>The blocking font fetch works as follows.
+     * First, check the local cache, then if the requested font is not cached, request the
+     * font from the provider and wait until it is finished.  You can change the length of
+     * the timeout by modifying fontProviderFetchTimeout.  If the timeout happens, the
+     * default typeface will be used instead.</td></tr>
      * </table>
      *
      * @attr name com.thegorgeouscows.team.finalrev:fontProviderFetchStrategy
      */
     public static final int FontFamily_fontProviderFetchStrategy=2;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#fontProviderFetchTimeout}
-     * attribute's value can be found in the {@link #FontFamily} array.
+     * <p>
+     * @attr description
+     * The length of the timeout during fetching.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      * <p>Must be one of the following constant values.</p>
@@ -14933,15 +15090,18 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
+     * <tr><td>forever</td><td>ffffffff</td><td>A special value for the timeout. In this case, the blocking font fetching will not
+     * timeout and wait until a reply is received from the font provider.</td></tr>
      * </table>
      *
      * @attr name com.thegorgeouscows.team.finalrev:fontProviderFetchTimeout
      */
     public static final int FontFamily_fontProviderFetchTimeout=3;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#fontProviderPackage}
-     * attribute's value can be found in the {@link #FontFamily} array.
+     * <p>
+     * @attr description
+     * The package for the Font Provider to be used for the request. This is used to verify
+     * the identity of the provider.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -14950,8 +15110,10 @@ public final class R {
      */
     public static final int FontFamily_fontProviderPackage=4;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#fontProviderQuery}
-     * attribute's value can be found in the {@link #FontFamily} array.
+     * <p>
+     * @attr description
+     * The query to be sent over to the provider. Refer to your font provider's documentation
+     * on the format of this string.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -14971,11 +15133,11 @@ public final class R {
      * <tr><td><code>{@link #FontFamilyFont_android_fontStyle android:fontStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_ttcIndex android:ttcIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_fontVariationSettings android:fontVariationSettings}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_font com.thegorgeouscows.team.finalrev:font}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.thegorgeouscows.team.finalrev:fontStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings com.thegorgeouscows.team.finalrev:fontVariationSettings}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.thegorgeouscows.team.finalrev:fontWeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_ttcIndex com.thegorgeouscows.team.finalrev:ttcIndex}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_font com.thegorgeouscows.team.finalrev:font}</code></td><td>The reference to the font file to be used.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.thegorgeouscows.team.finalrev:fontStyle}</code></td><td>The style of the given font file.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings com.thegorgeouscows.team.finalrev:fontVariationSettings}</code></td><td>The variation settings to be applied to the font.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.thegorgeouscows.team.finalrev:fontWeight}</code></td><td>The weight of the given font file.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_ttcIndex com.thegorgeouscows.team.finalrev:ttcIndex}</code></td><td>The index of the font in the tcc font file.</td></tr>
      * </table>
      * @see #FontFamilyFont_android_font
      * @see #FontFamilyFont_android_fontWeight
@@ -15015,8 +15177,9 @@ public final class R {
      */
     public static final int FontFamilyFont_android_fontWeight=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#fontStyle}
-     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     * <p>
+     * @attr description
+     * References to the framework attrs
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -15051,8 +15214,10 @@ public final class R {
      */
     public static final int FontFamilyFont_android_fontVariationSettings=4;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#font}
-     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     * <p>
+     * @attr description
+     * The reference to the font file to be used. This should be a file in the res/font folder
+     * and should therefore have an R reference value. E.g. @font/myfont
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15063,8 +15228,11 @@ public final class R {
      */
     public static final int FontFamilyFont_font=5;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#fontStyle}
-     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     * <p>
+     * @attr description
+     * The style of the given font file. This will be used when the font is being loaded into
+     * the font stack and will override any style information in the font's header tables. If
+     * unspecified, the value in the font's header tables will be used.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -15080,8 +15248,12 @@ public final class R {
      */
     public static final int FontFamilyFont_fontStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#fontVariationSettings}
-     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     * <p>
+     * @attr description
+     * The variation settings to be applied to the font. The string should be in the following
+     * format: "'tag1' value1, 'tag2' value2, ...". If the default variation settings should be
+     * used, or the font used does not support variation settings, this attribute needs not be
+     * specified.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -15090,8 +15262,13 @@ public final class R {
      */
     public static final int FontFamilyFont_fontVariationSettings=7;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#fontWeight}
-     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     * <p>
+     * @attr description
+     * The weight of the given font file. This will be used when the font is being loaded into
+     * the font stack and will override any weight information in the font's header tables. Must
+     * be a positive number, a multiple of 100, and between 100 and 900, inclusive. The most
+     * common values are 400 for regular weight and 700 for bold weight. If unspecified, the value
+     * in the font's header tables will be used.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -15099,8 +15276,10 @@ public final class R {
      */
     public static final int FontFamilyFont_fontWeight=8;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#ttcIndex}
-     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     * <p>
+     * @attr description
+     * The index of the font in the tcc font file. If the font file referenced is not in the
+     * tcc format, this attribute needs not be specified.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -15216,8 +15395,9 @@ public final class R {
       0x01010510, 0x01010511, 0x01010512, 0x01010513
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#startColor}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * Start color of the gradient.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -15227,8 +15407,9 @@ public final class R {
      */
     public static final int GradientColor_android_startColor=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#endColor}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * End color of the gradient.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -15238,8 +15419,9 @@ public final class R {
      */
     public static final int GradientColor_android_endColor=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#type}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * Type of gradient. The default type is linear.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -15256,8 +15438,9 @@ public final class R {
      */
     public static final int GradientColor_android_type=2;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#centerX}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * X coordinate of the center of the gradient within the path.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      * <p>May be a fractional value, which is a floating point number appended with
@@ -15269,8 +15452,9 @@ public final class R {
      */
     public static final int GradientColor_android_centerX=3;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#centerY}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * Y coordinate of the center of the gradient within the path.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      * <p>May be a fractional value, which is a floating point number appended with
@@ -15282,8 +15466,9 @@ public final class R {
      */
     public static final int GradientColor_android_centerY=4;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#gradientRadius}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * Radius of the gradient, used only with radial gradient.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15300,8 +15485,9 @@ public final class R {
      */
     public static final int GradientColor_android_gradientRadius=5;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#tileMode}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * Defines the tile mode of the gradient. SweepGradient doesn't support tiling.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -15319,8 +15505,9 @@ public final class R {
      */
     public static final int GradientColor_android_tileMode=6;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#centerColor}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * Optional center color.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -15330,8 +15517,10 @@ public final class R {
      */
     public static final int GradientColor_android_centerColor=7;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#startX}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * X coordinate of the start point origin of the gradient.
+     * Defined in same coordinates as the path itself
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -15339,8 +15528,10 @@ public final class R {
      */
     public static final int GradientColor_android_startX=8;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#startY}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * Y coordinate of the start point of the gradient within the shape.
+     * Defined in same coordinates as the path itself
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -15348,8 +15539,10 @@ public final class R {
      */
     public static final int GradientColor_android_startY=9;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#endX}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * X coordinate of the end point origin of the gradient.
+     * Defined in same coordinates as the path itself
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -15357,8 +15550,10 @@ public final class R {
      */
     public static final int GradientColor_android_endX=10;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#endY}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * Y coordinate of the end point of the gradient within the shape.
+     * Defined in same coordinates as the path itself
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -15382,8 +15577,9 @@ public final class R {
       0x010101a5, 0x01010514
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#color}
-     * attribute's value can be found in the {@link #GradientColorItem} array.
+     * <p>
+     * @attr description
+     * The current color for the offset inside the gradient.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -15393,8 +15589,10 @@ public final class R {
      */
     public static final int GradientColorItem_android_color=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#offset}
-     * attribute's value can be found in the {@link #GradientColorItem} array.
+     * <p>
+     * @attr description
+     * The offset (or ratio) of this current color item inside the gradient.
+     * The value is only meaningful when it is between 0 and 1.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -17876,7 +18074,7 @@ public final class R {
      * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalTrackDrawable com.thegorgeouscows.team.finalrev:fastScrollHorizontalTrackDrawable}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_fastScrollVerticalThumbDrawable com.thegorgeouscows.team.finalrev:fastScrollVerticalThumbDrawable}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_fastScrollVerticalTrackDrawable com.thegorgeouscows.team.finalrev:fastScrollVerticalTrackDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_layoutManager com.thegorgeouscows.team.finalrev:layoutManager}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_layoutManager com.thegorgeouscows.team.finalrev:layoutManager}</code></td><td>Class name of the Layout Manager to be used.</td></tr>
      * <tr><td><code>{@link #RecyclerView_reverseLayout com.thegorgeouscows.team.finalrev:reverseLayout}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_spanCount com.thegorgeouscows.team.finalrev:spanCount}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_stackFromEnd com.thegorgeouscows.team.finalrev:stackFromEnd}</code></td><td></td></tr>
@@ -17992,8 +18190,17 @@ public final class R {
      */
     public static final int RecyclerView_fastScrollVerticalTrackDrawable=6;
     /**
-     * <p>This symbol is the offset where the {@link com.thegorgeouscows.team.finalrev.R.attr#layoutManager}
-     * attribute's value can be found in the {@link #RecyclerView} array.
+     * <p>
+     * @attr description
+     * Class name of the Layout Manager to be used.
+     * <p/>
+     * The class must extandroidx.recyclerview.widget.RecyclerViewView$LayoutManager
+     * and have either a default constructor or constructor with the signature
+     * (android.content.Context, android.util.AttributeSet, int, int).
+     * <p/>
+     * If the name starts with a '.', application package is prefixed.
+     * Else, if the name contains a '.', the classname is assumed to be a full class name.
+     * Else, the recycler view package naandroidx.appcompat.widgetdget) is prefixed.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;

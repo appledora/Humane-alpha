@@ -35,9 +35,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class OrganizationProfile extends AppCompatActivity {
 
-    private CardView pendingVerification;
-    private CardView availableTasks;
-    private CardView volunteerList;
+    private CardView volunteerList,bloodBank,pendingTasks;
     private TextView name,email ;
     private CircleImageView profilePhoto;
     private Uri mImageUri = null,imageUri;
@@ -58,8 +56,8 @@ public class OrganizationProfile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.organization_ui_skull);
 
-        pendingVerification = (CardView) findViewById(R.id.pending);
-        availableTasks = (CardView)findViewById(R.id.available);
+        bloodBank = (CardView)findViewById(R.id.blood_bank_card);
+        pendingTasks = (CardView)findViewById(R.id.pending_tasks_card);
         volunteerList = (CardView)findViewById(R.id.volunteer);
         name = (TextView)findViewById(R.id.name_display_org);
         email = (TextView)findViewById(R.id.mail_display_org);
@@ -104,22 +102,6 @@ public class OrganizationProfile extends AppCompatActivity {
         });
 
 
-        pendingVerification.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(OrganizationProfile.this,"PENDING",Toast.LENGTH_SHORT).show();
-
-            }
-        });
-
-
-        availableTasks.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(OrganizationProfile.this,"AVAILABLE",Toast.LENGTH_SHORT).show();
-            }
-        });
-
         volunteerList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -130,6 +112,22 @@ public class OrganizationProfile extends AppCompatActivity {
             }
         });
 
+        bloodBank.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(OrganizationProfile.this,BloodFeedBase.class);
+                startActivity(i);
+                Toast.makeText(OrganizationProfile.this,"BloodBank",Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+        pendingTasks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(OrganizationProfile.this,"Pending",Toast.LENGTH_SHORT).show();
+            }
+        });
         setupBottomNavigationView();
 
     }

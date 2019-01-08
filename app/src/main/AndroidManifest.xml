@@ -26,7 +26,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".resetPasswordActivity"/>
+        <activity android:name=".resetPasswordActivity" />
         <activity android:name=".registerDonatorActivity" />
         <activity android:name=".generalPage" />
         <activity android:name=".LandingActivity" />
@@ -46,12 +46,14 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity android:name=".FoodPostForm" />
+        <activity android:name=".ClothPostForm" />
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
         <activity android:name=".FeedBase" />
         <activity android:name=".PopUpActivity" />
-        <activity android:name=".VolunteerListFeedBase"></activity>
+        <activity android:name=".VolunteerListFeedBase" />
+        <activity android:name=".BloodFeedBase"></activity>
     </application>
 
 </manifest>

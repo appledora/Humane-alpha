@@ -20,8 +20,13 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class registerDonatorActivity extends AppCompatActivity {
 
@@ -37,6 +42,7 @@ public class registerDonatorActivity extends AppCompatActivity {
     private DatabaseReference mDatabase;
     private FirebaseStorage storage;
     private StorageReference storageReference;
+    private FirebaseFirestore firebaseFirestore;
 
     private Spinner mSpinner;
 
@@ -53,6 +59,7 @@ public class registerDonatorActivity extends AppCompatActivity {
         mDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
         storage = FirebaseStorage.getInstance();
         storageReference = storage.getReference();
+        firebaseFirestore = FirebaseFirestore.getInstance();
 
         mProgress = new ProgressDialog(this);
 
@@ -86,7 +93,7 @@ public class registerDonatorActivity extends AppCompatActivity {
         final String contact = mContact.getText().toString().trim();
         final String bloodgroup= mSpinner.getSelectedItem().toString().trim();
 
-        if (!TextUtils.isEmpty(name) && !TextUtils.isEmpty(password) && !TextUtils.isEmpty(email)) {
+        if (!TextUtils.isEmpty(name) && !TextUtils.isEmpty(password) && !TextUtils.isEmpty(email) && !TextUtils.isEmpty(bloodgroup)) {
 
             mProgress.setMessage("Signing Up ");
             mProgress.show();
@@ -116,6 +123,21 @@ public class registerDonatorActivity extends AppCompatActivity {
                                                                                             }
                                                                                         }
             );
+
+
+            Map<String,Object> BloodList = new HashMap<>();
+            BloodList.put("buserName",name);
+            BloodList.put("bbloodGroup",bloodgroup);
+            BloodList.put("bcontact",contact);
+
+            firebaseFirestore.collection("BLOODLIST").add(BloodList).addOnCompleteListener(new OnCompleteListener<DocumentReference>() {
+                @Override
+                public void onComplete(@NonNull Task<DocumentReference> task) {
+                    if (task.isSuccessful()){
+                        Toast.makeText(registerDonatorActivity.this,"POST WAS ADDED",Toast.LENGTH_LONG).show();
+                    }
+                }
+            });
         }
 
     }
