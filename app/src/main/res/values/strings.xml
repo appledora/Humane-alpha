@@ -13,6 +13,7 @@
     <string name="password">Password</string>
 
     <string-array name="blood_groups">
+        <item>Please select your Bloodgroup</item>
         <item>A+</item>
         <item>B+</item>
         <item>O+</item>

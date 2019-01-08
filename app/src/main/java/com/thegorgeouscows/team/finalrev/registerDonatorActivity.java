@@ -86,35 +86,35 @@ public class registerDonatorActivity extends AppCompatActivity {
         final String contact = mContact.getText().toString().trim();
         final String bloodgroup= mSpinner.getSelectedItem().toString().trim();
 
-        if (!TextUtils.isEmpty(name) && !TextUtils.isEmpty(password) && !TextUtils.isEmpty(email)) {
+        if (!TextUtils.isEmpty(name) && !TextUtils.isEmpty(password) && !TextUtils.isEmpty(email) && !bloodgroup.equals("Please select your Bloodgroup")) {
 
             mProgress.setMessage("Signing Up ");
             mProgress.show();
 
             mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                                                                                            @Override
-                                                                                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                                                                                if (task.isSuccessful()) {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
+                    if (task.isSuccessful()) {
 
-                                                                                                    Toast.makeText(registerDonatorActivity.this, "Successful!", Toast.LENGTH_LONG).show();
-                                                                                                    String userid = mAuth.getCurrentUser().getUid();
+                        Toast.makeText(registerDonatorActivity.this, "Successful!", Toast.LENGTH_LONG).show();
+                        String userid = mAuth.getCurrentUser().getUid();
 
-                                                                                                    currentuserdata = mDatabase.child(userid);
-                                                                                                    currentuserdata.child("Name").setValue(name);
-                                                                                                    currentuserdata.child("Email").setValue(email);
-                                                                                                    currentuserdata.child("ID").setValue("Donator");
-                                                                                                    currentuserdata.child("Image").setValue("https://firebasestorage.googleapis.com/v0/b/final-rev-app.appspot.com/o/post_images%2Fperson.png?alt=media&token=fafa0ebd-2114-4622-b391-79712b84ff7a");
-                                                                                                    currentuserdata.child("Contact").setValue(contact);
-                                                                                                    currentuserdata.child("Bloodgroups").setValue(bloodgroup);
-                                                                                                    mProgress.dismiss();
+                        currentuserdata = mDatabase.child(userid);
+                        currentuserdata.child("Name").setValue(name);
+                        currentuserdata.child("Email").setValue(email);
+                        currentuserdata.child("ID").setValue("Donator");
+                        currentuserdata.child("Image").setValue("https://firebasestorage.googleapis.com/v0/b/final-rev-app.appspot.com/o/post_images%2Fperson.png?alt=media&token=fafa0ebd-2114-4622-b391-79712b84ff7a");
+                        currentuserdata.child("Contact").setValue(contact);
+                        currentuserdata.child("Bloodgroups").setValue(bloodgroup);
+                        mProgress.dismiss();
 
-                                                                                                    Intent i = new Intent(registerDonatorActivity.this, DonatorProfile.class);
-                                                                                                    i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                                                                                                    startActivity(i);
-                                                                                                } else
-                                                                                                    Toast.makeText(registerDonatorActivity.this, "Error", Toast.LENGTH_LONG).show();
-                                                                                            }
-                                                                                        }
+                        Intent i = new Intent(registerDonatorActivity.this, DonatorProfile.class);
+                        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(i);
+                    } else
+                        Toast.makeText(registerDonatorActivity.this, "Error", Toast.LENGTH_LONG).show();
+                }
+            }
             );
         }
 

@@ -32,28 +32,35 @@
             android:orientation="vertical"
             android:padding="24dp">
 
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textColorHint="@color/colorGrey">
 
             <EditText
                 android:id="@+id/entryEmailLog"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/email"
                 android:inputType="textEmailAddress"
                 android:textColor="@color/colorWhite"
-                android:textColorHint="@color/colorGrey"
                 android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
 
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:textColorHint="@color/colorGrey">
             <EditText
                 android:id="@+id/entryPasswordLog"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/password"
                 android:inputType="textPassword"
                 android:singleLine="true"
                 android:textColor="@color/colorWhite"
-                android:textColorHint="@color/colorGrey"
                 android:textSize="15dp" />
-
+            </android.support.design.widget.TextInputLayout>
             <Button
                 android:id="@+id/forgetpassword"
                 style="@style/Widget.AppCompat.Button.Borderless"
