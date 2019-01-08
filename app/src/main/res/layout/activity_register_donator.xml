@@ -7,11 +7,27 @@
     android:background="@drawable/gradient_blue"
     tools:context=".registerDonatorActivity">
 
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:text="Please Fill in this Form to Register"
+        android:textColor="@color/colorWhite"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <android.support.design.widget.TextInputLayout
         android:id="@+id/xoxo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
         android:hint="Full name"
+        android:textColorHint="@color/colorGrey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +41,6 @@
             android:layout_marginTop="40dp"
             android:layout_marginEnd="8dp"
             android:ems="10"
-            android:hint="Enter Name"
             android:inputType="textPersonName"
             android:padding="15dp"
             android:textColor="@color/colorWhite"
@@ -36,8 +51,8 @@
         android:id="@+id/text34"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:hint="Contact Number"
+        android:textColorHint="@color/colorGrey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
@@ -49,18 +64,18 @@
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:ems="10"
-            android:hint="Contact Number"
             android:inputType="numberDecimal"
             android:padding="15dp"
             android:textColor="@color/colorWhite"
-            android:textColorHint="@color/colorGrey" />
+            />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/textInputLayout"
-        android:layout_width="370dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Email Address"
+        android:textColorHint="@color/colorGrey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/xoxo">
@@ -70,11 +85,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Email Address"
             android:inputType="textEmailAddress"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:padding="15dp"
             android:textColor="@color/colorWhite"
-            android:textColorHint="@color/colorGrey" />
+/>
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -82,6 +98,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
+        android:textColorHint="@color/colorGrey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textInputLayout">
@@ -93,12 +110,20 @@
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:ems="10"
-            android:hint="Type Password"
             android:inputType="textPassword"
             android:padding="15dp"
             android:textColor="@color/colorWhite"
             android:textColorHint="@color/colorGrey" />
     </android.support.design.widget.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/BloodGroupSelector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/colorWhite"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/text34" />
 
     <Button
         android:id="@+id/testButton"
@@ -114,18 +139,15 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="8dp"
-        android:text="Please Fill in this Form to Register"
-        android:textColor="@color/colorWhite"
-        android:textSize="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/textView6"
+        android:layout_width="123dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:text="Blood Group"
+        android:paddingTop="15dp"
+        android:textColor="@color/colorGrey"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/text34" />
 
 
 </android.support.constraint.ConstraintLayout>
