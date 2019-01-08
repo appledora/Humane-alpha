@@ -7,92 +7,129 @@
     android:background="@drawable/gradient_blue"
     tools:context=".registerDonatorActivity">
 
-
-    <EditText
-        android:id="@+id/reg_contact"
-        android:layout_width="0dp"
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/xoxo"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/input_background"
-        android:ems="10"
-        android:hint="Contact Number"
-        android:inputType="numberDecimal"
-        android:padding="15dp"
-        android:textColor="@color/colorAquaDark"
-        android:textColorHint="@color/colorRipple"
+
+        android:hint="Full name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <EditText
+            android:id="@+id/entryName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Enter Name"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorGrey" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text34"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Contact Number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
+
+        <EditText
+            android:id="@+id/reg_contact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Contact Number"
+            android:inputType="numberDecimal"
+            android:padding="15dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorGrey" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/xoxo">
+
+        <EditText
+            android:id="@+id/entryEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorGrey" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayout">
+
+        <EditText
+            android:id="@+id/entryPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Type Password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorGrey" />
+    </android.support.design.widget.TextInputLayout>
 
     <Button
         android:id="@+id/testButton"
-        android:layout_width="222dp"
-        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="30dp"
-        android:background="@drawable/button_background"
-        android:backgroundTint="@color/colorBegun"
+        android:backgroundTint="@color/colorWhite"
         android:text="Register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/entryName"
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="8dp"
-        android:background="@drawable/input_background"
-        android:ems="10"
-        android:hint="Enter Name"
-        android:inputType="textPersonName"
-        android:padding="15dp"
-        android:textColor="@color/colorAquaDark"
-        android:textColorHint="@color/colorRipple"
+        android:text="Please Fill in this Form to Register"
+        android:textColor="@color/colorWhite"
+        android:textSize="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/entryEmail"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/input_background"
-        android:ems="10"
-        android:hint="Email Address"
-        android:inputType="textEmailAddress"
-        android:padding="15dp"
-        android:textColor="@color/colorAquaDark"
-        android:textColorHint="@color/colorRipple"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/entryName" />
-
-    <EditText
-        android:id="@+id/entryPassword"
-        android:layout_width="0dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/input_background"
-        android:ems="10"
-        android:hint="Type Password"
-        android:inputType="textPassword"
-        android:padding="15dp"
-        android:textColor="@color/colorAquaDark"
-        android:textColorHint="@color/colorRipple"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/entryEmail" />
 
 </android.support.constraint.ConstraintLayout>
