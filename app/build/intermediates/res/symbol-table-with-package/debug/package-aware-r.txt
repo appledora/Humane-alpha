@@ -25,6 +25,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array blood_groups
 array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
@@ -1245,6 +1246,7 @@ font roboto_slab_bold
 font roboto_slab_light
 font roboto_thin
 id ALT
+id BloodGroupSelector
 id Bloodbank
 id CTRL
 id CropOverlayView
@@ -1557,12 +1559,17 @@ id tag_unhandled_key_listeners
 id testButton
 id text
 id text2
+id text34
+id textInputLayout
+id textInputLayout3
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textView
 id textView2
 id textView3
 id textView4
+id textView5
+id textView6
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1600,6 +1607,7 @@ id wide
 id withText
 id wrap
 id wrap_content
+id xoxo
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration

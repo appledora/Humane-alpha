@@ -7,8 +7,11 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -35,6 +38,8 @@ public class registerDonatorActivity extends AppCompatActivity {
     private FirebaseStorage storage;
     private StorageReference storageReference;
 
+    private Spinner mSpinner;
+
     private ProgressDialog mProgress;
     DatabaseReference currentuserdata;
 
@@ -53,12 +58,15 @@ public class registerDonatorActivity extends AppCompatActivity {
 
         mTestButton = (Button) findViewById(R.id.testButton);
 
+        mSpinner= (Spinner) findViewById(R.id.BloodGroupSelector);
+        ArrayAdapter<CharSequence> adapter= ArrayAdapter.createFromResource(this, R.array.blood_groups, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        mSpinner.setAdapter(adapter);
 
         mNameEntry = (EditText) findViewById(R.id.entryName);
         mEmailEntry = (EditText) findViewById(R.id.entryEmail);
         mPasswordEntry = (EditText) findViewById(R.id.entryPassword);
         mContact = (EditText) findViewById(R.id.reg_contact);
-
 
         mTestButton.setOnClickListener(new View.OnClickListener() {
 
@@ -76,7 +84,7 @@ public class registerDonatorActivity extends AppCompatActivity {
         final String email = mEmailEntry.getText().toString().trim();
         String password = mPasswordEntry.getText().toString().trim();
         final String contact = mContact.getText().toString().trim();
-
+        final String bloodgroup= mSpinner.getSelectedItem().toString().trim();
 
         if (!TextUtils.isEmpty(name) && !TextUtils.isEmpty(password) && !TextUtils.isEmpty(email)) {
 
@@ -97,7 +105,7 @@ public class registerDonatorActivity extends AppCompatActivity {
                                                                                                     currentuserdata.child("ID").setValue("Donator");
                                                                                                     currentuserdata.child("Image").setValue("https://firebasestorage.googleapis.com/v0/b/final-rev-app.appspot.com/o/post_images%2Fperson.png?alt=media&token=fafa0ebd-2114-4622-b391-79712b84ff7a");
                                                                                                     currentuserdata.child("Contact").setValue(contact);
-
+                                                                                                    currentuserdata.child("Bloodgroups").setValue(bloodgroup);
                                                                                                     mProgress.dismiss();
 
                                                                                                     Intent i = new Intent(registerDonatorActivity.this, DonatorProfile.class);
