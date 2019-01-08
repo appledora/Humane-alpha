@@ -711,6 +711,7 @@ color colorGrapeFruit
 color colorGrapeFruitDark
 color colorGrass
 color colorGrassDark
+color colorGrey
 color colorLavander
 color colorLavanderDark
 color colorMint
@@ -725,6 +726,7 @@ color colorPrimary2
 color colorPrimaryDark
 color colorPrimaryDark1
 color colorPrimaryDark2
+color colorPrimaryMedium
 color colorPurple
 color colorRipple
 color colorTeal
@@ -1180,6 +1182,7 @@ drawable design_snackbar_background
 drawable diet
 drawable dieta
 drawable dish
+drawable donator_class
 drawable drop
 drawable fashion
 drawable fashiona
@@ -1208,6 +1211,7 @@ drawable ic_slideshow_black_24dp
 drawable input_background
 drawable item_color_selector
 drawable lakeside_sunset
+drawable mainlogo
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
 drawable notification_action_background
@@ -1222,6 +1226,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable organizer
 drawable orgbg
 drawable person
 drawable pop_quit
@@ -1301,7 +1306,6 @@ id buttonPanel
 id call_button
 id call_button_cloth_org
 id cancel_action
-id card_container
 id card_login
 id center
 id centerCrop
@@ -1386,6 +1390,7 @@ id fitCenter
 id fixed
 id foods
 id forever
+id forgetpassword
 id ghost_view
 id gone
 id group_divider
@@ -1399,6 +1404,8 @@ id ifRoom
 id image
 id imageView
 id imageView2
+id imageView3
+id imageView4
 id info
 id invisible
 id italic
@@ -1490,6 +1497,8 @@ id reg_contact_vol
 id reg_volunteer
 id registerButton
 id registerReq
+id resetButton
+id resetEmail
 id right
 id right_icon
 id right_side
@@ -1551,6 +1560,9 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textView
+id textView2
+id textView3
+id textView4
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1642,6 +1654,7 @@ layout activity_main
 layout activity_register_donator
 layout activity_register_organization
 layout activity_register_volunteer
+layout activity_reset_password
 layout activity_slide
 layout activity_volunteer_list_feed_base
 layout cloth_donation_post
@@ -1697,7 +1710,6 @@ menu bottom_items
 menu crop_image_menu
 menu feed_bottom_nav
 menu top_items
-mipmap gg
 mipmap ic_launcher
 mipmap ic_launcher_round
 mipmap splashlogo
@@ -1771,6 +1783,7 @@ string dash_o
 string dash_u
 string dash_v
 string default_web_client_id
+string email
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string firebase_database_url
@@ -1984,6 +1997,7 @@ style Base_Widget_MaterialComponents_TextInputLayout
 style CardView
 style CardView_Dark
 style CardView_Light
+style MyButton
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_MaterialComponents
@@ -2125,6 +2139,7 @@ style Theme_AppCompat_Light_Dialog_MinWidth
 style Theme_AppCompat_Light_DialogWhenLarge
 style Theme_AppCompat_Light_NoActionBar
 style Theme_AppCompat_NoActionBar
+style Theme_AppCompat_NoActionBar_FullScreen
 style Theme_Design
 style Theme_Design_BottomSheetDialog
 style Theme_Design_Light

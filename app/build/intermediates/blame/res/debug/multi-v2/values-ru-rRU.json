@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Humane-Test-master-master\\Humane-Test-master-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ru-rRU\\values-ru-rRU.xml",
+            "outputFile": "/home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ru-rRU/values-ru-rRU.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Appledora\\.gradle\\caches\\transforms-1\\files-1.1\\android-image-cropper-2.5.1.aar\\a80da11713d01077dae364cb4ee4f074\\res\\values-ru-rRU\\values-ru-rRU.xml",
+                    "source": "/home/istiak/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.5.1.aar/deb75bf791c6c08544930d85d37e0f9c/res/values-ru-rRU/values-ru-rRU.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",

@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.android.support:design-theme-28.0.0-alpha1">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-theme-28.0.0-alpha1.aar/1cc50b445cb27cd3e8b7a2f7019c3859/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-theme-28.0.0-alpha1.aar/fd727a8c9f8c9c522ed18531295908a6/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-theme-28.0.0-alpha1.aar/1cc50b445cb27cd3e8b7a2f7019c3859/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-theme-28.0.0-alpha1.aar/1cc50b445cb27cd3e8b7a2f7019c3859/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-theme-28.0.0-alpha1.aar/fd727a8c9f8c9c522ed18531295908a6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-theme-28.0.0-alpha1.aar/fd727a8c9f8c9c522ed18531295908a6/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

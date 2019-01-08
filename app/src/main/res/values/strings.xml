@@ -7,8 +7,9 @@
     <string name="user_nav_title">User DashBoard</string>
     <string name="title_activity_start_screen">StartScreen</string>
     <string name="logout">LogOut</string>
-    <string name="sign_in">Sign In</string>
-    <string name="click_to_register">Click to Register</string>
+    <string name="sign_in">Login</string>
+    <string name="click_to_register">Click here to Register</string>
+    <string name="email">Enter your mail</string>
     <string name="password">Password</string>
 
     <!-- TODO: Remove or change this placeholder text -->

@@ -4,21 +4,20 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 
 public class LandingActivity extends AppCompatActivity {
 
-    private Button mDonatorReg;
-    private Button mVolunteerReg;
-    private Button mOrganizationReg;
+    private ImageButton mDonatorReg;
+    private ImageButton mOrganizationReg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landing);
 
-        mDonatorReg= (Button) findViewById(R.id.donatorReg);
-        mOrganizationReg= (Button) findViewById(R.id.organizationReg);
+        mDonatorReg= (ImageButton) findViewById(R.id.donatorReg);
+        mOrganizationReg= (ImageButton) findViewById(R.id.organizationReg);
 
 
         mDonatorReg.setOnClickListener(new View.OnClickListener() {
