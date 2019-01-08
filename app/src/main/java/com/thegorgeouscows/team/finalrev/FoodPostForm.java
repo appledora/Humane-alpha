@@ -169,7 +169,7 @@ public class FoodPostForm extends AppCompatActivity implements View.OnClickListe
         final String quan = quantity.getText().toString().trim();
         final String prod = production_date.getText().toString().trim();
         final String expi = expiration_date.getText().toString().trim();
-        final String pick = pickup_address.getText().toString().trim();
+        final String pick = pickup_time.getText().toString().trim();
         final String add = pickup_address.getText().toString().trim();
 
         if(imageUri!= null && !TextUtils.isEmpty(quan) && !TextUtils.isEmpty(prod) && !TextUtils.isEmpty(expi) && !TextUtils.isEmpty(pick)  && !TextUtils.isEmpty(add) ){

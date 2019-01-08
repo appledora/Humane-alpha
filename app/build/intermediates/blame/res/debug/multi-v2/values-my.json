@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-my/values-my.xml",
+            "outputFile": "D:\\Humane-Test-master-master\\Humane-Test-master-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-my\\values-my.xml",
             "map": [
                 {
-                    "source": "/home/istiak/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/73888c61538bb37125a5da62ead10966/res/values-my/values-my.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,214,319,436,529,641,769,847,926,1012,1135,1247,1349,1475,1586,1696,1856,1956",
-                        "endColumns": "108,104,116,92,111,127,77,78,85,122,111,101,125,110,109,159,99,83",
-                        "endOffsets": "209,314,431,524,636,764,842,921,1007,1130,1242,1344,1470,1581,1691,1851,1951,2035"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,37",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,214,319,436,529,641,769,847,926,1012,1135,1247,1349,1475,1586,1696,1856,4799",
-                        "endColumns": "108,104,116,92,111,127,77,78,85,122,111,101,125,110,109,159,99,83",
-                        "endOffsets": "209,314,431,524,636,764,842,921,1007,1130,1242,1344,1470,1581,1691,1851,1951,4878"
-                    }
-                },
-                {
-                    "source": "/home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/76292b1cc7a2610207eeaf74d18e1e73/res/values-my/values.xml",
+                    "source": "C:\\Users\\Appledora\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-16.1.0.aar\\0a8bac5eca6aea090f6058d31d58173a\\res\\values-my\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "/home/istiak/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/2ea43d91d0683bc0e34c3ebf2bab6bea/res/values-my/values-my.xml",
+                    "source": "C:\\Users\\Appledora\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha1.aar\\b629a009bc0fa393e90a99c32df51fd5\\res\\values-my\\values-my.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,214,319,436,529,641,769,847,926,1012,1135,1247,1349,1475,1586,1696,1856,1956",
+                        "endColumns": "108,104,116,92,111,127,77,78,85,122,111,101,125,110,109,159,99,83",
+                        "endOffsets": "209,314,431,524,636,764,842,921,1007,1130,1242,1344,1470,1581,1691,1851,1951,2035"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,37",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,214,319,436,529,641,769,847,926,1012,1135,1247,1349,1475,1586,1696,1856,4799",
+                        "endColumns": "108,104,116,92,111,127,77,78,85,122,111,101,125,110,109,159,99,83",
+                        "endOffsets": "209,314,431,524,636,764,842,921,1007,1130,1242,1344,1470,1581,1691,1851,1951,4878"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Appledora\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\ca7f1795a28e5f725e4978513c61903e\\res\\values-my\\values-my.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -55,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "/home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/a504fbc6e90ef4ce5a8b58120662c07e/res/values-my/values.xml",
+                    "source": "C:\\Users\\Appledora\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.0.1.aar\\980f6e82f9cc29a3788c15c707a86eb4\\res\\values-my\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",

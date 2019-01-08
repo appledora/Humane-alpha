@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml",
+            "outputFile": "D:\\Humane-Test-master-master\\Humane-Test-master-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
             "map": [
                 {
-                    "source": "/home/istiak/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/73888c61538bb37125a5da62ead10966/res/values-large-v4/values-large-v4.xml",
+                    "source": "C:\\Users\\Appledora\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha1.aar\\b629a009bc0fa393e90a99c32df51fd5\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/istiak/.gradle/caches/transforms-1/files-1.1/design-theme-28.0.0-alpha1.aar/fd727a8c9f8c9c522ed18531295908a6/res/values-large-v4/values-large-v4.xml",
+                    "source": "C:\\Users\\Appledora\\.gradle\\caches\\transforms-1\\files-1.1\\design-theme-28.0.0-alpha1.aar\\1cc50b445cb27cd3e8b7a2f7019c3859\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-te/values-te.xml",
+            "outputFile": "D:\\Humane-Test-master-master\\Humane-Test-master-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-te\\values-te.xml",
             "map": [
                 {
-                    "source": "/home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/76292b1cc7a2610207eeaf74d18e1e73/res/values-te/values.xml",
+                    "source": "C:\\Users\\Appledora\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-16.1.0.aar\\0a8bac5eca6aea090f6058d31d58173a\\res\\values-te\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -21,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "/home/istiak/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/2ea43d91d0683bc0e34c3ebf2bab6bea/res/values-te/values-te.xml",
+                    "source": "C:\\Users\\Appledora\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha1.aar\\b629a009bc0fa393e90a99c32df51fd5\\res\\values-te\\values-te.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,219,328,439,529,634,759,841,923,1007,1120,1228,1327,1438,1540,1657,1823,1924",
+                        "endColumns": "113,108,110,89,104,124,81,81,83,112,107,98,110,101,116,165,100,81",
+                        "endOffsets": "214,323,434,524,629,754,836,918,1002,1115,1223,1322,1433,1535,1652,1818,1919,2001"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,37",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,219,328,439,529,634,759,841,923,1007,1120,1228,1327,1438,1540,1657,1823,4601",
+                        "endColumns": "113,108,110,89,104,124,81,81,83,112,107,98,110,101,116,165,100,81",
+                        "endOffsets": "214,323,434,524,629,754,836,918,1002,1115,1223,1322,1433,1535,1652,1818,1919,4678"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Appledora\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\ca7f1795a28e5f725e4978513c61903e\\res\\values-te\\values-te.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -38,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "/home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/a504fbc6e90ef4ce5a8b58120662c07e/res/values-te/values.xml",
+                    "source": "C:\\Users\\Appledora\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.0.1.aar\\980f6e82f9cc29a3788c15c707a86eb4\\res\\values-te\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -52,23 +69,6 @@
                         "startOffsets": "1924,2036,2222,2354,2471,2667,2794,2929,3257,3465,3579,3763,3893,4103,4296,4390,4490",
                         "endColumns": "111,185,131,116,195,126,134,128,207,113,183,129,209,192,93,99,110",
                         "endOffsets": "2031,2217,2349,2466,2662,2789,2924,3053,3460,3574,3758,3888,4098,4291,4385,4485,4596"
-                    }
-                },
-                {
-                    "source": "/home/istiak/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/73888c61538bb37125a5da62ead10966/res/values-te/values-te.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,219,328,439,529,634,759,841,923,1007,1120,1228,1327,1438,1540,1657,1823,1924",
-                        "endColumns": "113,108,110,89,104,124,81,81,83,112,107,98,110,101,116,165,100,81",
-                        "endOffsets": "214,323,434,524,629,754,836,918,1002,1115,1223,1322,1433,1535,1652,1818,1919,2001"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,37",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,219,328,439,529,634,759,841,923,1007,1120,1228,1327,1438,1540,1657,1823,4601",
-                        "endColumns": "113,108,110,89,104,124,81,81,83,112,107,98,110,101,116,165,100,81",
-                        "endOffsets": "214,323,434,524,629,754,836,918,1002,1115,1223,1322,1433,1535,1652,1818,1919,4678"
                     }
                 }
             ]

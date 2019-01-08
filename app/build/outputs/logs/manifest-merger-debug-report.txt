@@ -1,595 +1,595 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:2:1-57:12
-INJECTED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:2:1-57:12
-INJECTED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:2:1-57:12
-INJECTED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:2:1-57:12
-MERGED from [com.android.support:design:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-28.0.0-alpha1.aar/1e42a1b63c00387af8d9caae06fc2aa7/AndroidManifest.xml:17:1-24:12
-MERGED from [com.theartofdev.edmodo:android-image-cropper:2.5.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.5.1.aar/deb75bf791c6c08544930d85d37e0f9c/AndroidManifest.xml:2:1-12:12
-MERGED from [com.android.support:design-bottomappbar:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-bottomappbar-28.0.0-alpha1.aar/fd35f7419a23030b7c661f03d1238366/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:design-theme:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-theme-28.0.0-alpha1.aar/fd727a8c9f8c9c522ed18531295908a6/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:design-transformation:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-transformation-28.0.0-alpha1.aar/75af6d43757235d6d9252494d4654901/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:design-widget:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-widget-28.0.0-alpha1.aar/a857e4c8b71420908f42f1270ec83e93/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:design-bottomsheet:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-bottomsheet-28.0.0-alpha1.aar/81613e2fae378e652b206745f3c716bb/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:design-dialog:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-dialog-28.0.0-alpha1.aar/8742e72aadd626ed620ac080a48ce684/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:design-button:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-button-28.0.0-alpha1.aar/bdc2bbaf4fedf9564064f0fe75fb670a/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:design-card:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-card-28.0.0-alpha1.aar/80a90bce3b627ab2c8067eacbae637dc/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:design-chip:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-chip-28.0.0-alpha1.aar/c56f6952216f5a8b0f2fa3338f0bfb6c/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:design-internal:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-internal-28.0.0-alpha1.aar/765d077d1de1b9bf2e1904c1b107d34d/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:design-bottomnavigation:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-bottomnavigation-28.0.0-alpha1.aar/1559f0d256bcb3823d1b98ae864fdfbc/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:design-floatingactionbutton:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-floatingactionbutton-28.0.0-alpha1.aar/b3a16f57a25b2fa9acc868b74c9f4888/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:design-navigation:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-navigation-28.0.0-alpha1.aar/8d4ef5a37f5fd998be8819eb919a7295/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:design-resources:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-resources-28.0.0-alpha1.aar/8a49a61ef1fe4d2e9b0a38ddcc1569c4/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:design-tabs:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-tabs-28.0.0-alpha1.aar/da0aee8bd16c301874a0043e3df23fa3/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:design-textfield:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-textfield-28.0.0-alpha1.aar/299dbefbe96e53ee590ce58b78c5b864/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:design-typography:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-typography-28.0.0-alpha1.aar/0bc87409ef58e723c9a3b6c480ad06e8/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:design-shape:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-shape-28.0.0-alpha1.aar/df79983b4a2234a78271e4fdfc08e97b/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:appcompat-v7:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/73888c61538bb37125a5da62ead10966/AndroidManifest.xml:17:1-23:12
-MERGED from [com.android.support:design-circularreveal-cardview:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-circularreveal-cardview-28.0.0-alpha1.aar/63ad4e6cfcf2388fa8c5136927d76f82/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:cardview-v7:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/96d1892e4ac24cab57820ea10184fae1/AndroidManifest.xml:17:1-22:12
-MERGED from [com.firebaseui:firebase-ui-firestore:4.3.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-ui-firestore-4.3.0.aar/938bafd4646510293fbea758834a5c01/AndroidManifest.xml:2:1-13:12
-MERGED from [com.google.firebase:firebase-database:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.1.aar/fa3e17898adc5f48609b90b1df490933/AndroidManifest.xml:2:1-8:12
-MERGED from [com.google.firebase:firebase-auth:16.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/cfa382c4977caa2f03eced9f40a6f835/AndroidManifest.xml:17:1-42:12
-MERGED from [com.google.firebase:firebase-database-connection:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-16.0.1.aar/4390767c9a88171917881dae4a747256/AndroidManifest.xml:2:1-10:12
-MERGED from [com.google.firebase:firebase-storage:16.0.5] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.5.aar/8edcfe790eac07b27759d5d4c6f51421/AndroidManifest.xml:15:1-26:12
-MERGED from [com.google.firebase:firebase-firestore:17.1.5] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.5.aar/cad29db8c42e4e47e06621e17f355dbb/AndroidManifest.xml:2:1-20:12
-MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/38d3996d6f43f9eee59859aeb412e7c6/AndroidManifest.xml:2:1-10:12
-MERGED from [com.google.android.gms:play-services-flags:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/26f324b70f43b290819ad2c19ba1bcac/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/a504fbc6e90ef4ce5a8b58120662c07e/AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.firebase:firebase-common:16.0.4] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.4.aar/bdeddc34e7a0e9e06fb2ef8fad2effe3/AndroidManifest.xml:2:1-17:12
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/f8cb3155ae0de4be8e7e48f955ded50f/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/76292b1cc7a2610207eeaf74d18e1e73/AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/6ed7a65e45498deb242e823fb2cdcbb7/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/208d70b8c80b02b317a7ee1e4f47801b/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/istiak/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/13cc628530399f8e32176f07717fd0d4/AndroidManifest.xml:2:1-11:12
-MERGED from [com.mikhaellopez:circularimageview:3.2.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/circularimageview-3.2.0.aar/e89a315782f9ba840fdc138b37a21557/AndroidManifest.xml:2:1-11:12
-MERGED from [com.github.siyamed:android-shape-imageview:0.9.3] /home/istiak/.gradle/caches/transforms-1/files-1.1/android-shape-imageview-0.9.3.aar/e0fc8d3040c17418a15a09120bac9826/AndroidManifest.xml:2:1-12:12
-MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/9fd88643e23371216443d76661c47734/AndroidManifest.xml:2:1-11:12
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/5279d1f66c15347aac81ceb2098e5b72/AndroidManifest.xml:2:1-13:12
-MERGED from [com.android.support:transition:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/transition-28.0.0-alpha1.aar/dd797630236a55269d2bc4321265cf5b/AndroidManifest.xml:17:1-23:12
-MERGED from [com.android.support:design-animation:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-animation-28.0.0-alpha1.aar/7a6c2eafe9b4a11044da5fe67a29555f/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:design-canvas:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-canvas-28.0.0-alpha1.aar/7c6f77afb56feea344396895985309c2/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:design-circularreveal-coordinatorlayout:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-circularreveal-coordinatorlayout-28.0.0-alpha1.aar/8a01c6900ffd26859d882d45ec1102a6/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:design-circularreveal:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-circularreveal-28.0.0-alpha1.aar/9bead8f05a139dfcde4381b464b7bcbb/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:design-drawable:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-drawable-28.0.0-alpha1.aar/8242980078a906b218de131dcc5a35ae/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:design-expandable:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-expandable-28.0.0-alpha1.aar/01c4c59425d62d3e2e6247ac99f5735b/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:design-ripple:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-ripple-28.0.0-alpha1.aar/ec4a562022ac382d8b02ccfa81ff57bd/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:design-stateful:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-stateful-28.0.0-alpha1.aar/5692914b067f59d6cf02fda157fbca6e/AndroidManifest.xml:17:1-24:12
-MERGED from [com.firebaseui:firebase-ui-common:4.3.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-ui-common-4.3.0.aar/39aa09a600ee694c3f28c9bdd79f7439/AndroidManifest.xml:2:1-11:12
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/88f50dce499eee55eda9e4e8e9a66519/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-fragment:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/a6c89fa002a5c58ca1fc73cfab38e9c0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/6db0f530f6e33a59d1b670defc7403cc/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-alpha1.aar/715328f4087b97013444ae14b9c2b8b5/AndroidManifest.xml:17:1-23:12
-MERGED from [com.android.support:support-core-ui:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/6cfb7e786c2f8e6cdf3a193cf28747e4/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/65d68566abc930bbb627b694d6c8f500/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/99bb1feef5e21914ceb245d14c8de460/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/df2c36d5b30e1e9de3578c28cf31f057/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/019c21257e7b4362a567199fea19b90d/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/7955b3142edd2d964af225caa95d126f/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/44e7a1577b5d0ab33e9ff1a22bb869e8/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/fc834dfddb4d6f09d8ff67f380b7d643/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/5427713e800cb4cdf1c22ce0e855534d/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/e51f0ecff1acee6641cc4306f6c78d8e/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-alpha1.aar/932b261582dbc29a84058e8004c34cb6/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/2ea43d91d0683bc0e34c3ebf2bab6bea/AndroidManifest.xml:17:1-24:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/ed6711cf0c5bd33ba156f176af28b704/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/1941d33482ba9516c011eb79297f7d18/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/991e9cea2b3885b9acaacf90ce398cbd/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/b483478e514e71378631c06c34b15e79/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/953275588aa84fe9f1e6c0198692d108/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/cbc724481a5bca531eb8d7091f5640aa/AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:documentfile:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/68e193d4f654f860997635c1d2b733db/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/d4fc244f1d7cffda6797e2db0f9e4564/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/c9d37796d78fec2fd21f9f2af91f824e/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/aa1b23921808569036a34777ccc07c8b/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cursoradapter:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/5247db06e93377b17d4fe9d174d50d00/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:design-color:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-color-28.0.0-alpha1.aar/48b6c0eeac892050de8300b877d1fa0c/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:design-math:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-math-28.0.0-alpha1.aar/ffdd1354866ee73220ed9559d49fd89a/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:design-snackbar:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-snackbar-28.0.0-alpha1.aar/966639c0baca0caf5b401ccd1a119fb5/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.1.aar/5d9b8e5c786464f268ee87128d2b68e0/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/protolite-well-known-types-16.0.1.aar/e5b58f717c0b474f9852b20bf9cafe63/AndroidManifest.xml:2:1-11:12
-MERGED from [io.grpc:grpc-android:1.16.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/grpc-android-1.16.1.aar/7cf10f7dad12e6a3869abc017526ee38/AndroidManifest.xml:2:1-13:12
-MERGED from [com.android.support:exifinterface:26.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/exifinterface-26.1.0.aar/ad0dbbd60b7901af7ffece1e0467326f/AndroidManifest.xml:17:1-28:12
-INJECTED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:2:1-57:12
-INJECTED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:2:1-57:12
-INJECTED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:2:1-57:12
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:1-57:12
+MERGED from [com.android.support:design:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-28.0.0-alpha1.aar\c4d2c815e6bb10db882d506d1f043f79\AndroidManifest.xml:17:1-24:12
+MERGED from [com.theartofdev.edmodo:android-image-cropper:2.5.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\android-image-cropper-2.5.1.aar\a80da11713d01077dae364cb4ee4f074\AndroidManifest.xml:2:1-12:12
+MERGED from [com.android.support:design-bottomappbar:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-bottomappbar-28.0.0-alpha1.aar\31adf946c0dfeef53b28610db41b6074\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design-theme:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-theme-28.0.0-alpha1.aar\1cc50b445cb27cd3e8b7a2f7019c3859\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design-transformation:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-transformation-28.0.0-alpha1.aar\fa6bd3af074dd4e27c0a76af5641bb35\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design-widget:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-widget-28.0.0-alpha1.aar\b696c51abe70cfb79d96c9325835a4cd\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design-bottomsheet:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-bottomsheet-28.0.0-alpha1.aar\cd7aa47f6c7411b673c58fadfb91d8c9\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design-dialog:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-dialog-28.0.0-alpha1.aar\a0701a9404f7594419fc51241a960757\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design-button:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-button-28.0.0-alpha1.aar\cc1cb28c7144a16f251f96ce3b358062\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design-card:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-card-28.0.0-alpha1.aar\233337ce858208b705f0b27285a5aad2\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design-chip:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-chip-28.0.0-alpha1.aar\2eadbf69dab9764c1d52f1db2ac21cef\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design-internal:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-internal-28.0.0-alpha1.aar\1657a7970c6815af30013c16ce2b57df\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design-bottomnavigation:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-bottomnavigation-28.0.0-alpha1.aar\bbd53b94be826a1bbfc0b9a11f326951\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design-floatingactionbutton:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-floatingactionbutton-28.0.0-alpha1.aar\3f4493df107c1096497fca704768b0a1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design-navigation:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-navigation-28.0.0-alpha1.aar\599c3a6feb84a7561d0d5b03e33a1547\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design-resources:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-resources-28.0.0-alpha1.aar\190ee01d02c9b19b2d0628ab3d88f020\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design-tabs:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-tabs-28.0.0-alpha1.aar\d8322b82d6e5399612fc2076bc61ea72\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design-textfield:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-textfield-28.0.0-alpha1.aar\4873bb504b12a2db4f6f20922c5a1fb5\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design-typography:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-typography-28.0.0-alpha1.aar\dd07c42883bf21b438086345d54e978c\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design-shape:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-shape-28.0.0-alpha1.aar\0fbd5f3ee65bc6cc28a7d8ea43373ad4\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0-alpha1.aar\b629a009bc0fa393e90a99c32df51fd5\AndroidManifest.xml:17:1-23:12
+MERGED from [com.android.support:design-circularreveal-cardview:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-circularreveal-cardview-28.0.0-alpha1.aar\4e1c96aa52f4cde0e27de2f05364d7bf\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\bcd74892f183abd44dc4adc31b4f3efc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.firebaseui:firebase-ui-firestore:4.3.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-ui-firestore-4.3.0.aar\223b2336896936e4da78c3ed2ee8beb3\AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.firebase:firebase-database:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-database-16.0.1.aar\9da189c51337f59fd4a1498b5271c713\AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-auth:16.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.1.0.aar\1a623cf829a11de3e2734c6863de5ca7\AndroidManifest.xml:17:1-42:12
+MERGED from [com.google.firebase:firebase-database-connection:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-16.0.1.aar\e9805dd5bc130c2a562c52f709e2d9c1\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-storage:16.0.5] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-storage-16.0.5.aar\7952d0d78f45901352aefb35ea5890bb\AndroidManifest.xml:15:1-26:12
+MERGED from [com.google.firebase:firebase-firestore:17.1.5] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-firestore-17.1.5.aar\3f778016eb7e1e7aa8124fb6776ed7ab\AndroidManifest.xml:2:1-20:12
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-auth-interop-16.0.1.aar\11dc30752565910ae5857516116cfa3e\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\play-services-flags-16.0.1.aar\6fc6c44e86a5f270d4cbe19890404ab4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\980f6e82f9cc29a3788c15c707a86eb4\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-common:16.0.4] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.4.aar\57d975fb7cef6f52a31413f37ce0f3eb\AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\d432ee9adf1c9dedaa7dee3bb607308d\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.1.0.aar\0a8bac5eca6aea090f6058d31d58173a\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\d4b273c1c553d6a45169b72952f2038f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\aa22201b33203651874fd74bb4c3e0ff\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\7ca09f8e65308cad00ea9686c26df998\AndroidManifest.xml:2:1-11:12
+MERGED from [com.mikhaellopez:circularimageview:3.2.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\circularimageview-3.2.0.aar\7a5322c3a39a21fcfc47030c2936242e\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.siyamed:android-shape-imageview:0.9.3] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\android-shape-imageview-0.9.3.aar\318be98f47fa220e7b3f57f33d7e4801\AndroidManifest.xml:2:1-12:12
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\afc1ca6d99acf412f6e1c1985ab786e0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\126dbab063cf9ae1cee3c8859f6ffc2e\AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:transition:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\transition-28.0.0-alpha1.aar\2ed262de2d4bb3d774930d498e0d2f60\AndroidManifest.xml:17:1-23:12
+MERGED from [com.android.support:design-animation:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-animation-28.0.0-alpha1.aar\5479c2042de62661e645b7772255cdbf\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design-canvas:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-canvas-28.0.0-alpha1.aar\4d8b515122af2eec7928f19ff30b57e4\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design-circularreveal-coordinatorlayout:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-circularreveal-coordinatorlayout-28.0.0-alpha1.aar\2671dd716d6a95aa94f67f55d94fae96\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design-circularreveal:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-circularreveal-28.0.0-alpha1.aar\442d638a1fa3e9f02935bde3c4a339ea\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design-drawable:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-drawable-28.0.0-alpha1.aar\b7fac5c8a231093a493239f1ba03bcc0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design-expandable:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-expandable-28.0.0-alpha1.aar\a28a752edeadc452acd93364fa8345ab\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design-ripple:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-ripple-28.0.0-alpha1.aar\c868ee536cefe52c9c95e7c214efd497\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design-stateful:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-stateful-28.0.0-alpha1.aar\a187c5bbe9ec724a0c99cc2fd3985dbc\AndroidManifest.xml:17:1-24:12
+MERGED from [com.firebaseui:firebase-ui-common:4.3.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-ui-common-4.3.0.aar\082bda845e63ec6037ec7d4f0ac4406c\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.7.1.aar\21a4e8396900f84a06c3a445a83a451b\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\3d05b3f16d5c0414aeaa6b9137c1005d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\653fa9964afd1e5804a5abc546b10f63\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0-alpha1.aar\4e3e511dd51b0c8422f6a20633e73040\AndroidManifest.xml:17:1-23:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\9f34caccb7d0e87d0c9d3b31881a657b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\cccba4ae0f1fc99f2b49e757ca703f28\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\6c63ddcea96e8b4f41afec746490d2ee\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\b33afb96d27943df8febcfece2b926e4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\cf99bbd37bb2566f5bcc5d09d927eb65\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\14bbb6dee95d6a21fddf8db29a4f1587\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\cdbfdb773cde4cb49d91c38bfda47d00\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\5ad6deb5849bb7736f6df63a0d0baf6c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\ad6246e1ad7ac12e90cf31a207975152\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\2783179e82b00cbd386401ed4adfe523\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0-alpha1.aar\f1e31a2e9feaa21708f47a59f2983bfe\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\ca7f1795a28e5f725e4978513c61903e\AndroidManifest.xml:17:1-24:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\0a14914460999f7dddf88b423a19d7c8\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\b1049a4246085411cebfbadecd2d6224\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\84f9bbebe4586231330ca6f1d93d0934\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\20b5cf3655b6cae21bcb94f8eaeddb66\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\769519484c23b8a16742ed70ab5f546f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\a0a47e6619bf371db83ce9972a7379db\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\9549f1b718469f78c3c9df5a45ea0846\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\9b11ace129ca3eaf800dcda8593aa434\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\c7849bfffd7919cc10e151e6e58d117f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\9a9c82897396b9243503571f7f61c149\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\7e40d2c7f79e139e643e86e3b39d8a6f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:design-color:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-color-28.0.0-alpha1.aar\77e3bf7bb3d4a33350ef1526bcfd38fb\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design-math:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-math-28.0.0-alpha1.aar\67c5fe7e8e3bcaa8a3a1911bb5bc7a12\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design-snackbar:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-snackbar-28.0.0-alpha1.aar\615358abad4942423a456a89b1f3918c\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-database-collection:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-database-collection-16.0.1.aar\533608a42b8e986ad553916e835c1290\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\protolite-well-known-types-16.0.1.aar\cb5be0687154357f847c3667c55618ef\AndroidManifest.xml:2:1-11:12
+MERGED from [io.grpc:grpc-android:1.16.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\grpc-android-1.16.1.aar\38076eb451899879d8618742572735cf\AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:exifinterface:26.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\exifinterface-26.1.0.aar\d6910ccc1c43a3e076a788a83183b80c\AndroidManifest.xml:17:1-28:12
+INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:1-57:12
 	package
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:4:5-48
-		INJECTED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml
-		INJECTED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:4:5-48
+		INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:2:1-57:12
-		INJECTED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml
+		INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:1-57:12
+		INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:3:5-51
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:2:1-57:12
-		INJECTED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml
+		INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:1-57:12
+		INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.VIBRATE
-ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:6:5-66
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:6:5-66
 	android:name
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:6:22-63
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:6:22-63
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:7:5-80
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:7:5-80
 	android:name
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:7:22-77
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:7:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:8:5-81
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:8:5-81
 	android:name
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:8:22-78
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:8:22-78
 uses-permission#android.permission.CALL_PHONE
-ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:9:5-69
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:9:5-69
 	android:name
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:9:22-66
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:9:22-66
 application
-ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:11:5-55:19
-MERGED from [com.android.support:design:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-28.0.0-alpha1.aar/1e42a1b63c00387af8d9caae06fc2aa7/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-28.0.0-alpha1.aar/1e42a1b63c00387af8d9caae06fc2aa7/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-bottomappbar:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-bottomappbar-28.0.0-alpha1.aar/fd35f7419a23030b7c661f03d1238366/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-bottomappbar:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-bottomappbar-28.0.0-alpha1.aar/fd35f7419a23030b7c661f03d1238366/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-theme:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-theme-28.0.0-alpha1.aar/fd727a8c9f8c9c522ed18531295908a6/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-theme:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-theme-28.0.0-alpha1.aar/fd727a8c9f8c9c522ed18531295908a6/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-transformation:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-transformation-28.0.0-alpha1.aar/75af6d43757235d6d9252494d4654901/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-transformation:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-transformation-28.0.0-alpha1.aar/75af6d43757235d6d9252494d4654901/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-widget:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-widget-28.0.0-alpha1.aar/a857e4c8b71420908f42f1270ec83e93/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-widget:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-widget-28.0.0-alpha1.aar/a857e4c8b71420908f42f1270ec83e93/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-bottomsheet:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-bottomsheet-28.0.0-alpha1.aar/81613e2fae378e652b206745f3c716bb/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-bottomsheet:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-bottomsheet-28.0.0-alpha1.aar/81613e2fae378e652b206745f3c716bb/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-dialog:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-dialog-28.0.0-alpha1.aar/8742e72aadd626ed620ac080a48ce684/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-dialog:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-dialog-28.0.0-alpha1.aar/8742e72aadd626ed620ac080a48ce684/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-button:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-button-28.0.0-alpha1.aar/bdc2bbaf4fedf9564064f0fe75fb670a/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-button:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-button-28.0.0-alpha1.aar/bdc2bbaf4fedf9564064f0fe75fb670a/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-card:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-card-28.0.0-alpha1.aar/80a90bce3b627ab2c8067eacbae637dc/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-card:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-card-28.0.0-alpha1.aar/80a90bce3b627ab2c8067eacbae637dc/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-chip:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-chip-28.0.0-alpha1.aar/c56f6952216f5a8b0f2fa3338f0bfb6c/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-chip:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-chip-28.0.0-alpha1.aar/c56f6952216f5a8b0f2fa3338f0bfb6c/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-internal:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-internal-28.0.0-alpha1.aar/765d077d1de1b9bf2e1904c1b107d34d/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-internal:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-internal-28.0.0-alpha1.aar/765d077d1de1b9bf2e1904c1b107d34d/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-bottomnavigation:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-bottomnavigation-28.0.0-alpha1.aar/1559f0d256bcb3823d1b98ae864fdfbc/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-bottomnavigation:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-bottomnavigation-28.0.0-alpha1.aar/1559f0d256bcb3823d1b98ae864fdfbc/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-floatingactionbutton:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-floatingactionbutton-28.0.0-alpha1.aar/b3a16f57a25b2fa9acc868b74c9f4888/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-floatingactionbutton:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-floatingactionbutton-28.0.0-alpha1.aar/b3a16f57a25b2fa9acc868b74c9f4888/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-navigation:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-navigation-28.0.0-alpha1.aar/8d4ef5a37f5fd998be8819eb919a7295/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-navigation:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-navigation-28.0.0-alpha1.aar/8d4ef5a37f5fd998be8819eb919a7295/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-resources:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-resources-28.0.0-alpha1.aar/8a49a61ef1fe4d2e9b0a38ddcc1569c4/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-resources:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-resources-28.0.0-alpha1.aar/8a49a61ef1fe4d2e9b0a38ddcc1569c4/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-tabs:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-tabs-28.0.0-alpha1.aar/da0aee8bd16c301874a0043e3df23fa3/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-tabs:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-tabs-28.0.0-alpha1.aar/da0aee8bd16c301874a0043e3df23fa3/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-textfield:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-textfield-28.0.0-alpha1.aar/299dbefbe96e53ee590ce58b78c5b864/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-textfield:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-textfield-28.0.0-alpha1.aar/299dbefbe96e53ee590ce58b78c5b864/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-typography:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-typography-28.0.0-alpha1.aar/0bc87409ef58e723c9a3b6c480ad06e8/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-typography:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-typography-28.0.0-alpha1.aar/0bc87409ef58e723c9a3b6c480ad06e8/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-shape:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-shape-28.0.0-alpha1.aar/df79983b4a2234a78271e4fdfc08e97b/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-shape:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-shape-28.0.0-alpha1.aar/df79983b4a2234a78271e4fdfc08e97b/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-circularreveal-cardview:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-circularreveal-cardview-28.0.0-alpha1.aar/63ad4e6cfcf2388fa8c5136927d76f82/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-circularreveal-cardview:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-circularreveal-cardview-28.0.0-alpha1.aar/63ad4e6cfcf2388fa8c5136927d76f82/AndroidManifest.xml:22:5-20
-MERGED from [com.google.firebase:firebase-auth:16.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/cfa382c4977caa2f03eced9f40a6f835/AndroidManifest.xml:23:5-40:19
-MERGED from [com.google.firebase:firebase-auth:16.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/cfa382c4977caa2f03eced9f40a6f835/AndroidManifest.xml:23:5-40:19
-MERGED from [com.google.firebase:firebase-firestore:17.1.5] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.5.aar/cad29db8c42e4e47e06621e17f355dbb/AndroidManifest.xml:12:5-18:19
-MERGED from [com.google.firebase:firebase-firestore:17.1.5] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.5.aar/cad29db8c42e4e47e06621e17f355dbb/AndroidManifest.xml:12:5-18:19
-MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/38d3996d6f43f9eee59859aeb412e7c6/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/38d3996d6f43f9eee59859aeb412e7c6/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/a504fbc6e90ef4ce5a8b58120662c07e/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/a504fbc6e90ef4ce5a8b58120662c07e/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.firebase:firebase-common:16.0.4] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.4.aar/bdeddc34e7a0e9e06fb2ef8fad2effe3/AndroidManifest.xml:9:5-15:19
-MERGED from [com.google.firebase:firebase-common:16.0.4] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.4.aar/bdeddc34e7a0e9e06fb2ef8fad2effe3/AndroidManifest.xml:9:5-15:19
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/f8cb3155ae0de4be8e7e48f955ded50f/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/f8cb3155ae0de4be8e7e48f955ded50f/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/76292b1cc7a2610207eeaf74d18e1e73/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/76292b1cc7a2610207eeaf74d18e1e73/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/istiak/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/13cc628530399f8e32176f07717fd0d4/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/istiak/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/13cc628530399f8e32176f07717fd0d4/AndroidManifest.xml:9:5-20
-MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/9fd88643e23371216443d76661c47734/AndroidManifest.xml:9:5-20
-MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/9fd88643e23371216443d76661c47734/AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/5279d1f66c15347aac81ceb2098e5b72/AndroidManifest.xml:11:5-20
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/5279d1f66c15347aac81ceb2098e5b72/AndroidManifest.xml:11:5-20
-MERGED from [com.android.support:design-animation:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-animation-28.0.0-alpha1.aar/7a6c2eafe9b4a11044da5fe67a29555f/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-animation:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-animation-28.0.0-alpha1.aar/7a6c2eafe9b4a11044da5fe67a29555f/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-canvas:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-canvas-28.0.0-alpha1.aar/7c6f77afb56feea344396895985309c2/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-canvas:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-canvas-28.0.0-alpha1.aar/7c6f77afb56feea344396895985309c2/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-circularreveal-coordinatorlayout:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-circularreveal-coordinatorlayout-28.0.0-alpha1.aar/8a01c6900ffd26859d882d45ec1102a6/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-circularreveal-coordinatorlayout:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-circularreveal-coordinatorlayout-28.0.0-alpha1.aar/8a01c6900ffd26859d882d45ec1102a6/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-circularreveal:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-circularreveal-28.0.0-alpha1.aar/9bead8f05a139dfcde4381b464b7bcbb/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-circularreveal:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-circularreveal-28.0.0-alpha1.aar/9bead8f05a139dfcde4381b464b7bcbb/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-drawable:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-drawable-28.0.0-alpha1.aar/8242980078a906b218de131dcc5a35ae/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-drawable:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-drawable-28.0.0-alpha1.aar/8242980078a906b218de131dcc5a35ae/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-expandable:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-expandable-28.0.0-alpha1.aar/01c4c59425d62d3e2e6247ac99f5735b/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-expandable:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-expandable-28.0.0-alpha1.aar/01c4c59425d62d3e2e6247ac99f5735b/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-ripple:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-ripple-28.0.0-alpha1.aar/ec4a562022ac382d8b02ccfa81ff57bd/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-ripple:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-ripple-28.0.0-alpha1.aar/ec4a562022ac382d8b02ccfa81ff57bd/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-stateful:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-stateful-28.0.0-alpha1.aar/5692914b067f59d6cf02fda157fbca6e/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-stateful:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-stateful-28.0.0-alpha1.aar/5692914b067f59d6cf02fda157fbca6e/AndroidManifest.xml:22:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/88f50dce499eee55eda9e4e8e9a66519/AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/88f50dce499eee55eda9e4e8e9a66519/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:support-compat:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/2ea43d91d0683bc0e34c3ebf2bab6bea/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/2ea43d91d0683bc0e34c3ebf2bab6bea/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/cbc724481a5bca531eb8d7091f5640aa/AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/cbc724481a5bca531eb8d7091f5640aa/AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:design-color:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-color-28.0.0-alpha1.aar/48b6c0eeac892050de8300b877d1fa0c/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-color:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-color-28.0.0-alpha1.aar/48b6c0eeac892050de8300b877d1fa0c/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-math:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-math-28.0.0-alpha1.aar/ffdd1354866ee73220ed9559d49fd89a/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-math:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-math-28.0.0-alpha1.aar/ffdd1354866ee73220ed9559d49fd89a/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-snackbar:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-snackbar-28.0.0-alpha1.aar/966639c0baca0caf5b401ccd1a119fb5/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design-snackbar:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-snackbar-28.0.0-alpha1.aar/966639c0baca0caf5b401ccd1a119fb5/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:exifinterface:26.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/exifinterface-26.1.0.aar/ad0dbbd60b7901af7ffece1e0467326f/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:exifinterface:26.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/exifinterface-26.1.0.aar/ad0dbbd60b7901af7ffece1e0467326f/AndroidManifest.xml:22:5-26:19
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:11:5-55:19
+MERGED from [com.android.support:design:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-28.0.0-alpha1.aar\c4d2c815e6bb10db882d506d1f043f79\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-28.0.0-alpha1.aar\c4d2c815e6bb10db882d506d1f043f79\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-bottomappbar:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-bottomappbar-28.0.0-alpha1.aar\31adf946c0dfeef53b28610db41b6074\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-bottomappbar:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-bottomappbar-28.0.0-alpha1.aar\31adf946c0dfeef53b28610db41b6074\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-theme:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-theme-28.0.0-alpha1.aar\1cc50b445cb27cd3e8b7a2f7019c3859\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-theme:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-theme-28.0.0-alpha1.aar\1cc50b445cb27cd3e8b7a2f7019c3859\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-transformation:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-transformation-28.0.0-alpha1.aar\fa6bd3af074dd4e27c0a76af5641bb35\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-transformation:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-transformation-28.0.0-alpha1.aar\fa6bd3af074dd4e27c0a76af5641bb35\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-widget:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-widget-28.0.0-alpha1.aar\b696c51abe70cfb79d96c9325835a4cd\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-widget:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-widget-28.0.0-alpha1.aar\b696c51abe70cfb79d96c9325835a4cd\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-bottomsheet:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-bottomsheet-28.0.0-alpha1.aar\cd7aa47f6c7411b673c58fadfb91d8c9\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-bottomsheet:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-bottomsheet-28.0.0-alpha1.aar\cd7aa47f6c7411b673c58fadfb91d8c9\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-dialog:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-dialog-28.0.0-alpha1.aar\a0701a9404f7594419fc51241a960757\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-dialog:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-dialog-28.0.0-alpha1.aar\a0701a9404f7594419fc51241a960757\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-button:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-button-28.0.0-alpha1.aar\cc1cb28c7144a16f251f96ce3b358062\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-button:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-button-28.0.0-alpha1.aar\cc1cb28c7144a16f251f96ce3b358062\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-card:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-card-28.0.0-alpha1.aar\233337ce858208b705f0b27285a5aad2\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-card:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-card-28.0.0-alpha1.aar\233337ce858208b705f0b27285a5aad2\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-chip:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-chip-28.0.0-alpha1.aar\2eadbf69dab9764c1d52f1db2ac21cef\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-chip:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-chip-28.0.0-alpha1.aar\2eadbf69dab9764c1d52f1db2ac21cef\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-internal:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-internal-28.0.0-alpha1.aar\1657a7970c6815af30013c16ce2b57df\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-internal:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-internal-28.0.0-alpha1.aar\1657a7970c6815af30013c16ce2b57df\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-bottomnavigation:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-bottomnavigation-28.0.0-alpha1.aar\bbd53b94be826a1bbfc0b9a11f326951\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-bottomnavigation:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-bottomnavigation-28.0.0-alpha1.aar\bbd53b94be826a1bbfc0b9a11f326951\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-floatingactionbutton:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-floatingactionbutton-28.0.0-alpha1.aar\3f4493df107c1096497fca704768b0a1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-floatingactionbutton:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-floatingactionbutton-28.0.0-alpha1.aar\3f4493df107c1096497fca704768b0a1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-navigation:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-navigation-28.0.0-alpha1.aar\599c3a6feb84a7561d0d5b03e33a1547\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-navigation:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-navigation-28.0.0-alpha1.aar\599c3a6feb84a7561d0d5b03e33a1547\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-resources:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-resources-28.0.0-alpha1.aar\190ee01d02c9b19b2d0628ab3d88f020\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-resources:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-resources-28.0.0-alpha1.aar\190ee01d02c9b19b2d0628ab3d88f020\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-tabs:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-tabs-28.0.0-alpha1.aar\d8322b82d6e5399612fc2076bc61ea72\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-tabs:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-tabs-28.0.0-alpha1.aar\d8322b82d6e5399612fc2076bc61ea72\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-textfield:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-textfield-28.0.0-alpha1.aar\4873bb504b12a2db4f6f20922c5a1fb5\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-textfield:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-textfield-28.0.0-alpha1.aar\4873bb504b12a2db4f6f20922c5a1fb5\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-typography:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-typography-28.0.0-alpha1.aar\dd07c42883bf21b438086345d54e978c\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-typography:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-typography-28.0.0-alpha1.aar\dd07c42883bf21b438086345d54e978c\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-shape:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-shape-28.0.0-alpha1.aar\0fbd5f3ee65bc6cc28a7d8ea43373ad4\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-shape:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-shape-28.0.0-alpha1.aar\0fbd5f3ee65bc6cc28a7d8ea43373ad4\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-circularreveal-cardview:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-circularreveal-cardview-28.0.0-alpha1.aar\4e1c96aa52f4cde0e27de2f05364d7bf\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-circularreveal-cardview:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-circularreveal-cardview-28.0.0-alpha1.aar\4e1c96aa52f4cde0e27de2f05364d7bf\AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-auth:16.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.1.0.aar\1a623cf829a11de3e2734c6863de5ca7\AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-auth:16.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.1.0.aar\1a623cf829a11de3e2734c6863de5ca7\AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-firestore:17.1.5] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-firestore-17.1.5.aar\3f778016eb7e1e7aa8124fb6776ed7ab\AndroidManifest.xml:12:5-18:19
+MERGED from [com.google.firebase:firebase-firestore:17.1.5] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-firestore-17.1.5.aar\3f778016eb7e1e7aa8124fb6776ed7ab\AndroidManifest.xml:12:5-18:19
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-auth-interop-16.0.1.aar\11dc30752565910ae5857516116cfa3e\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-auth-interop-16.0.1.aar\11dc30752565910ae5857516116cfa3e\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\980f6e82f9cc29a3788c15c707a86eb4\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\980f6e82f9cc29a3788c15c707a86eb4\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.firebase:firebase-common:16.0.4] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.4.aar\57d975fb7cef6f52a31413f37ce0f3eb\AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.firebase:firebase-common:16.0.4] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.4.aar\57d975fb7cef6f52a31413f37ce0f3eb\AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\d432ee9adf1c9dedaa7dee3bb607308d\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\d432ee9adf1c9dedaa7dee3bb607308d\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.1.0.aar\0a8bac5eca6aea090f6058d31d58173a\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.1.0.aar\0a8bac5eca6aea090f6058d31d58173a\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\7ca09f8e65308cad00ea9686c26df998\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\7ca09f8e65308cad00ea9686c26df998\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\afc1ca6d99acf412f6e1c1985ab786e0\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\afc1ca6d99acf412f6e1c1985ab786e0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\126dbab063cf9ae1cee3c8859f6ffc2e\AndroidManifest.xml:11:5-20
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\126dbab063cf9ae1cee3c8859f6ffc2e\AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:design-animation:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-animation-28.0.0-alpha1.aar\5479c2042de62661e645b7772255cdbf\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-animation:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-animation-28.0.0-alpha1.aar\5479c2042de62661e645b7772255cdbf\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-canvas:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-canvas-28.0.0-alpha1.aar\4d8b515122af2eec7928f19ff30b57e4\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-canvas:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-canvas-28.0.0-alpha1.aar\4d8b515122af2eec7928f19ff30b57e4\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-circularreveal-coordinatorlayout:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-circularreveal-coordinatorlayout-28.0.0-alpha1.aar\2671dd716d6a95aa94f67f55d94fae96\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-circularreveal-coordinatorlayout:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-circularreveal-coordinatorlayout-28.0.0-alpha1.aar\2671dd716d6a95aa94f67f55d94fae96\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-circularreveal:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-circularreveal-28.0.0-alpha1.aar\442d638a1fa3e9f02935bde3c4a339ea\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-circularreveal:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-circularreveal-28.0.0-alpha1.aar\442d638a1fa3e9f02935bde3c4a339ea\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-drawable:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-drawable-28.0.0-alpha1.aar\b7fac5c8a231093a493239f1ba03bcc0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-drawable:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-drawable-28.0.0-alpha1.aar\b7fac5c8a231093a493239f1ba03bcc0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-expandable:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-expandable-28.0.0-alpha1.aar\a28a752edeadc452acd93364fa8345ab\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-expandable:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-expandable-28.0.0-alpha1.aar\a28a752edeadc452acd93364fa8345ab\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-ripple:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-ripple-28.0.0-alpha1.aar\c868ee536cefe52c9c95e7c214efd497\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-ripple:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-ripple-28.0.0-alpha1.aar\c868ee536cefe52c9c95e7c214efd497\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-stateful:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-stateful-28.0.0-alpha1.aar\a187c5bbe9ec724a0c99cc2fd3985dbc\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-stateful:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-stateful-28.0.0-alpha1.aar\a187c5bbe9ec724a0c99cc2fd3985dbc\AndroidManifest.xml:22:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.7.1.aar\21a4e8396900f84a06c3a445a83a451b\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.7.1.aar\21a4e8396900f84a06c3a445a83a451b\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\ca7f1795a28e5f725e4978513c61903e\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\ca7f1795a28e5f725e4978513c61903e\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\a0a47e6619bf371db83ce9972a7379db\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\a0a47e6619bf371db83ce9972a7379db\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:design-color:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-color-28.0.0-alpha1.aar\77e3bf7bb3d4a33350ef1526bcfd38fb\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-color:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-color-28.0.0-alpha1.aar\77e3bf7bb3d4a33350ef1526bcfd38fb\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-math:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-math-28.0.0-alpha1.aar\67c5fe7e8e3bcaa8a3a1911bb5bc7a12\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-math:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-math-28.0.0-alpha1.aar\67c5fe7e8e3bcaa8a3a1911bb5bc7a12\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-snackbar:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-snackbar-28.0.0-alpha1.aar\615358abad4942423a456a89b1f3918c\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design-snackbar:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-snackbar-28.0.0-alpha1.aar\615358abad4942423a456a89b1f3918c\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:exifinterface:26.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\exifinterface-26.1.0.aar\d6910ccc1c43a3e076a788a83183b80c\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:exifinterface:26.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\exifinterface-26.1.0.aar\d6910ccc1c43a3e076a788a83183b80c\AndroidManifest.xml:22:5-26:19
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/2ea43d91d0683bc0e34c3ebf2bab6bea/AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\ca7f1795a28e5f725e4978513c61903e\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:17:9-35
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:17:9-35
 	android:label
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:15:9-41
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:15:9-41
 	tools:ignore
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:19:9-48
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:19:9-48
 	android:roundIcon
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:16:9-47
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:16:9-47
 	android:icon
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:14:9-42
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:14:9-42
 	android:allowBackup
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:13:9-35
 	android:theme
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:18:9-40
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:18:9-40
 	android:name
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:12:9-38
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:12:9-38
 activity#com.thegorgeouscows.team.finalrev.MainActivity
-ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:20:9-28:20
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:20:9-28:20
 	android:theme
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:22:13-74
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:22:13-74
 	android:name
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:21:13-41
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:21:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:23:13-27:29
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:23:13-27:29
 action#android.intent.action.MAIN
-ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:24:17-69
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:24:17-69
 	android:name
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:24:25-66
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:26:17-77
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:26:27-74
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:26:27-74
 activity#com.thegorgeouscows.team.finalrev.resetPasswordActivity
-ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:29:9-58
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:29:9-58
 	android:name
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:29:19-56
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:29:19-56
 activity#com.thegorgeouscows.team.finalrev.registerDonatorActivity
-ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:30:9-61
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:30:9-61
 	android:name
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:30:19-58
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:30:19-58
 activity#com.thegorgeouscows.team.finalrev.generalPage
-ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:31:9-49
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:31:9-49
 	android:name
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:31:19-46
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:31:19-46
 activity#com.thegorgeouscows.team.finalrev.LandingActivity
-ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:32:9-53
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:32:9-53
 	android:name
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:32:19-50
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:32:19-50
 activity#com.thegorgeouscows.team.finalrev.registerVolunteerActivity
-ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:33:9-63
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:33:9-63
 	android:name
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:33:19-60
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:33:19-60
 activity#com.thegorgeouscows.team.finalrev.registerOrganizationActivity
-ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:34:9-66
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:34:9-66
 	android:name
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:34:19-63
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:34:19-63
 activity#com.thegorgeouscows.team.finalrev.loginActivity
-ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:35:9-51
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:35:9-51
 	android:name
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:35:19-48
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:35:19-48
 activity#com.thegorgeouscows.team.finalrev.DonatorProfile
-ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:36:9-38:58
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:36:9-38:58
 	android:theme
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:38:13-55
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:38:13-55
 	android:name
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:37:13-43
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:37:13-43
 activity#com.thegorgeouscows.team.finalrev.OrganizationProfile
-ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:39:9-57
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:39:9-57
 	android:name
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:39:19-54
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:39:19-54
 activity#com.thegorgeouscows.team.finalrev.SlideActivity
-ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:40:9-42:49
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:40:9-42:49
 	android:theme
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:42:13-46
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:42:13-46
 	android:name
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:41:13-42
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:41:13-42
 meta-data#preloaded_fonts
-ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:44:9-46:57
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:44:9-46:57
 	android:resource
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:46:13-54
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:46:13-54
 	android:name
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:45:13-43
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:45:13-43
 activity#com.thegorgeouscows.team.finalrev.FoodPostForm
-ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:48:9-50
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:48:9-50
 	android:name
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:48:19-47
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:48:19-47
 activity#com.theartofdev.edmodo.cropper.CropImageActivity
-ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:49:9-51:59
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:49:9-51:59
 	android:theme
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:51:13-56
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:51:13-56
 	android:name
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:50:13-76
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:50:13-76
 activity#com.thegorgeouscows.team.finalrev.FeedBase
-ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:52:9-46
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:52:9-46
 	android:name
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:52:19-43
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:52:19-43
 activity#com.thegorgeouscows.team.finalrev.PopUpActivity
-ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:53:9-51
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:53:9-51
 	android:name
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:53:19-48
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:53:19-48
 activity#com.thegorgeouscows.team.finalrev.VolunteerListFeedBase
-ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:54:9-68
+ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:54:9-68
 	android:name
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml:54:19-56
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml:54:19-56
 uses-sdk
-INJECTED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml
-INJECTED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support:design:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-28.0.0-alpha1.aar/1e42a1b63c00387af8d9caae06fc2aa7/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-28.0.0-alpha1.aar/1e42a1b63c00387af8d9caae06fc2aa7/AndroidManifest.xml:20:5-44
-MERGED from [com.theartofdev.edmodo:android-image-cropper:2.5.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.5.1.aar/deb75bf791c6c08544930d85d37e0f9c/AndroidManifest.xml:8:5-10:41
-MERGED from [com.theartofdev.edmodo:android-image-cropper:2.5.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.5.1.aar/deb75bf791c6c08544930d85d37e0f9c/AndroidManifest.xml:8:5-10:41
-MERGED from [com.android.support:design-bottomappbar:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-bottomappbar-28.0.0-alpha1.aar/fd35f7419a23030b7c661f03d1238366/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-bottomappbar:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-bottomappbar-28.0.0-alpha1.aar/fd35f7419a23030b7c661f03d1238366/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-theme:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-theme-28.0.0-alpha1.aar/fd727a8c9f8c9c522ed18531295908a6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-theme:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-theme-28.0.0-alpha1.aar/fd727a8c9f8c9c522ed18531295908a6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-transformation:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-transformation-28.0.0-alpha1.aar/75af6d43757235d6d9252494d4654901/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-transformation:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-transformation-28.0.0-alpha1.aar/75af6d43757235d6d9252494d4654901/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-widget:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-widget-28.0.0-alpha1.aar/a857e4c8b71420908f42f1270ec83e93/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-widget:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-widget-28.0.0-alpha1.aar/a857e4c8b71420908f42f1270ec83e93/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-bottomsheet:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-bottomsheet-28.0.0-alpha1.aar/81613e2fae378e652b206745f3c716bb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-bottomsheet:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-bottomsheet-28.0.0-alpha1.aar/81613e2fae378e652b206745f3c716bb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-dialog:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-dialog-28.0.0-alpha1.aar/8742e72aadd626ed620ac080a48ce684/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-dialog:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-dialog-28.0.0-alpha1.aar/8742e72aadd626ed620ac080a48ce684/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-button:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-button-28.0.0-alpha1.aar/bdc2bbaf4fedf9564064f0fe75fb670a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-button:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-button-28.0.0-alpha1.aar/bdc2bbaf4fedf9564064f0fe75fb670a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-card:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-card-28.0.0-alpha1.aar/80a90bce3b627ab2c8067eacbae637dc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-card:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-card-28.0.0-alpha1.aar/80a90bce3b627ab2c8067eacbae637dc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-chip:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-chip-28.0.0-alpha1.aar/c56f6952216f5a8b0f2fa3338f0bfb6c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-chip:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-chip-28.0.0-alpha1.aar/c56f6952216f5a8b0f2fa3338f0bfb6c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-internal:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-internal-28.0.0-alpha1.aar/765d077d1de1b9bf2e1904c1b107d34d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-internal:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-internal-28.0.0-alpha1.aar/765d077d1de1b9bf2e1904c1b107d34d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-bottomnavigation:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-bottomnavigation-28.0.0-alpha1.aar/1559f0d256bcb3823d1b98ae864fdfbc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-bottomnavigation:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-bottomnavigation-28.0.0-alpha1.aar/1559f0d256bcb3823d1b98ae864fdfbc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-floatingactionbutton:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-floatingactionbutton-28.0.0-alpha1.aar/b3a16f57a25b2fa9acc868b74c9f4888/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-floatingactionbutton:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-floatingactionbutton-28.0.0-alpha1.aar/b3a16f57a25b2fa9acc868b74c9f4888/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-navigation:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-navigation-28.0.0-alpha1.aar/8d4ef5a37f5fd998be8819eb919a7295/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-navigation:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-navigation-28.0.0-alpha1.aar/8d4ef5a37f5fd998be8819eb919a7295/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-resources:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-resources-28.0.0-alpha1.aar/8a49a61ef1fe4d2e9b0a38ddcc1569c4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-resources:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-resources-28.0.0-alpha1.aar/8a49a61ef1fe4d2e9b0a38ddcc1569c4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-tabs:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-tabs-28.0.0-alpha1.aar/da0aee8bd16c301874a0043e3df23fa3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-tabs:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-tabs-28.0.0-alpha1.aar/da0aee8bd16c301874a0043e3df23fa3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-textfield:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-textfield-28.0.0-alpha1.aar/299dbefbe96e53ee590ce58b78c5b864/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-textfield:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-textfield-28.0.0-alpha1.aar/299dbefbe96e53ee590ce58b78c5b864/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-typography:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-typography-28.0.0-alpha1.aar/0bc87409ef58e723c9a3b6c480ad06e8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-typography:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-typography-28.0.0-alpha1.aar/0bc87409ef58e723c9a3b6c480ad06e8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-shape:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-shape-28.0.0-alpha1.aar/df79983b4a2234a78271e4fdfc08e97b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-shape:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-shape-28.0.0-alpha1.aar/df79983b4a2234a78271e4fdfc08e97b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/73888c61538bb37125a5da62ead10966/AndroidManifest.xml:21:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/73888c61538bb37125a5da62ead10966/AndroidManifest.xml:21:5-44
-MERGED from [com.android.support:design-circularreveal-cardview:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-circularreveal-cardview-28.0.0-alpha1.aar/63ad4e6cfcf2388fa8c5136927d76f82/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-circularreveal-cardview:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-circularreveal-cardview-28.0.0-alpha1.aar/63ad4e6cfcf2388fa8c5136927d76f82/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/96d1892e4ac24cab57820ea10184fae1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/96d1892e4ac24cab57820ea10184fae1/AndroidManifest.xml:20:5-44
-MERGED from [com.firebaseui:firebase-ui-firestore:4.3.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-ui-firestore-4.3.0.aar/938bafd4646510293fbea758834a5c01/AndroidManifest.xml:7:5-9:41
-MERGED from [com.firebaseui:firebase-ui-firestore:4.3.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-ui-firestore-4.3.0.aar/938bafd4646510293fbea758834a5c01/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.firebase:firebase-database:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.1.aar/fa3e17898adc5f48609b90b1df490933/AndroidManifest.xml:6:5-44
-MERGED from [com.google.firebase:firebase-database:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.1.aar/fa3e17898adc5f48609b90b1df490933/AndroidManifest.xml:6:5-44
-MERGED from [com.google.firebase:firebase-auth:16.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/cfa382c4977caa2f03eced9f40a6f835/AndroidManifest.xml:21:5-44
-MERGED from [com.google.firebase:firebase-auth:16.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/cfa382c4977caa2f03eced9f40a6f835/AndroidManifest.xml:21:5-44
-MERGED from [com.google.firebase:firebase-database-connection:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-16.0.1.aar/4390767c9a88171917881dae4a747256/AndroidManifest.xml:6:5-44
-MERGED from [com.google.firebase:firebase-database-connection:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-16.0.1.aar/4390767c9a88171917881dae4a747256/AndroidManifest.xml:6:5-44
-MERGED from [com.google.firebase:firebase-storage:16.0.5] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.5.aar/8edcfe790eac07b27759d5d4c6f51421/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-storage:16.0.5] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.5.aar/8edcfe790eac07b27759d5d4c6f51421/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-firestore:17.1.5] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.5.aar/cad29db8c42e4e47e06621e17f355dbb/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.firebase:firebase-firestore:17.1.5] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.5.aar/cad29db8c42e4e47e06621e17f355dbb/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/38d3996d6f43f9eee59859aeb412e7c6/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/38d3996d6f43f9eee59859aeb412e7c6/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-flags:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/26f324b70f43b290819ad2c19ba1bcac/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-flags:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/26f324b70f43b290819ad2c19ba1bcac/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/a504fbc6e90ef4ce5a8b58120662c07e/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/a504fbc6e90ef4ce5a8b58120662c07e/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-common:16.0.4] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.4.aar/bdeddc34e7a0e9e06fb2ef8fad2effe3/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.firebase:firebase-common:16.0.4] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.4.aar/bdeddc34e7a0e9e06fb2ef8fad2effe3/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/f8cb3155ae0de4be8e7e48f955ded50f/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/f8cb3155ae0de4be8e7e48f955ded50f/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/76292b1cc7a2610207eeaf74d18e1e73/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/76292b1cc7a2610207eeaf74d18e1e73/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/6ed7a65e45498deb242e823fb2cdcbb7/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/6ed7a65e45498deb242e823fb2cdcbb7/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/208d70b8c80b02b317a7ee1e4f47801b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/208d70b8c80b02b317a7ee1e4f47801b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/istiak/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/13cc628530399f8e32176f07717fd0d4/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/istiak/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/13cc628530399f8e32176f07717fd0d4/AndroidManifest.xml:5:5-7:41
-MERGED from [com.mikhaellopez:circularimageview:3.2.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/circularimageview-3.2.0.aar/e89a315782f9ba840fdc138b37a21557/AndroidManifest.xml:7:5-9:41
-MERGED from [com.mikhaellopez:circularimageview:3.2.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/circularimageview-3.2.0.aar/e89a315782f9ba840fdc138b37a21557/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.siyamed:android-shape-imageview:0.9.3] /home/istiak/.gradle/caches/transforms-1/files-1.1/android-shape-imageview-0.9.3.aar/e0fc8d3040c17418a15a09120bac9826/AndroidManifest.xml:8:5-10:41
-MERGED from [com.github.siyamed:android-shape-imageview:0.9.3] /home/istiak/.gradle/caches/transforms-1/files-1.1/android-shape-imageview-0.9.3.aar/e0fc8d3040c17418a15a09120bac9826/AndroidManifest.xml:8:5-10:41
-MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/9fd88643e23371216443d76661c47734/AndroidManifest.xml:5:5-7:41
-MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/9fd88643e23371216443d76661c47734/AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/5279d1f66c15347aac81ceb2098e5b72/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/5279d1f66c15347aac81ceb2098e5b72/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:transition:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/transition-28.0.0-alpha1.aar/dd797630236a55269d2bc4321265cf5b/AndroidManifest.xml:21:5-44
-MERGED from [com.android.support:transition:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/transition-28.0.0-alpha1.aar/dd797630236a55269d2bc4321265cf5b/AndroidManifest.xml:21:5-44
-MERGED from [com.android.support:design-animation:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-animation-28.0.0-alpha1.aar/7a6c2eafe9b4a11044da5fe67a29555f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-animation:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-animation-28.0.0-alpha1.aar/7a6c2eafe9b4a11044da5fe67a29555f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-canvas:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-canvas-28.0.0-alpha1.aar/7c6f77afb56feea344396895985309c2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-canvas:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-canvas-28.0.0-alpha1.aar/7c6f77afb56feea344396895985309c2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-circularreveal-coordinatorlayout:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-circularreveal-coordinatorlayout-28.0.0-alpha1.aar/8a01c6900ffd26859d882d45ec1102a6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-circularreveal-coordinatorlayout:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-circularreveal-coordinatorlayout-28.0.0-alpha1.aar/8a01c6900ffd26859d882d45ec1102a6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-circularreveal:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-circularreveal-28.0.0-alpha1.aar/9bead8f05a139dfcde4381b464b7bcbb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-circularreveal:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-circularreveal-28.0.0-alpha1.aar/9bead8f05a139dfcde4381b464b7bcbb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-drawable:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-drawable-28.0.0-alpha1.aar/8242980078a906b218de131dcc5a35ae/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-drawable:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-drawable-28.0.0-alpha1.aar/8242980078a906b218de131dcc5a35ae/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-expandable:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-expandable-28.0.0-alpha1.aar/01c4c59425d62d3e2e6247ac99f5735b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-expandable:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-expandable-28.0.0-alpha1.aar/01c4c59425d62d3e2e6247ac99f5735b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-ripple:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-ripple-28.0.0-alpha1.aar/ec4a562022ac382d8b02ccfa81ff57bd/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-ripple:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-ripple-28.0.0-alpha1.aar/ec4a562022ac382d8b02ccfa81ff57bd/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-stateful:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-stateful-28.0.0-alpha1.aar/5692914b067f59d6cf02fda157fbca6e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-stateful:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-stateful-28.0.0-alpha1.aar/5692914b067f59d6cf02fda157fbca6e/AndroidManifest.xml:20:5-44
-MERGED from [com.firebaseui:firebase-ui-common:4.3.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-ui-common-4.3.0.aar/39aa09a600ee694c3f28c9bdd79f7439/AndroidManifest.xml:7:5-9:41
-MERGED from [com.firebaseui:firebase-ui-common:4.3.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-ui-common-4.3.0.aar/39aa09a600ee694c3f28c9bdd79f7439/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/88f50dce499eee55eda9e4e8e9a66519/AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/88f50dce499eee55eda9e4e8e9a66519/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:support-fragment:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/a6c89fa002a5c58ca1fc73cfab38e9c0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/a6c89fa002a5c58ca1fc73cfab38e9c0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/6db0f530f6e33a59d1b670defc7403cc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/6db0f530f6e33a59d1b670defc7403cc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-alpha1.aar/715328f4087b97013444ae14b9c2b8b5/AndroidManifest.xml:21:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-alpha1.aar/715328f4087b97013444ae14b9c2b8b5/AndroidManifest.xml:21:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/6cfb7e786c2f8e6cdf3a193cf28747e4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/6cfb7e786c2f8e6cdf3a193cf28747e4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/65d68566abc930bbb627b694d6c8f500/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/65d68566abc930bbb627b694d6c8f500/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/99bb1feef5e21914ceb245d14c8de460/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/99bb1feef5e21914ceb245d14c8de460/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/df2c36d5b30e1e9de3578c28cf31f057/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/df2c36d5b30e1e9de3578c28cf31f057/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/019c21257e7b4362a567199fea19b90d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/019c21257e7b4362a567199fea19b90d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/7955b3142edd2d964af225caa95d126f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/7955b3142edd2d964af225caa95d126f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/44e7a1577b5d0ab33e9ff1a22bb869e8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/44e7a1577b5d0ab33e9ff1a22bb869e8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/fc834dfddb4d6f09d8ff67f380b7d643/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/fc834dfddb4d6f09d8ff67f380b7d643/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/5427713e800cb4cdf1c22ce0e855534d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/5427713e800cb4cdf1c22ce0e855534d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/e51f0ecff1acee6641cc4306f6c78d8e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/e51f0ecff1acee6641cc4306f6c78d8e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-alpha1.aar/932b261582dbc29a84058e8004c34cb6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-alpha1.aar/932b261582dbc29a84058e8004c34cb6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/2ea43d91d0683bc0e34c3ebf2bab6bea/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/2ea43d91d0683bc0e34c3ebf2bab6bea/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/ed6711cf0c5bd33ba156f176af28b704/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/ed6711cf0c5bd33ba156f176af28b704/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/1941d33482ba9516c011eb79297f7d18/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/1941d33482ba9516c011eb79297f7d18/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/991e9cea2b3885b9acaacf90ce398cbd/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/991e9cea2b3885b9acaacf90ce398cbd/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/b483478e514e71378631c06c34b15e79/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/b483478e514e71378631c06c34b15e79/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/953275588aa84fe9f1e6c0198692d108/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/953275588aa84fe9f1e6c0198692d108/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/cbc724481a5bca531eb8d7091f5640aa/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/cbc724481a5bca531eb8d7091f5640aa/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/68e193d4f654f860997635c1d2b733db/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/68e193d4f654f860997635c1d2b733db/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/d4fc244f1d7cffda6797e2db0f9e4564/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/d4fc244f1d7cffda6797e2db0f9e4564/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/c9d37796d78fec2fd21f9f2af91f824e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/c9d37796d78fec2fd21f9f2af91f824e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/aa1b23921808569036a34777ccc07c8b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/aa1b23921808569036a34777ccc07c8b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/5247db06e93377b17d4fe9d174d50d00/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/5247db06e93377b17d4fe9d174d50d00/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-color:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-color-28.0.0-alpha1.aar/48b6c0eeac892050de8300b877d1fa0c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-color:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-color-28.0.0-alpha1.aar/48b6c0eeac892050de8300b877d1fa0c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-math:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-math-28.0.0-alpha1.aar/ffdd1354866ee73220ed9559d49fd89a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-math:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-math-28.0.0-alpha1.aar/ffdd1354866ee73220ed9559d49fd89a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-snackbar:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-snackbar-28.0.0-alpha1.aar/966639c0baca0caf5b401ccd1a119fb5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design-snackbar:28.0.0-alpha1] /home/istiak/.gradle/caches/transforms-1/files-1.1/design-snackbar-28.0.0-alpha1.aar/966639c0baca0caf5b401ccd1a119fb5/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.1.aar/5d9b8e5c786464f268ee87128d2b68e0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.1.aar/5d9b8e5c786464f268ee87128d2b68e0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/protolite-well-known-types-16.0.1.aar/e5b58f717c0b474f9852b20bf9cafe63/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/protolite-well-known-types-16.0.1.aar/e5b58f717c0b474f9852b20bf9cafe63/AndroidManifest.xml:7:5-9:41
-MERGED from [io.grpc:grpc-android:1.16.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/grpc-android-1.16.1.aar/7cf10f7dad12e6a3869abc017526ee38/AndroidManifest.xml:7:5-9:41
-MERGED from [io.grpc:grpc-android:1.16.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/grpc-android-1.16.1.aar/7cf10f7dad12e6a3869abc017526ee38/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:exifinterface:26.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/exifinterface-26.1.0.aar/ad0dbbd60b7901af7ffece1e0467326f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:exifinterface:26.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/exifinterface-26.1.0.aar/ad0dbbd60b7901af7ffece1e0467326f/AndroidManifest.xml:20:5-44
-INJECTED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml
-INJECTED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml
+INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml
+INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-28.0.0-alpha1.aar\c4d2c815e6bb10db882d506d1f043f79\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-28.0.0-alpha1.aar\c4d2c815e6bb10db882d506d1f043f79\AndroidManifest.xml:20:5-44
+MERGED from [com.theartofdev.edmodo:android-image-cropper:2.5.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\android-image-cropper-2.5.1.aar\a80da11713d01077dae364cb4ee4f074\AndroidManifest.xml:8:5-10:41
+MERGED from [com.theartofdev.edmodo:android-image-cropper:2.5.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\android-image-cropper-2.5.1.aar\a80da11713d01077dae364cb4ee4f074\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:design-bottomappbar:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-bottomappbar-28.0.0-alpha1.aar\31adf946c0dfeef53b28610db41b6074\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-bottomappbar:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-bottomappbar-28.0.0-alpha1.aar\31adf946c0dfeef53b28610db41b6074\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-theme:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-theme-28.0.0-alpha1.aar\1cc50b445cb27cd3e8b7a2f7019c3859\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-theme:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-theme-28.0.0-alpha1.aar\1cc50b445cb27cd3e8b7a2f7019c3859\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-transformation:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-transformation-28.0.0-alpha1.aar\fa6bd3af074dd4e27c0a76af5641bb35\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-transformation:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-transformation-28.0.0-alpha1.aar\fa6bd3af074dd4e27c0a76af5641bb35\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-widget:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-widget-28.0.0-alpha1.aar\b696c51abe70cfb79d96c9325835a4cd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-widget:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-widget-28.0.0-alpha1.aar\b696c51abe70cfb79d96c9325835a4cd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-bottomsheet:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-bottomsheet-28.0.0-alpha1.aar\cd7aa47f6c7411b673c58fadfb91d8c9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-bottomsheet:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-bottomsheet-28.0.0-alpha1.aar\cd7aa47f6c7411b673c58fadfb91d8c9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-dialog:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-dialog-28.0.0-alpha1.aar\a0701a9404f7594419fc51241a960757\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-dialog:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-dialog-28.0.0-alpha1.aar\a0701a9404f7594419fc51241a960757\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-button:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-button-28.0.0-alpha1.aar\cc1cb28c7144a16f251f96ce3b358062\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-button:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-button-28.0.0-alpha1.aar\cc1cb28c7144a16f251f96ce3b358062\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-card:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-card-28.0.0-alpha1.aar\233337ce858208b705f0b27285a5aad2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-card:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-card-28.0.0-alpha1.aar\233337ce858208b705f0b27285a5aad2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-chip:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-chip-28.0.0-alpha1.aar\2eadbf69dab9764c1d52f1db2ac21cef\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-chip:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-chip-28.0.0-alpha1.aar\2eadbf69dab9764c1d52f1db2ac21cef\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-internal:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-internal-28.0.0-alpha1.aar\1657a7970c6815af30013c16ce2b57df\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-internal:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-internal-28.0.0-alpha1.aar\1657a7970c6815af30013c16ce2b57df\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-bottomnavigation:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-bottomnavigation-28.0.0-alpha1.aar\bbd53b94be826a1bbfc0b9a11f326951\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-bottomnavigation:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-bottomnavigation-28.0.0-alpha1.aar\bbd53b94be826a1bbfc0b9a11f326951\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-floatingactionbutton:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-floatingactionbutton-28.0.0-alpha1.aar\3f4493df107c1096497fca704768b0a1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-floatingactionbutton:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-floatingactionbutton-28.0.0-alpha1.aar\3f4493df107c1096497fca704768b0a1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-navigation:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-navigation-28.0.0-alpha1.aar\599c3a6feb84a7561d0d5b03e33a1547\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-navigation:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-navigation-28.0.0-alpha1.aar\599c3a6feb84a7561d0d5b03e33a1547\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-resources:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-resources-28.0.0-alpha1.aar\190ee01d02c9b19b2d0628ab3d88f020\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-resources:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-resources-28.0.0-alpha1.aar\190ee01d02c9b19b2d0628ab3d88f020\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-tabs:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-tabs-28.0.0-alpha1.aar\d8322b82d6e5399612fc2076bc61ea72\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-tabs:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-tabs-28.0.0-alpha1.aar\d8322b82d6e5399612fc2076bc61ea72\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-textfield:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-textfield-28.0.0-alpha1.aar\4873bb504b12a2db4f6f20922c5a1fb5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-textfield:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-textfield-28.0.0-alpha1.aar\4873bb504b12a2db4f6f20922c5a1fb5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-typography:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-typography-28.0.0-alpha1.aar\dd07c42883bf21b438086345d54e978c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-typography:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-typography-28.0.0-alpha1.aar\dd07c42883bf21b438086345d54e978c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-shape:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-shape-28.0.0-alpha1.aar\0fbd5f3ee65bc6cc28a7d8ea43373ad4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-shape:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-shape-28.0.0-alpha1.aar\0fbd5f3ee65bc6cc28a7d8ea43373ad4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0-alpha1.aar\b629a009bc0fa393e90a99c32df51fd5\AndroidManifest.xml:21:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0-alpha1.aar\b629a009bc0fa393e90a99c32df51fd5\AndroidManifest.xml:21:5-44
+MERGED from [com.android.support:design-circularreveal-cardview:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-circularreveal-cardview-28.0.0-alpha1.aar\4e1c96aa52f4cde0e27de2f05364d7bf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-circularreveal-cardview:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-circularreveal-cardview-28.0.0-alpha1.aar\4e1c96aa52f4cde0e27de2f05364d7bf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\bcd74892f183abd44dc4adc31b4f3efc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\bcd74892f183abd44dc4adc31b4f3efc\AndroidManifest.xml:20:5-44
+MERGED from [com.firebaseui:firebase-ui-firestore:4.3.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-ui-firestore-4.3.0.aar\223b2336896936e4da78c3ed2ee8beb3\AndroidManifest.xml:7:5-9:41
+MERGED from [com.firebaseui:firebase-ui-firestore:4.3.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-ui-firestore-4.3.0.aar\223b2336896936e4da78c3ed2ee8beb3\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-database:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-database-16.0.1.aar\9da189c51337f59fd4a1498b5271c713\AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-database:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-database-16.0.1.aar\9da189c51337f59fd4a1498b5271c713\AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-auth:16.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.1.0.aar\1a623cf829a11de3e2734c6863de5ca7\AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:16.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.1.0.aar\1a623cf829a11de3e2734c6863de5ca7\AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-database-connection:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-16.0.1.aar\e9805dd5bc130c2a562c52f709e2d9c1\AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-database-connection:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-16.0.1.aar\e9805dd5bc130c2a562c52f709e2d9c1\AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-storage:16.0.5] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-storage-16.0.5.aar\7952d0d78f45901352aefb35ea5890bb\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-storage:16.0.5] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-storage-16.0.5.aar\7952d0d78f45901352aefb35ea5890bb\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-firestore:17.1.5] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-firestore-17.1.5.aar\3f778016eb7e1e7aa8124fb6776ed7ab\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-firestore:17.1.5] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-firestore-17.1.5.aar\3f778016eb7e1e7aa8124fb6776ed7ab\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-auth-interop-16.0.1.aar\11dc30752565910ae5857516116cfa3e\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-auth-interop-16.0.1.aar\11dc30752565910ae5857516116cfa3e\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\play-services-flags-16.0.1.aar\6fc6c44e86a5f270d4cbe19890404ab4\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\play-services-flags-16.0.1.aar\6fc6c44e86a5f270d4cbe19890404ab4\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\980f6e82f9cc29a3788c15c707a86eb4\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\980f6e82f9cc29a3788c15c707a86eb4\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:16.0.4] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.4.aar\57d975fb7cef6f52a31413f37ce0f3eb\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-common:16.0.4] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.4.aar\57d975fb7cef6f52a31413f37ce0f3eb\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\d432ee9adf1c9dedaa7dee3bb607308d\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\d432ee9adf1c9dedaa7dee3bb607308d\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.1.0.aar\0a8bac5eca6aea090f6058d31d58173a\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.1.0.aar\0a8bac5eca6aea090f6058d31d58173a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\d4b273c1c553d6a45169b72952f2038f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\d4b273c1c553d6a45169b72952f2038f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\aa22201b33203651874fd74bb4c3e0ff\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\aa22201b33203651874fd74bb4c3e0ff\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\7ca09f8e65308cad00ea9686c26df998\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\7ca09f8e65308cad00ea9686c26df998\AndroidManifest.xml:5:5-7:41
+MERGED from [com.mikhaellopez:circularimageview:3.2.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\circularimageview-3.2.0.aar\7a5322c3a39a21fcfc47030c2936242e\AndroidManifest.xml:7:5-9:41
+MERGED from [com.mikhaellopez:circularimageview:3.2.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\circularimageview-3.2.0.aar\7a5322c3a39a21fcfc47030c2936242e\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.siyamed:android-shape-imageview:0.9.3] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\android-shape-imageview-0.9.3.aar\318be98f47fa220e7b3f57f33d7e4801\AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.siyamed:android-shape-imageview:0.9.3] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\android-shape-imageview-0.9.3.aar\318be98f47fa220e7b3f57f33d7e4801\AndroidManifest.xml:8:5-10:41
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\afc1ca6d99acf412f6e1c1985ab786e0\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\afc1ca6d99acf412f6e1c1985ab786e0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\126dbab063cf9ae1cee3c8859f6ffc2e\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\126dbab063cf9ae1cee3c8859f6ffc2e\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:transition:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\transition-28.0.0-alpha1.aar\2ed262de2d4bb3d774930d498e0d2f60\AndroidManifest.xml:21:5-44
+MERGED from [com.android.support:transition:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\transition-28.0.0-alpha1.aar\2ed262de2d4bb3d774930d498e0d2f60\AndroidManifest.xml:21:5-44
+MERGED from [com.android.support:design-animation:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-animation-28.0.0-alpha1.aar\5479c2042de62661e645b7772255cdbf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-animation:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-animation-28.0.0-alpha1.aar\5479c2042de62661e645b7772255cdbf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-canvas:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-canvas-28.0.0-alpha1.aar\4d8b515122af2eec7928f19ff30b57e4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-canvas:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-canvas-28.0.0-alpha1.aar\4d8b515122af2eec7928f19ff30b57e4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-circularreveal-coordinatorlayout:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-circularreveal-coordinatorlayout-28.0.0-alpha1.aar\2671dd716d6a95aa94f67f55d94fae96\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-circularreveal-coordinatorlayout:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-circularreveal-coordinatorlayout-28.0.0-alpha1.aar\2671dd716d6a95aa94f67f55d94fae96\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-circularreveal:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-circularreveal-28.0.0-alpha1.aar\442d638a1fa3e9f02935bde3c4a339ea\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-circularreveal:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-circularreveal-28.0.0-alpha1.aar\442d638a1fa3e9f02935bde3c4a339ea\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-drawable:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-drawable-28.0.0-alpha1.aar\b7fac5c8a231093a493239f1ba03bcc0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-drawable:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-drawable-28.0.0-alpha1.aar\b7fac5c8a231093a493239f1ba03bcc0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-expandable:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-expandable-28.0.0-alpha1.aar\a28a752edeadc452acd93364fa8345ab\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-expandable:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-expandable-28.0.0-alpha1.aar\a28a752edeadc452acd93364fa8345ab\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-ripple:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-ripple-28.0.0-alpha1.aar\c868ee536cefe52c9c95e7c214efd497\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-ripple:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-ripple-28.0.0-alpha1.aar\c868ee536cefe52c9c95e7c214efd497\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-stateful:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-stateful-28.0.0-alpha1.aar\a187c5bbe9ec724a0c99cc2fd3985dbc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-stateful:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-stateful-28.0.0-alpha1.aar\a187c5bbe9ec724a0c99cc2fd3985dbc\AndroidManifest.xml:20:5-44
+MERGED from [com.firebaseui:firebase-ui-common:4.3.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-ui-common-4.3.0.aar\082bda845e63ec6037ec7d4f0ac4406c\AndroidManifest.xml:7:5-9:41
+MERGED from [com.firebaseui:firebase-ui-common:4.3.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-ui-common-4.3.0.aar\082bda845e63ec6037ec7d4f0ac4406c\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.7.1.aar\21a4e8396900f84a06c3a445a83a451b\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.7.1.aar\21a4e8396900f84a06c3a445a83a451b\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\3d05b3f16d5c0414aeaa6b9137c1005d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\3d05b3f16d5c0414aeaa6b9137c1005d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\653fa9964afd1e5804a5abc546b10f63\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\653fa9964afd1e5804a5abc546b10f63\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0-alpha1.aar\4e3e511dd51b0c8422f6a20633e73040\AndroidManifest.xml:21:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0-alpha1.aar\4e3e511dd51b0c8422f6a20633e73040\AndroidManifest.xml:21:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\9f34caccb7d0e87d0c9d3b31881a657b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\9f34caccb7d0e87d0c9d3b31881a657b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\cccba4ae0f1fc99f2b49e757ca703f28\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\cccba4ae0f1fc99f2b49e757ca703f28\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\6c63ddcea96e8b4f41afec746490d2ee\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\6c63ddcea96e8b4f41afec746490d2ee\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\b33afb96d27943df8febcfece2b926e4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\b33afb96d27943df8febcfece2b926e4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\cf99bbd37bb2566f5bcc5d09d927eb65\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\cf99bbd37bb2566f5bcc5d09d927eb65\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\14bbb6dee95d6a21fddf8db29a4f1587\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\14bbb6dee95d6a21fddf8db29a4f1587\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\cdbfdb773cde4cb49d91c38bfda47d00\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\cdbfdb773cde4cb49d91c38bfda47d00\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\5ad6deb5849bb7736f6df63a0d0baf6c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\5ad6deb5849bb7736f6df63a0d0baf6c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\ad6246e1ad7ac12e90cf31a207975152\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\ad6246e1ad7ac12e90cf31a207975152\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\2783179e82b00cbd386401ed4adfe523\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\2783179e82b00cbd386401ed4adfe523\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0-alpha1.aar\f1e31a2e9feaa21708f47a59f2983bfe\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0-alpha1.aar\f1e31a2e9feaa21708f47a59f2983bfe\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\ca7f1795a28e5f725e4978513c61903e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\ca7f1795a28e5f725e4978513c61903e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\0a14914460999f7dddf88b423a19d7c8\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\0a14914460999f7dddf88b423a19d7c8\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\b1049a4246085411cebfbadecd2d6224\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\b1049a4246085411cebfbadecd2d6224\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\84f9bbebe4586231330ca6f1d93d0934\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\84f9bbebe4586231330ca6f1d93d0934\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\20b5cf3655b6cae21bcb94f8eaeddb66\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\20b5cf3655b6cae21bcb94f8eaeddb66\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\769519484c23b8a16742ed70ab5f546f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\769519484c23b8a16742ed70ab5f546f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\a0a47e6619bf371db83ce9972a7379db\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\a0a47e6619bf371db83ce9972a7379db\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\9549f1b718469f78c3c9df5a45ea0846\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\9549f1b718469f78c3c9df5a45ea0846\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\9b11ace129ca3eaf800dcda8593aa434\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\9b11ace129ca3eaf800dcda8593aa434\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\c7849bfffd7919cc10e151e6e58d117f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\c7849bfffd7919cc10e151e6e58d117f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\9a9c82897396b9243503571f7f61c149\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\9a9c82897396b9243503571f7f61c149\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\7e40d2c7f79e139e643e86e3b39d8a6f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\7e40d2c7f79e139e643e86e3b39d8a6f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-color:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-color-28.0.0-alpha1.aar\77e3bf7bb3d4a33350ef1526bcfd38fb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-color:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-color-28.0.0-alpha1.aar\77e3bf7bb3d4a33350ef1526bcfd38fb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-math:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-math-28.0.0-alpha1.aar\67c5fe7e8e3bcaa8a3a1911bb5bc7a12\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-math:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-math-28.0.0-alpha1.aar\67c5fe7e8e3bcaa8a3a1911bb5bc7a12\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-snackbar:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-snackbar-28.0.0-alpha1.aar\615358abad4942423a456a89b1f3918c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design-snackbar:28.0.0-alpha1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\design-snackbar-28.0.0-alpha1.aar\615358abad4942423a456a89b1f3918c\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database-collection:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-database-collection-16.0.1.aar\533608a42b8e986ad553916e835c1290\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database-collection:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-database-collection-16.0.1.aar\533608a42b8e986ad553916e835c1290\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\protolite-well-known-types-16.0.1.aar\cb5be0687154357f847c3667c55618ef\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\protolite-well-known-types-16.0.1.aar\cb5be0687154357f847c3667c55618ef\AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.16.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\grpc-android-1.16.1.aar\38076eb451899879d8618742572735cf\AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.16.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\grpc-android-1.16.1.aar\38076eb451899879d8618742572735cf\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:exifinterface:26.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\exifinterface-26.1.0.aar\d6910ccc1c43a3e076a788a83183b80c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:26.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\exifinterface-26.1.0.aar\d6910ccc1c43a3e076a788a83183b80c\AndroidManifest.xml:20:5-44
+INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml
+INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml
-		INJECTED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml
+		INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml
-		ADDED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml
-		INJECTED from /home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/src/main/AndroidManifest.xml
+		INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml
+		ADDED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Humane-Test-master-master\Humane-Test-master-master\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from [com.firebaseui:firebase-ui-firestore:4.3.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-ui-firestore-4.3.0.aar/938bafd4646510293fbea758834a5c01/AndroidManifest.xml:11:5-67
-MERGED from [com.google.firebase:firebase-database-connection:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-16.0.1.aar/4390767c9a88171917881dae4a747256/AndroidManifest.xml:8:5-67
-MERGED from [com.google.firebase:firebase-database-connection:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-16.0.1.aar/4390767c9a88171917881dae4a747256/AndroidManifest.xml:8:5-67
-MERGED from [com.google.firebase:firebase-storage:16.0.5] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.5.aar/8edcfe790eac07b27759d5d4c6f51421/AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-storage:16.0.5] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.5.aar/8edcfe790eac07b27759d5d4c6f51421/AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-firestore:17.1.5] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.5.aar/cad29db8c42e4e47e06621e17f355dbb/AndroidManifest.xml:10:5-67
-MERGED from [com.google.firebase:firebase-firestore:17.1.5] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.5.aar/cad29db8c42e4e47e06621e17f355dbb/AndroidManifest.xml:10:5-67
+ADDED from [com.firebaseui:firebase-ui-firestore:4.3.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-ui-firestore-4.3.0.aar\223b2336896936e4da78c3ed2ee8beb3\AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-database-connection:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-16.0.1.aar\e9805dd5bc130c2a562c52f709e2d9c1\AndroidManifest.xml:8:5-67
+MERGED from [com.google.firebase:firebase-database-connection:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-16.0.1.aar\e9805dd5bc130c2a562c52f709e2d9c1\AndroidManifest.xml:8:5-67
+MERGED from [com.google.firebase:firebase-storage:16.0.5] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-storage-16.0.5.aar\7952d0d78f45901352aefb35ea5890bb\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-storage:16.0.5] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-storage-16.0.5.aar\7952d0d78f45901352aefb35ea5890bb\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-firestore:17.1.5] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-firestore-17.1.5.aar\3f778016eb7e1e7aa8124fb6776ed7ab\AndroidManifest.xml:10:5-67
+MERGED from [com.google.firebase:firebase-firestore:17.1.5] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-firestore-17.1.5.aar\3f778016eb7e1e7aa8124fb6776ed7ab\AndroidManifest.xml:10:5-67
 	android:name
-		ADDED from [com.firebaseui:firebase-ui-firestore:4.3.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-ui-firestore-4.3.0.aar/938bafd4646510293fbea758834a5c01/AndroidManifest.xml:11:22-64
+		ADDED from [com.firebaseui:firebase-ui-firestore:4.3.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-ui-firestore-4.3.0.aar\223b2336896936e4da78c3ed2ee8beb3\AndroidManifest.xml:11:22-64
 activity#com.google.firebase.auth.internal.FederatedSignInActivity
-ADDED from [com.google.firebase:firebase-auth:16.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/cfa382c4977caa2f03eced9f40a6f835/AndroidManifest.xml:24:9-31:50
+ADDED from [com.google.firebase:firebase-auth:16.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.1.0.aar\1a623cf829a11de3e2734c6863de5ca7\AndroidManifest.xml:24:9-31:50
 	android:excludeFromRecents
-		ADDED from [com.google.firebase:firebase-auth:16.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/cfa382c4977caa2f03eced9f40a6f835/AndroidManifest.xml:26:13-46
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.1.0.aar\1a623cf829a11de3e2734c6863de5ca7\AndroidManifest.xml:26:13-46
 	android:launchMode
-		ADDED from [com.google.firebase:firebase-auth:16.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/cfa382c4977caa2f03eced9f40a6f835/AndroidManifest.xml:28:13-44
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.1.0.aar\1a623cf829a11de3e2734c6863de5ca7\AndroidManifest.xml:28:13-44
 	android:exported
-		ADDED from [com.google.firebase:firebase-auth:16.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/cfa382c4977caa2f03eced9f40a6f835/AndroidManifest.xml:27:13-36
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.1.0.aar\1a623cf829a11de3e2734c6863de5ca7\AndroidManifest.xml:27:13-36
 	android:permission
-		ADDED from [com.google.firebase:firebase-auth:16.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/cfa382c4977caa2f03eced9f40a6f835/AndroidManifest.xml:29:13-102
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.1.0.aar\1a623cf829a11de3e2734c6863de5ca7\AndroidManifest.xml:29:13-102
 	android:theme
-		ADDED from [com.google.firebase:firebase-auth:16.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/cfa382c4977caa2f03eced9f40a6f835/AndroidManifest.xml:30:13-72
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.1.0.aar\1a623cf829a11de3e2734c6863de5ca7\AndroidManifest.xml:30:13-72
 	tools:replace
-		ADDED from [com.google.firebase:firebase-auth:16.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/cfa382c4977caa2f03eced9f40a6f835/AndroidManifest.xml:31:13-47
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.1.0.aar\1a623cf829a11de3e2734c6863de5ca7\AndroidManifest.xml:31:13-47
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:16.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/cfa382c4977caa2f03eced9f40a6f835/AndroidManifest.xml:25:13-85
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.1.0.aar\1a623cf829a11de3e2734c6863de5ca7\AndroidManifest.xml:25:13-85
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [com.google.firebase:firebase-auth:16.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/cfa382c4977caa2f03eced9f40a6f835/AndroidManifest.xml:33:9-39:19
-MERGED from [com.google.firebase:firebase-firestore:17.1.5] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.5.aar/cad29db8c42e4e47e06621e17f355dbb/AndroidManifest.xml:13:9-17:19
-MERGED from [com.google.firebase:firebase-firestore:17.1.5] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.5.aar/cad29db8c42e4e47e06621e17f355dbb/AndroidManifest.xml:13:9-17:19
+ADDED from [com.google.firebase:firebase-auth:16.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.1.0.aar\1a623cf829a11de3e2734c6863de5ca7\AndroidManifest.xml:33:9-39:19
+MERGED from [com.google.firebase:firebase-firestore:17.1.5] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-firestore-17.1.5.aar\3f778016eb7e1e7aa8124fb6776ed7ab\AndroidManifest.xml:13:9-17:19
+MERGED from [com.google.firebase:firebase-firestore:17.1.5] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-firestore-17.1.5.aar\3f778016eb7e1e7aa8124fb6776ed7ab\AndroidManifest.xml:13:9-17:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-auth:16.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/cfa382c4977caa2f03eced9f40a6f835/AndroidManifest.xml:35:13-37
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.1.0.aar\1a623cf829a11de3e2734c6863de5ca7\AndroidManifest.xml:35:13-37
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:16.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/cfa382c4977caa2f03eced9f40a6f835/AndroidManifest.xml:34:13-84
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.1.0.aar\1a623cf829a11de3e2734c6863de5ca7\AndroidManifest.xml:34:13-84
 meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
-ADDED from [com.google.firebase:firebase-auth:16.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/cfa382c4977caa2f03eced9f40a6f835/AndroidManifest.xml:36:13-38:85
+ADDED from [com.google.firebase:firebase-auth:16.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.1.0.aar\1a623cf829a11de3e2734c6863de5ca7\AndroidManifest.xml:36:13-38:85
 	android:value
-		ADDED from [com.google.firebase:firebase-auth:16.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/cfa382c4977caa2f03eced9f40a6f835/AndroidManifest.xml:38:17-82
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.1.0.aar\1a623cf829a11de3e2734c6863de5ca7\AndroidManifest.xml:38:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-auth:16.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/cfa382c4977caa2f03eced9f40a6f835/AndroidManifest.xml:37:17-109
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.1.0.aar\1a623cf829a11de3e2734c6863de5ca7\AndroidManifest.xml:37:17-109
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-storage:16.0.5] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.5.aar/8edcfe790eac07b27759d5d4c6f51421/AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-firestore:17.1.5] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.5.aar/cad29db8c42e4e47e06621e17f355dbb/AndroidManifest.xml:9:5-79
-MERGED from [com.google.firebase:firebase-firestore:17.1.5] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.5.aar/cad29db8c42e4e47e06621e17f355dbb/AndroidManifest.xml:9:5-79
-MERGED from [io.grpc:grpc-android:1.16.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/grpc-android-1.16.1.aar/7cf10f7dad12e6a3869abc017526ee38/AndroidManifest.xml:11:5-79
-MERGED from [io.grpc:grpc-android:1.16.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/grpc-android-1.16.1.aar/7cf10f7dad12e6a3869abc017526ee38/AndroidManifest.xml:11:5-79
+ADDED from [com.google.firebase:firebase-storage:16.0.5] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-storage-16.0.5.aar\7952d0d78f45901352aefb35ea5890bb\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-firestore:17.1.5] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-firestore-17.1.5.aar\3f778016eb7e1e7aa8124fb6776ed7ab\AndroidManifest.xml:9:5-79
+MERGED from [com.google.firebase:firebase-firestore:17.1.5] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-firestore-17.1.5.aar\3f778016eb7e1e7aa8124fb6776ed7ab\AndroidManifest.xml:9:5-79
+MERGED from [io.grpc:grpc-android:1.16.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\grpc-android-1.16.1.aar\38076eb451899879d8618742572735cf\AndroidManifest.xml:11:5-79
+MERGED from [io.grpc:grpc-android:1.16.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\grpc-android-1.16.1.aar\38076eb451899879d8618742572735cf\AndroidManifest.xml:11:5-79
 	android:name
-		ADDED from [com.google.firebase:firebase-storage:16.0.5] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.5.aar/8edcfe790eac07b27759d5d4c6f51421/AndroidManifest.xml:23:22-76
+		ADDED from [com.google.firebase:firebase-storage:16.0.5] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-storage-16.0.5.aar\7952d0d78f45901352aefb35ea5890bb\AndroidManifest.xml:23:22-76
 meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
-ADDED from [com.google.firebase:firebase-firestore:17.1.5] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.5.aar/cad29db8c42e4e47e06621e17f355dbb/AndroidManifest.xml:14:13-16:85
+ADDED from [com.google.firebase:firebase-firestore:17.1.5] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-firestore-17.1.5.aar\3f778016eb7e1e7aa8124fb6776ed7ab\AndroidManifest.xml:14:13-16:85
 	android:value
-		ADDED from [com.google.firebase:firebase-firestore:17.1.5] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.5.aar/cad29db8c42e4e47e06621e17f355dbb/AndroidManifest.xml:16:17-82
+		ADDED from [com.google.firebase:firebase-firestore:17.1.5] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-firestore-17.1.5.aar\3f778016eb7e1e7aa8124fb6776ed7ab\AndroidManifest.xml:16:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-firestore:17.1.5] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.5.aar/cad29db8c42e4e47e06621e17f355dbb/AndroidManifest.xml:15:17-111
+		ADDED from [com.google.firebase:firebase-firestore:17.1.5] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-firestore-17.1.5.aar\3f778016eb7e1e7aa8124fb6776ed7ab\AndroidManifest.xml:15:17-111
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/a504fbc6e90ef4ce5a8b58120662c07e/AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\980f6e82f9cc29a3788c15c707a86eb4\AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/a504fbc6e90ef4ce5a8b58120662c07e/AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\980f6e82f9cc29a3788c15c707a86eb4\AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/a504fbc6e90ef4ce5a8b58120662c07e/AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\980f6e82f9cc29a3788c15c707a86eb4\AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/a504fbc6e90ef4ce5a8b58120662c07e/AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\980f6e82f9cc29a3788c15c707a86eb4\AndroidManifest.xml:24:13-79
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:16.0.4] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.4.aar/bdeddc34e7a0e9e06fb2ef8fad2effe3/AndroidManifest.xml:10:9-14:39
+ADDED from [com.google.firebase:firebase-common:16.0.4] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.4.aar\57d975fb7cef6f52a31413f37ce0f3eb\AndroidManifest.xml:10:9-14:39
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:16.0.4] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.4.aar/bdeddc34e7a0e9e06fb2ef8fad2effe3/AndroidManifest.xml:12:13-72
+		ADDED from [com.google.firebase:firebase-common:16.0.4] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.4.aar\57d975fb7cef6f52a31413f37ce0f3eb\AndroidManifest.xml:12:13-72
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:16.0.4] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.4.aar/bdeddc34e7a0e9e06fb2ef8fad2effe3/AndroidManifest.xml:13:13-37
+		ADDED from [com.google.firebase:firebase-common:16.0.4] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.4.aar\57d975fb7cef6f52a31413f37ce0f3eb\AndroidManifest.xml:13:13-37
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:16.0.4] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.4.aar/bdeddc34e7a0e9e06fb2ef8fad2effe3/AndroidManifest.xml:14:13-36
+		ADDED from [com.google.firebase:firebase-common:16.0.4] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.4.aar\57d975fb7cef6f52a31413f37ce0f3eb\AndroidManifest.xml:14:13-36
 	android:name
-		ADDED from [com.google.firebase:firebase-common:16.0.4] /home/istiak/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.4.aar/bdeddc34e7a0e9e06fb2ef8fad2effe3/AndroidManifest.xml:11:13-77
+		ADDED from [com.google.firebase:firebase-common:16.0.4] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.4.aar\57d975fb7cef6f52a31413f37ce0f3eb\AndroidManifest.xml:11:13-77
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:16.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/76292b1cc7a2610207eeaf74d18e1e73/AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.1.0.aar\0a8bac5eca6aea090f6058d31d58173a\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:16.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/76292b1cc7a2610207eeaf74d18e1e73/AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.1.0.aar\0a8bac5eca6aea090f6058d31d58173a\AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:16.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/76292b1cc7a2610207eeaf74d18e1e73/AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:16.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.1.0.aar\0a8bac5eca6aea090f6058d31d58173a\AndroidManifest.xml:24:13-58
 meta-data#android.support.VERSION
-ADDED from [com.android.support:exifinterface:26.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/exifinterface-26.1.0.aar/ad0dbbd60b7901af7ffece1e0467326f/AndroidManifest.xml:23:9-25:38
+ADDED from [com.android.support:exifinterface:26.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\exifinterface-26.1.0.aar\d6910ccc1c43a3e076a788a83183b80c\AndroidManifest.xml:23:9-25:38
 	android:value
-		ADDED from [com.android.support:exifinterface:26.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/exifinterface-26.1.0.aar/ad0dbbd60b7901af7ffece1e0467326f/AndroidManifest.xml:25:13-35
+		ADDED from [com.android.support:exifinterface:26.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\exifinterface-26.1.0.aar\d6910ccc1c43a3e076a788a83183b80c\AndroidManifest.xml:25:13-35
 	android:name
-		ADDED from [com.android.support:exifinterface:26.1.0] /home/istiak/.gradle/caches/transforms-1/files-1.1/exifinterface-26.1.0.aar/ad0dbbd60b7901af7ffece1e0467326f/AndroidManifest.xml:24:13-51
+		ADDED from [com.android.support:exifinterface:26.1.0] C:\Users\Appledora\.gradle\caches\transforms-1\files-1.1\exifinterface-26.1.0.aar\d6910ccc1c43a3e076a788a83183b80c\AndroidManifest.xml:24:13-51

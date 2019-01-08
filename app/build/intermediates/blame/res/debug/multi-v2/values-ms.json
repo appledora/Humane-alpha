@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ms/values-ms.xml",
+            "outputFile": "D:\\Humane-Test-master-master\\Humane-Test-master-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ms\\values-ms.xml",
             "map": [
                 {
-                    "source": "/home/istiak/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/2ea43d91d0683bc0e34c3ebf2bab6bea/res/values-ms/values-ms.xml",
+                    "source": "C:\\Users\\Appledora\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\ca7f1795a28e5f725e4978513c61903e\\res\\values-ms\\values-ms.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "/home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/76292b1cc7a2610207eeaf74d18e1e73/res/values-ms/values.xml",
+                    "source": "C:\\Users\\Appledora\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha1.aar\\b629a009bc0fa393e90a99c32df51fd5\\res\\values-ms\\values-ms.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,216,321,429,516,620,731,809,888,968,1080,1189,1286,1395,1498,1605,1764,1865",
+                        "endColumns": "110,104,107,86,103,110,77,78,79,111,108,96,108,102,106,158,100,79",
+                        "endOffsets": "211,316,424,511,615,726,804,883,963,1075,1184,1281,1390,1493,1600,1759,1860,1940"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,37",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,216,321,429,516,620,731,809,888,968,1080,1189,1286,1395,1498,1605,1764,4710",
+                        "endColumns": "110,104,107,86,103,110,77,78,79,111,108,96,108,102,106,158,100,79",
+                        "endOffsets": "211,316,424,511,615,726,804,883,963,1075,1184,1281,1390,1493,1600,1759,1860,4785"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Appledora\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-16.1.0.aar\\0a8bac5eca6aea090f6058d31d58173a\\res\\values-ms\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -38,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "/home/istiak/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/a504fbc6e90ef4ce5a8b58120662c07e/res/values-ms/values.xml",
+                    "source": "C:\\Users\\Appledora\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.0.1.aar\\980f6e82f9cc29a3788c15c707a86eb4\\res\\values-ms\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -52,23 +69,6 @@
                         "startOffsets": "1865,1973,2178,2310,2418,2649,2783,2933,3274,3518,3629,3835,3972,4202,4407,4504,4598",
                         "endColumns": "107,204,131,107,230,133,149,135,243,110,205,136,229,204,96,93,111",
                         "endOffsets": "1968,2173,2305,2413,2644,2778,2928,3064,3513,3624,3830,3967,4197,4402,4499,4593,4705"
-                    }
-                },
-                {
-                    "source": "/home/istiak/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/73888c61538bb37125a5da62ead10966/res/values-ms/values-ms.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,216,321,429,516,620,731,809,888,968,1080,1189,1286,1395,1498,1605,1764,1865",
-                        "endColumns": "110,104,107,86,103,110,77,78,79,111,108,96,108,102,106,158,100,79",
-                        "endOffsets": "211,316,424,511,615,726,804,883,963,1075,1184,1281,1390,1493,1600,1759,1860,1940"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,37",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,216,321,429,516,620,731,809,888,968,1080,1189,1286,1395,1498,1605,1764,4710",
-                        "endColumns": "110,104,107,86,103,110,77,78,79,111,108,96,108,102,106,158,100,79",
-                        "endOffsets": "211,316,424,511,615,726,804,883,963,1075,1184,1281,1390,1493,1600,1759,1860,4785"
                     }
                 }
             ]

@@ -154,30 +154,25 @@ public class ClothPostForm extends AppCompatActivity implements View.OnClickList
         } }
 
     private void startClothPosting() {
-        Log.i("my","post button pressed");
         final String quan = quantity.getText().toString().trim();
         final String pickd = pickup_date.getText().toString().trim();
-        final String pick = pickup_address.getText().toString().trim();
+        final String pick = pickup_time.getText().toString().trim();
         final String cont = contact_no.getText().toString().trim();
         final String add = pickup_address.getText().toString().trim();
 
         if(postImageUri!= null && !TextUtils.isEmpty(quan) && !TextUtils.isEmpty(pickd)  && !TextUtils.isEmpty(pick) && !TextUtils.isEmpty(cont) && !TextUtils.isEmpty(add) ){
-            //postProgress.setVisibility(View.VISIBLE);
-            Log.i("my", "nothing is empty");
             String randomName = UUID.randomUUID().toString();
             final StorageReference filePath = storageReference.child("cloth_images").child(randomName + ".jpg");
             filePath.putFile(postImageUri).addOnCompleteListener(new OnCompleteListener<UploadTask.TaskSnapshot>() {
 
                 @Override
                 public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
-                    Log.i("my","putting file?");
 
 
                     filePath.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
 
                         @Override
                         public void onSuccess(Uri uri) {
-                            Log.i("my","got through downloadUri");
                             final String downloadUri = uri.toString();
                             Map<String,Object> postMap = new HashMap<>();
                             postMap.put("cimage_url",downloadUri);
@@ -200,7 +195,6 @@ public class ClothPostForm extends AppCompatActivity implements View.OnClickList
                                         startActivity(intent);
                                     }
                                     else {
-                                        //postProgress.setVisibility(View.INVISIBLE);
                                         Toast.makeText(ClothPostForm.this,"POST WAS NOOOOT ADDED",Toast.LENGTH_LONG).show();
                                         finish();
                                     }
@@ -210,7 +204,6 @@ public class ClothPostForm extends AppCompatActivity implements View.OnClickList
                     }).addOnFailureListener(new OnFailureListener() {
                         @Override
                         public void onFailure(@NonNull Exception e) {
-                            //postProgress.setVisibility(View.INVISIBLE);
                         }
                     });
                 }

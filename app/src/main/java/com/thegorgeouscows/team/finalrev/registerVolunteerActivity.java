@@ -26,8 +26,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class registerVolunteerActivity extends AppCompatActivity {
-    private EditText volName,volContact,volAddress,volEmail;
-    EditText vusername,vaddress,vcontact,vemail;
+    private EditText vusername,vaddress,vcontact,vemail;
     private Button register;
     DatabaseReference ref;
     String currentUserID;
@@ -58,7 +57,6 @@ public class registerVolunteerActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if (dataSnapshot.exists()){
                     orgName = dataSnapshot.child("Name").getValue().toString();
-                    Log.i("my ORGNAME: ",orgName);
                 }
             }
 
@@ -86,12 +84,9 @@ public class registerVolunteerActivity extends AppCompatActivity {
             volCred.put("ID","Volunteer");
             volCred.put("Organization",orgName);
 
-        Log.i("my: ","went past MAPPING");
         FirebaseFirestore rootref = FirebaseFirestore.getInstance();
         CollectionReference colref = rootref.collection("OrgList").document(orgName).collection("Volunteers");
-        Log.i("my: ","crossed referencing");
         colref.add(volCred);
-        Log.i("my: ","ADDED to STORE");
             Intent intent = new Intent(registerVolunteerActivity.this,OrganizationProfile.class);
             startActivity(intent);
         }
