@@ -11,7 +11,6 @@
         android:id="@+id/xoxo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:hint="Full name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -70,8 +69,6 @@
             android:id="@+id/entryEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
             android:ems="10"
             android:hint="Email Address"
             android:inputType="textEmailAddress"
@@ -84,7 +81,6 @@
         android:id="@+id/textInputLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:hint="Password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
