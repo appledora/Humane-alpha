@@ -30,6 +30,7 @@ loginActivity extends AppCompatActivity {
 
     private Button mLoginButton;
     private Button mRegisterButton;
+    private Button mForgetPasswordButton;
 
     private DatabaseReference ref;
     FirebaseAuth mAuth;
@@ -50,6 +51,7 @@ loginActivity extends AppCompatActivity {
 
         mLoginButton = (Button) findViewById(R.id.login);
         mRegisterButton = (Button) findViewById(R.id.registerButton);
+        mForgetPasswordButton= (Button) findViewById(R.id.forgetpassword);
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -79,7 +81,13 @@ loginActivity extends AppCompatActivity {
             }
         });
 
-
+        mForgetPasswordButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(loginActivity.this, resetPasswordActivity.class);
+                startActivity(i);
+            }
+        });
     }
 
     @Override

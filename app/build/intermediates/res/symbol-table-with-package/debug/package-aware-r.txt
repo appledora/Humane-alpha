@@ -1182,6 +1182,7 @@ drawable design_snackbar_background
 drawable diet
 drawable dieta
 drawable dish
+drawable donator_class
 drawable drop
 drawable fashion
 drawable fashiona
@@ -1225,6 +1226,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable organizer
 drawable orgbg
 drawable person
 drawable pop_quit
@@ -1304,7 +1306,6 @@ id buttonPanel
 id call_button
 id call_button_cloth_org
 id cancel_action
-id card_container
 id card_login
 id center
 id centerCrop
@@ -1389,6 +1390,7 @@ id fitCenter
 id fixed
 id foods
 id forever
+id forgetpassword
 id ghost_view
 id gone
 id group_divider
@@ -1402,6 +1404,7 @@ id ifRoom
 id image
 id imageView
 id imageView2
+id imageView3
 id imageView4
 id info
 id invisible
@@ -1494,6 +1497,8 @@ id reg_contact_vol
 id reg_volunteer
 id registerButton
 id registerReq
+id resetButton
+id resetEmail
 id right
 id right_icon
 id right_side
@@ -1554,6 +1559,10 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textView
+id textView2
+id textView3
+id textView4
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1645,6 +1654,7 @@ layout activity_main
 layout activity_register_donator
 layout activity_register_organization
 layout activity_register_volunteer
+layout activity_reset_password
 layout activity_slide
 layout activity_volunteer_list_feed_base
 layout cloth_donation_post
