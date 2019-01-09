@@ -14,13 +14,6 @@
         <item name="android:textAllCaps">false</item>
     </style>
 
-    <style name="userTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary1</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark1</item>
-        <item name="colorAccent">@color/colorAccent1</item>
-    </style>
-
     <style name="Theme.AppCompat.NoActionBar.FullScreen" parent="@style/Theme.AppCompat">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
@@ -39,13 +32,5 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark2</item>
         <item name="colorAccent">@color/colorAccent2</item>
     </style>
-
-    <style name="userProfileTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
-
-    </style>
-
-    <style name="userTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="userTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>

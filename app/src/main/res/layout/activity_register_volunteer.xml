@@ -27,7 +27,6 @@
         android:layout_height="wrap_content"
         android:hint="Contact Number"
         android:textColorHint="@color/colorGrey"
-        android:id="@+id/Text1"
         app:layout_constraintTop_toBottomOf="@id/Text4">
     <EditText
         android:id="@+id/reg_contact_vol"

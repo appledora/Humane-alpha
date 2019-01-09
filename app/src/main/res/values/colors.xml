@@ -2,38 +2,21 @@
 <resources>
     <color name="colorPrimary">#2C5364</color>
     <color name="colorPrimaryDark">#0F2027</color>
-    <color name="colorPrimaryMedium">#203A43</color>
 
     <color name="colorGrey">#D3D3D3</color>
 
     <color name="colorAccent">#ffffff</color>
-    <color name="colorPrimary1">#dd3333</color>
-    <color name="colorPrimaryDark1">#d11616</color>
-    <color name="colorAccent1">#ff4081</color>
     <color name="colorPrimary2">#262938</color>
     <color name="colorPrimaryDark2">#181a24</color>
     <color name="colorAccent2">#FF4081</color>
     <color name="colorWhite">#FFFFFF</color>
-    <color name="colorGrapeFruit">#ed5565</color>
     <color name="colorGrapeFruitDark">#da4453</color>
-    <color name="colorBitterSweet">#FC6E51</color>
-    <color name="colorBitterSweetDark">#E9573F</color>
     <color name="colorFlower">#ffce54</color>
-    <color name="colorFlowerDark">#f68b42</color>
     <color name="colorGrass">#a0d468</color>
-    <color name="colorGrassDark">#8cc152</color>
-    <color name="colorPurple">#4A148C</color>
-    <color name="colorTeal">#00BFA5</color>
     <color name="colorBlueJeans">#509cec</color>
-    <color name="colorBlueJeansDark">#4a89dc</color>
     <color name="colorLavander">#2b2342</color>
-    <color name="colorLavanderDark">#967adc</color>
-    <color name="colorMint">#48CFAD</color>
-    <color name="colorMintDark">#37BC9B</color>
     <color name="colorAqua">#be635e</color>
     <color name="colorAquaDark">#3bafda</color>
-    <color name="colorPinkRose">#EC87C0</color>
-    <color name="colorPinkRoseDark">#D770AD</color>
     <color name="colorRipple">#a9a9f5</color>
     <color name="colorBegun">#944b78</color>
     <color name="colorPeyaj">#b84b72</color>

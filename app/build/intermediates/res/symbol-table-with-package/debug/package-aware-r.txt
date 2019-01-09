@@ -1260,6 +1260,16 @@ id ImageView_image
 id META
 id SHIFT
 id SYM
+id Text1
+id Text2
+id Text3
+id Text4
+id TextField1
+id TextField2
+id TextField3
+id TextField4
+id Textss
+id Textsss
 id action0
 id action_bar
 id action_bar_activity_content
