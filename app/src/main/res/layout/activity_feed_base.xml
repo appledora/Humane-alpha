@@ -21,7 +21,7 @@
          android:clickable="true"
          android:focusable="true"
          android:src="@drawable/action_add"
-         app:backgroundTint="@color/colorAqua"
+         app:backgroundTint="@color/colorPrimary"
          app:layout_constraintBottom_toTopOf="@+id/mainBottomNav"
          app:layout_constraintEnd_toEndOf="parent" />
 
@@ -29,21 +29,22 @@
          android:id="@+id/mainBottomNav"
          android:layout_width="0dp"
          android:layout_height="wrap_content"
-         app:itemBackground="@color/colorPeyaj"
+         app:itemBackground="@color/colorWhite"
          app:layout_constraintBottom_toBottomOf="parent"
          app:layout_constraintEnd_toEndOf="parent"
+         app:itemIconSize="35dp"
          app:layout_constraintStart_toStartOf="parent"
          app:menu="@menu/feed_bottom_nav"
-         app:itemIconTint="@drawable/item_color_selector"
+         app:itemIconTint="@color/bottom_nav_color_alternate"
          />
 
      <android.support.design.widget.BottomNavigationView
          android:id="@+id/topNav"
          android:layout_width="match_parent"
          android:layout_height="0dp"
-         android:background="@color/colorPeyaj"
-         app:itemBackground="@color/colorPeyaj"
-         app:itemIconTint="@drawable/item_color_selector"
+         android:background="@color/colorPrimary"
+         app:itemBackground="@color/colorPrimary"
+         app:itemIconTint="@color/bottom_nav_color"
          app:layout_constraintStart_toStartOf="parent"
          app:layout_constraintTop_toBottomOf="parent"
          app:layout_constraintTop_toTopOf="parent"

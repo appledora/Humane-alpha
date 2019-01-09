@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background1"
     tools:context=".SlideActivity"
     android:orientation="horizontal">
 
@@ -12,7 +11,6 @@
         android:id="@+id/slideviewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/lakeside_sunset"
         android:visibility="visible">
 
     </android.support.v4.view.ViewPager>

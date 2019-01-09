@@ -4,9 +4,11 @@
 
     <item
         android:id="@+id/foods"
-        android:icon="@drawable/dieta" />
+        android:icon="@drawable/dieta"
+        android:title="Foods"/>
     <item
         android:id="@+id/clothe"
-        android:icon="@drawable/fashiona" />
+        android:icon="@drawable/fashiona"
+        android:title="Cloths"/>
 
 </menu>

@@ -7,91 +7,115 @@
     android:background="@drawable/gradient_blue"
     tools:context=".registerDonatorActivity">
 
-
-    <EditText
-        android:id="@+id/org_contact"
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/Textsss"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="8dp"
-        android:background="@drawable/input_background"
-        android:ems="10"
-        android:hint="Contact Number"
-        android:inputType="numberDecimal"
-        android:padding="15dp"
-        android:textColor="@color/colorAquaDark"
-        android:textColorHint="@color/colorRipple"
+        android:text="Please Fill in this Form to Register"
+        android:textColor="@color/colorWhite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/org_entryPassword" />
+        app:layout_constraintTop_toTopOf="parent" />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextField4"
+        android:hint="Contact Number"
+        app:layout_constraintTop_toBottomOf="@id/TextField1"
+        android:textColorHint="@color/colorGrey"
+        >
 
+        <EditText
+            android:id="@+id/org_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:padding="15dp"
+            android:textColor="@color/colorAquaDark" />
+    </android.support.design.widget.TextInputLayout>
     <Button
         android:id="@+id/org_testButton"
-        android:layout_width="222dp"
-        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="30dp"
-        android:background="@drawable/button_background"
-        android:backgroundTint="@color/colorBegun"
+        android:backgroundTint="@color/colorWhite"
         android:text="Register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/org_entryName"
-        android:layout_width="0dp"
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TextField3"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:background="@drawable/input_background"
-        android:ems="10"
-        android:hint="Enter Name"
-        android:inputType="textPersonName"
-        android:padding="15dp"
-        android:textColor="@color/colorAquaDark"
-        android:textColorHint="@color/colorRipple"
+        android:hint="Full Name"
+        android:textColorHint="@color/colorGrey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/Textsss">
 
+        <EditText
+            android:id="@+id/org_entryName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:textColor="@color/colorAquaDark" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextField2"
+        android:textColorHint="@color/colorGrey"
+        app:layout_constraintTop_toBottomOf="@id/TextField3"
+        android:hint="@string/email">
     <EditText
         android:id="@+id/org_entryEmail"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:background="@drawable/input_background"
         android:ems="10"
-        android:hint="Email Address"
         android:inputType="textEmailAddress"
         android:padding="15dp"
         android:textColor="@color/colorAquaDark"
-        android:textColorHint="@color/colorRipple"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/org_entryName" />
-
+/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextField1"
+        android:textColorHint="@color/colorGrey"
+        app:layout_constraintTop_toBottomOf="@id/TextField2"
+        android:hint="@string/password">
     <EditText
         android:id="@+id/org_entryPassword"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="51dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:background="@drawable/input_background"
         android:ems="10"
-        android:hint="Type Password"
         android:inputType="textPassword"
         android:padding="15dp"
         android:textColor="@color/colorAquaDark"
-        android:textColorHint="@color/colorRipple"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/org_entryEmail" />
-
+/>
+    </android.support.design.widget.TextInputLayout>
 </android.support.constraint.ConstraintLayout>

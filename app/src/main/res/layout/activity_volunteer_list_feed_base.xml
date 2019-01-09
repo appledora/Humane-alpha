@@ -24,7 +24,7 @@
             android:clickable="true"
             android:focusable="true"
             android:src="@drawable/action_add"
-            app:backgroundTint="@color/colorAqua"
+            app:backgroundTint="@color/colorPrimary"
             app:layout_constraintBottom_toTopOf="@+id/mainBottomNav_vol"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -32,12 +32,13 @@
             android:id="@+id/mainBottomNav_vol"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:itemBackground="@color/colorPeyaj"
-            app:itemIconTint="@drawable/item_color_selector"
+            app:itemBackground="@color/colorWhite"
+            app:itemIconTint="@color/bottom_nav_default"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:menu="@menu/feed_bottom_nav" />
+            app:menu="@menu/feed_bottom_nav"
+            app:itemIconSize="34dp"/>
 
 
         <FrameLayout
@@ -45,7 +46,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="8dp"
-            android:background="@color/colorFlowerDark"
+            android:background="@color/colorGrey"
             app:layout_constraintBottom_toTopOf="@+id/mainBottomNav_vol"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"

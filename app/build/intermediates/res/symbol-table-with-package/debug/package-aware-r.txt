@@ -684,6 +684,9 @@ color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
+color bottom_nav_color
+color bottom_nav_color_alternate
+color bottom_nav_default
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -1234,6 +1237,7 @@ drawable pop_quit
 drawable profile
 drawable ripple_effect
 drawable rounded
+drawable spinner_background
 drawable tasks
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1363,6 +1367,7 @@ id direct
 id disableHome
 id donate
 id donate_cloth
+id donatorLogin
 id donatorReg
 id dp_org
 id edit_query
@@ -1371,11 +1376,15 @@ id end_padder
 id enterAlways
 id enterAlwaysCollapsed
 id entryAddress_vol
+id entryDonatorEmailLog
+id entryDonatorPasswordLog
 id entryEmail
 id entryEmailLog
 id entryEmail_vol
 id entryName
 id entryName_vol
+id entryOrganizationEmailLog
+id entryOrganizationPasswordLog
 id entryPassword
 id entryPasswordLog
 id exitUntilCollapsed
@@ -1465,6 +1474,7 @@ id org_entryEmail
 id org_entryName
 id org_entryPassword
 id org_testButton
+id organizationLogin
 id organizationReg
 id outline
 id oval
@@ -1653,12 +1663,15 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_donator_login
 layout activity_feed_base
 layout activity_feed_base_org
 layout activity_general_page
 layout activity_landing
 layout activity_login_card
+layout activity_login_medium
 layout activity_main
+layout activity_organization_login
 layout activity_register_donator
 layout activity_register_organization
 layout activity_register_volunteer
