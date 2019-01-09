@@ -19,7 +19,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:fontFamily="@font/roboto_slab_bold"
         android:padding="16dp"
         android:text="Title Here"
         android:textColor="@color/colorLavander"
@@ -43,9 +42,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:backgroundTint="@color/colorAqua"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:clickable="true"
-        android:fontFamily="@font/roboto_slab_bold"
         android:gravity="center"
         android:text="Button" />
 

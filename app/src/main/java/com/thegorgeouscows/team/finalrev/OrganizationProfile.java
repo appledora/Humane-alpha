@@ -193,6 +193,7 @@ public class OrganizationProfile extends AppCompatActivity {
 
     private void setupBottomNavigationView() {
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigation);
+        bottomNavigationView.setSelectedItemId(R.id.current_profile);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -201,8 +202,6 @@ public class OrganizationProfile extends AppCompatActivity {
                         auth.signOut();
                         Intent intent = new Intent(OrganizationProfile.this,loginActivity.class);
                         startActivity(intent);
-                    case R.id.current_profile:
-                        Toast.makeText(OrganizationProfile.this,"HOME",Toast.LENGTH_SHORT).show();
                     case R.id.feed:
                         Intent i = new Intent(OrganizationProfile.this,FeedBase.class);
                         startActivity(i);

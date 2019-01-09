@@ -4,28 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_blue">
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="20dp">
+    android:background="@drawable/gradient_blue"
+    >
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp">
+    <TextView
+        android:id="@+id/TextTy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="Please Fill in this Form"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
-        <EditText
-            android:id="@+id/quantity_cloth"
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/Likha1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/input_background"
-            android:ems="10"
-            android:hint="Quantity"
-            android:inputType="number"
-            android:padding="15dp"
-            android:textColor="@color/colorAquaDark"
-            android:textColorHint="@color/colorRipple"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:hint="Food Description"
+            android:textColorHint="@color/colorWhite"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="57dp" />
+            app:layout_constraintTop_toBottomOf="@+id/TextTy">
+
+            <EditText
+                android:id="@+id/quantity_cloth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="57dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorWhite"
+        android:id="@+id/Likha2"
+        app:layout_constraintTop_toBottomOf="@+id/Likha1"
+        android:hint="Pickup Date">
 
         <EditText
             android:id="@+id/pickup_date_cloth"
@@ -33,92 +64,118 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="5dp"
-            android:background="@drawable/input_background"
             android:clickable="true"
             android:ems="10"
             android:focusable="false"
-            android:hint="Pickup Date"
             android:inputType="textEmailAddress"
             android:padding="15dp"
-            android:textColor="@color/colorAquaDark"
-            android:textColorHint="@color/colorRipple"
+            android:textColor="@color/colorWhite"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="57dp" />
+    </android.support.design.widget.TextInputLayout>
 
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorWhite"
+        android:id="@+id/Likha3"
+        app:layout_constraintTop_toBottomOf="@+id/Likha2"
+        android:hint="Pickup Time">
         <EditText
             android:id="@+id/time_cloth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="5dp"
-            android:background="@drawable/input_background"
             android:clickable="true"
             android:ems="10"
             android:focusable="false"
-            android:hint="Pickup time"
             android:inputType="textEmailAddress"
             android:padding="15dp"
-            android:textColor="@color/colorAquaDark"
-            android:textColorHint="@color/colorRipple"
+            android:textColor="@color/colorWhite"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="251dp" />
+    </android.support.design.widget.TextInputLayout>
 
-
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorWhite"
+        android:id="@+id/Likha4"
+        app:layout_constraintTop_toBottomOf="@+id/Likha3"
+        android:hint="Pickup Address">
         <EditText
             android:id="@+id/address_cloth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="5dp"
-            android:background="@drawable/input_background"
             android:ems="10"
-            android:hint="Pickup Address"
             android:inputType="textEmailAddress"
             android:padding="15dp"
-            android:textColor="@color/colorAquaDark"
-            android:textColorHint="@color/colorRipple"
+            android:textColor="@color/colorWhite"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="314dp" />
+    </android.support.design.widget.TextInputLayout>
 
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorWhite"
+        android:id="@+id/Likha5"
+        app:layout_constraintTop_toBottomOf="@+id/Likha4"
+        android:hint="Contact">
         <EditText
             android:id="@+id/contact_number_cloth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="5dp"
-            android:background="@drawable/input_background"
             android:ems="10"
-            android:hint="Contact"
             android:inputType="numberDecimal"
             android:padding="15dp"
-            android:textColor="@color/colorAquaDark"
-            android:textColorHint="@color/colorRipple"
+            android:textColor="@color/colorWhite"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="375dp" />
+    </android.support.design.widget.TextInputLayout>
 
-
-        <ImageButton
-            android:id="@+id/photoButton_cloth"
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="5dp"
-            android:padding="15dp"
-            app:srcCompat="@color/colorAccent" />
+    <ImageButton
+        android:id="@+id/photoButton_cloth"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Likha5"
+        app:srcCompat="@color/colorAccent" />
 
         <Button
             android:id="@+id/donate_cloth"
-            android:layout_width="222dp"
-            android:layout_height="48dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/button_background"
-            android:backgroundTint="@color/colorBegun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorWhite"
             android:text="Donate"
-            tools:layout_editor_absoluteX="67dp"
-            tools:layout_editor_absoluteY="445dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/photoButton_cloth" />
 
-
-    </LinearLayout>
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Photo"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="@+id/photoButton_cloth"
+            app:layout_constraintEnd_toEndOf="@+id/photoButton_cloth"
+            app:layout_constraintStart_toStartOf="@+id/photoButton_cloth"
+            app:layout_constraintTop_toTopOf="@+id/photoButton_cloth" />
+    </android.support.constraint.ConstraintLayout>
 
 </ScrollView>

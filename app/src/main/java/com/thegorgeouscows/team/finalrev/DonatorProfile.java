@@ -172,19 +172,17 @@ public class DonatorProfile extends AppCompatActivity {
                     });
                 }
             });
-
-
-
-
             }
 
     }
 
     private void setupBottomNavigationView() {
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigation);
+        bottomNavigationView.setSelectedItemId(R.id.current_profile);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
                 switch (item.getItemId()) {
                     case R.id.logout:
                         auth.signOut();

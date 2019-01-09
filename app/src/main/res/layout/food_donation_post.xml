@@ -1,122 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_blue">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
-
         android:orientation="vertical"
         android:padding="20dp">
-
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Food Description"
+            android:textColorHint="@color/colorWhite">
         <EditText
             android:id="@+id/quantity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:background="@drawable/input_background"
             android:ems="10"
-            android:hint="Quantity"
-            android:inputType="number"
+            android:inputType="text"
             android:padding="15dp"
-            android:textColor="@color/colorAquaDark"
-            android:textColorHint="@color/colorRipple"
+            android:textColor="@color/colorWhite"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="57dp"
             android:layout_marginTop="5dp"
             />
-
+        </android.support.design.widget.TextInputLayout>
+        
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Production Date"
+            android:textColorHint="@color/colorGrey">
         <EditText
             android:layout_marginTop="5dp"
             android:id="@+id/production"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:background="@drawable/input_background"
             android:ems="10"
-            android:hint="Production Date"
             android:inputType="textEmailAddress"
             android:padding="15dp"
-            android:textColor="@color/colorAquaDark"
-            android:textColorHint="@color/colorRipple"
+            android:textColor="@color/colorWhite"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="57dp"
             android:clickable="true"
             android:focusable="false"/>
-
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Expiration Date"
+            android:textColorHint="@color/colorGrey">
         <EditText
             android:layout_marginTop="5dp"
             android:id="@+id/expiration_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:background="@drawable/input_background"
             android:ems="10"
-            android:hint="Expiration Date"
             android:inputType="textEmailAddress"
             android:padding="15dp"
-            android:textColor="@color/colorAquaDark"
-            android:textColorHint="@color/colorRipple"
+            android:textColor="@color/colorWhite"
+             
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="185dp"
             android:clickable="true"
             android:focusable="false"/>
+    </android.support.design.widget.TextInputLayout>
 
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pickup Time"
+            android:textColorHint="@color/colorGrey">
         <EditText
             android:layout_marginTop="5dp"
             android:id="@+id/time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:background="@drawable/input_background"
             android:ems="10"
-            android:hint="Pickup time"
             android:inputType="textEmailAddress"
             android:padding="15dp"
-            android:textColor="@color/colorAquaDark"
-            android:textColorHint="@color/colorRipple"
+            android:textColor="@color/colorWhite"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="251dp"
             android:clickable="true"
             android:focusable="false"/>
-
-
+    </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pickup Address"
+            android:textColorHint="@color/colorGrey">
         <EditText
             android:layout_marginTop="5dp"
             android:id="@+id/address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:background="@drawable/input_background"
             android:ems="10"
-            android:hint="Pickup Address"
             android:inputType="textEmailAddress"
             android:padding="15dp"
-            android:textColor="@color/colorAquaDark"
-            android:textColorHint="@color/colorRipple"
+            android:textColor="@color/colorWhite"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="314dp" />
-
+    </android.support.design.widget.TextInputLayout>
 
         <ImageButton
             android:id="@+id/photoButton"
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="5dp"
-            android:padding="15dp"
-            app:srcCompat="@color/colorAccent" />
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@color/colorAccent"
+            />
 
         <Button
             android:id="@+id/donate"
-            android:layout_width="222dp"
-            android:layout_height="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/button_background"
-            android:backgroundTint="@color/colorBegun"
+            android:backgroundTint="@color/colorWhite"
             android:text="Donate"
             tools:layout_editor_absoluteX="67dp"
             tools:layout_editor_absoluteY="445dp"
@@ -124,5 +135,5 @@
 
 
     </LinearLayout>
-
-</ScrollView>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
