@@ -20,8 +20,13 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class registerDonatorActivity extends AppCompatActivity {
 
@@ -37,6 +42,7 @@ public class registerDonatorActivity extends AppCompatActivity {
     private DatabaseReference mDatabase;
     private FirebaseStorage storage;
     private StorageReference storageReference;
+    private FirebaseFirestore firebaseFirestore;
 
     private Spinner mSpinner;
 
@@ -53,6 +59,7 @@ public class registerDonatorActivity extends AppCompatActivity {
         mDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
         storage = FirebaseStorage.getInstance();
         storageReference = storage.getReference();
+        firebaseFirestore = FirebaseFirestore.getInstance();
 
         mProgress = new ProgressDialog(this);
 
@@ -86,36 +93,51 @@ public class registerDonatorActivity extends AppCompatActivity {
         final String contact = mContact.getText().toString().trim();
         final String bloodgroup= mSpinner.getSelectedItem().toString().trim();
 
-        if (!TextUtils.isEmpty(name) && !TextUtils.isEmpty(password) && !TextUtils.isEmpty(email) && !bloodgroup.equals("Please select your Bloodgroup")) {
+        if (!TextUtils.isEmpty(name) && !TextUtils.isEmpty(password) && !TextUtils.isEmpty(email) && !TextUtils.isEmpty(bloodgroup)) {
 
             mProgress.setMessage("Signing Up ");
             mProgress.show();
 
             mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                @Override
-                public void onComplete(@NonNull Task<AuthResult> task) {
-                    if (task.isSuccessful()) {
+                                                                                            @Override
+                                                                                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                                                                                if (task.isSuccessful()) {
 
-                        Toast.makeText(registerDonatorActivity.this, "Successful!", Toast.LENGTH_LONG).show();
-                        String userid = mAuth.getCurrentUser().getUid();
+                                                                                                    Toast.makeText(registerDonatorActivity.this, "Successful!", Toast.LENGTH_LONG).show();
+                                                                                                    String userid = mAuth.getCurrentUser().getUid();
 
-                        currentuserdata = mDatabase.child(userid);
-                        currentuserdata.child("Name").setValue(name);
-                        currentuserdata.child("Email").setValue(email);
-                        currentuserdata.child("ID").setValue("Donator");
-                        currentuserdata.child("Image").setValue("https://firebasestorage.googleapis.com/v0/b/final-rev-app.appspot.com/o/post_images%2Fperson.png?alt=media&token=fafa0ebd-2114-4622-b391-79712b84ff7a");
-                        currentuserdata.child("Contact").setValue(contact);
-                        currentuserdata.child("Bloodgroups").setValue(bloodgroup);
-                        mProgress.dismiss();
+                                                                                                    currentuserdata = mDatabase.child(userid);
+                                                                                                    currentuserdata.child("Name").setValue(name);
+                                                                                                    currentuserdata.child("Email").setValue(email);
+                                                                                                    currentuserdata.child("ID").setValue("Donator");
+                                                                                                    currentuserdata.child("Image").setValue("https://firebasestorage.googleapis.com/v0/b/final-rev-app.appspot.com/o/post_images%2Fperson.png?alt=media&token=fafa0ebd-2114-4622-b391-79712b84ff7a");
+                                                                                                    currentuserdata.child("Contact").setValue(contact);
+                                                                                                    currentuserdata.child("Bloodgroups").setValue(bloodgroup);
+                                                                                                    mProgress.dismiss();
 
-                        Intent i = new Intent(registerDonatorActivity.this, DonatorProfile.class);
-                        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                        startActivity(i);
-                    } else
-                        Toast.makeText(registerDonatorActivity.this, "Error", Toast.LENGTH_LONG).show();
-                }
-            }
+                                                                                                    Intent i = new Intent(registerDonatorActivity.this, DonatorProfile.class);
+                                                                                                    i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                                                                                    startActivity(i);
+                                                                                                } else
+                                                                                                    Toast.makeText(registerDonatorActivity.this, "Error", Toast.LENGTH_LONG).show();
+                                                                                            }
+                                                                                        }
             );
+
+
+            Map<String,Object> BloodList = new HashMap<>();
+            BloodList.put("buserName",name);
+            BloodList.put("bbloodGroup",bloodgroup);
+            BloodList.put("bcontact",contact);
+
+            firebaseFirestore.collection("BLOODLIST").add(BloodList).addOnCompleteListener(new OnCompleteListener<DocumentReference>() {
+                @Override
+                public void onComplete(@NonNull Task<DocumentReference> task) {
+                    if (task.isSuccessful()){
+                        Toast.makeText(registerDonatorActivity.this,"POST WAS ADDED",Toast.LENGTH_LONG).show();
+                    }
+                }
+            });
         }
 
     }

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/istiak/Documents/Humane-Test/Humane-Test-master-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh/values-zh.xml",
+            "outputFile": "/home/istiak/Downloads/Humane-Test/Humane-Test-master-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh/values-zh.xml",
             "map": [
                 {
                     "source": "/home/istiak/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.5.1.aar/deb75bf791c6c08544930d85d37e0f9c/res/values-zh/values-zh.xml",

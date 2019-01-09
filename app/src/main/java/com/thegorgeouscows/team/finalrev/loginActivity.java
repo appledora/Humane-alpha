@@ -121,10 +121,12 @@ loginActivity extends AppCompatActivity {
 
                                     if(tag.equals("Organization")){
                                         Intent intent = new Intent(loginActivity.this, OrganizationProfile.class);
+                                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                         startActivity(intent);
                                     }
                                     else if (tag.equals("Donator")) {
                                         Intent intent = new Intent(loginActivity.this, DonatorProfile.class);
+                                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                         startActivity(intent);
                                     }
                                 }

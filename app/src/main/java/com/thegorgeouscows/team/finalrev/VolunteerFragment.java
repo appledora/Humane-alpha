@@ -50,11 +50,8 @@ public class VolunteerFragment extends Fragment {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         orgName = getArguments().getString("org");
-        Log.i("my ORGA: ",orgName);
         final View view = inflater.inflate(R.layout.fragment_volunteer, container, false);
         volunteerList = new ArrayList<>();
         vols_list_view = view.findViewById(R.id.vol_list_view);
@@ -68,20 +65,20 @@ public class VolunteerFragment extends Fragment {
         colRef.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
-               for (final QueryDocumentSnapshot document: task.getResult()){
-                   DocumentReference docRef = colRef.document(document.getId());
-                   docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-                       @Override
-                       public void onSuccess(DocumentSnapshot documentSnapshot) {
-                           Volunteer vol = documentSnapshot.toObject(Volunteer.class);
-                           volunteerList.add(vol);
-                           Log.i("my: ","added VOL");
-                           volunteerRecyclerAdapter.notifyDataSetChanged();
-                           Log.i("my","Notified Adapter");
-                       }
-                   });
+                for (final QueryDocumentSnapshot document: task.getResult()){
+                    DocumentReference docRef = colRef.document(document.getId());
+                    docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                        @Override
+                        public void onSuccess(DocumentSnapshot documentSnapshot) {
+                            Volunteer vol = documentSnapshot.toObject(Volunteer.class);
+                            volunteerList.add(vol);
+                            Log.i("my: ","added VOL");
+                            volunteerRecyclerAdapter.notifyDataSetChanged();
+                            Log.i("my","Notified Adapter");
+                        }
+                    });
 
-               }
+                }
             }
         });
         return view;
@@ -89,3 +86,4 @@ public class VolunteerFragment extends Fragment {
     }
 
 }
+

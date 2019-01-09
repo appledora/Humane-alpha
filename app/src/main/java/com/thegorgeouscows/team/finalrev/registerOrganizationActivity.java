@@ -82,7 +82,7 @@ public class registerOrganizationActivity extends AppCompatActivity {
                         currentuserdata.child("ID").setValue("Organization");
                         mProgress.dismiss();
                         Intent i = new Intent(registerOrganizationActivity.this, OrganizationProfile.class);
-                        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
                         startActivity(i);
                         } else
                             Toast.makeText(registerOrganizationActivity.this, "Error", Toast.LENGTH_LONG).show();

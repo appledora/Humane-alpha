@@ -43,9 +43,8 @@ public class VolunteerListFeedBase extends AppCompatActivity {
                     orgName = dataSnapshot.child("Name").getValue().toString();
 
                     if(orgName != null){
-                        Log.i("my ORGFEEDBASE: ",orgName);
-                    volunteerFragment = new VolunteerFragment();
-                    startFragment();}
+                        volunteerFragment = new VolunteerFragment();
+                        startFragment();}
                 }
             }
 

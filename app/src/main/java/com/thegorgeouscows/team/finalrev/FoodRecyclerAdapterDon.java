@@ -28,7 +28,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class FoodRecyclerAdapterDon extends RecyclerView.Adapter<FoodRecyclerAdapterDon.ViewHolder> {
     public List<Posts> posts_lists;
     public Context context;
-    String user_id,pickup_address,contact_num, profile_photo;
+    String user_id,pickup_address,contact_num, profile_photo,exp_date;
 
 
     public FoodRecyclerAdapterDon(List<Posts> posts_list) {
@@ -55,12 +55,14 @@ public class FoodRecyclerAdapterDon extends RecyclerView.Adapter<FoodRecyclerAda
          profile_photo = posts_lists.get(position).getProfilePhoto();
         long millisec = posts_lists.get(position).getTimestamp().getTime();
         String dateString = DateFormat.format("MM/dd/yyyy", new Date(millisec)).toString();        //Log.i("my","recieved address: "+user_id);
+        exp_date = posts_lists.get(position).getExpirationdate();
         contact_num = posts_lists.get(position).getContact();
         holder.setName(user_id);
         holder.setAddress(pickup_address);
         holder.setBlogImage(image_url);
         holder.setTime(dateString);
         holder.setProfilePhoto(profile_photo);
+        holder.setExpiredate(exp_date);
 
     }
 
@@ -73,7 +75,7 @@ public class FoodRecyclerAdapterDon extends RecyclerView.Adapter<FoodRecyclerAda
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView addressText, postDate;
+        private TextView addressText, postDate,expDate;
         private View mView;
         private ImageView blogImage;
         private CircleImageView blogphoto;
@@ -127,7 +129,11 @@ public class FoodRecyclerAdapterDon extends RecyclerView.Adapter<FoodRecyclerAda
         }
 
 
+        public void setExpiredate(String exp_date) {
+            expDate = mView.findViewById(R.id.expire_date);
+            expDate.setText(exp_date);
 
+        }
     }
         public String getLocation(){
         return pickup_address;

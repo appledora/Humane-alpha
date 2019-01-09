@@ -35,6 +35,7 @@ public class DonatorProfile extends AppCompatActivity {
     private TextView name ;
     private TextView email;
     private TextView contact;
+    private TextView blood;
     private Button butt;
     private Uri mImageUri = null,imageUri;
 
@@ -74,6 +75,7 @@ public class DonatorProfile extends AppCompatActivity {
         name = (TextView)findViewById(R.id.name_display);
         email = (TextView)findViewById(R.id.mail_display);
         contact = (TextView) findViewById(R.id.contact_display);
+        blood = (TextView) findViewById(R.id.blood_group);
         butt = (Button)findViewById(R.id.start_donation);
         profilePhoto = (CircleImageView) findViewById(R.id.main_dp);
         profilePhoto.setOnClickListener(new View.OnClickListener() {
@@ -91,6 +93,7 @@ public class DonatorProfile extends AppCompatActivity {
                     String nm = dataSnapshot.child("Name").getValue().toString();
                     String em = dataSnapshot.child("Email").getValue(String.class);
                     String cn = dataSnapshot.child("Contact").getValue().toString();
+                    String bl = dataSnapshot.child("Bloodgroups").getValue().toString();
                     if(dataSnapshot.child("Image").getValue().toString() != "default"){
                         String photoadd = dataSnapshot.child("Image").getValue().toString();
                         Uri photoURI = Uri.parse(photoadd);
@@ -101,6 +104,7 @@ public class DonatorProfile extends AppCompatActivity {
                     name.setText(nm);
                     email.setText(em);
                     contact.setText(cn);
+                    blood.setText(bl);
 
                 }
             }
@@ -120,7 +124,7 @@ public class DonatorProfile extends AppCompatActivity {
         });
         setupBottomNavigationView();
 
-        }
+    }
 
     private void selectPhoto() {
         Intent galleryIntent = new Intent();
@@ -154,10 +158,10 @@ public class DonatorProfile extends AppCompatActivity {
 
     private void uploadImage() {
 
-            if(mImageUri != null){
-                final ProgressDialog progressDialog = new ProgressDialog(this);
-                progressDialog.setTitle("Uploading...");
-                progressDialog.show();
+        if(mImageUri != null){
+            final ProgressDialog progressDialog = new ProgressDialog(this);
+            progressDialog.setTitle("Uploading...");
+            progressDialog.show();
 
             final StorageReference photref = mStorageRef.child(imageUri.getLastPathSegment());
             photref.putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
@@ -172,7 +176,11 @@ public class DonatorProfile extends AppCompatActivity {
                     });
                 }
             });
-            }
+
+
+
+
+        }
 
     }
 
@@ -182,18 +190,16 @@ public class DonatorProfile extends AppCompatActivity {
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
                 switch (item.getItemId()) {
                     case R.id.logout:
                         auth.signOut();
                         Intent intent = new Intent(DonatorProfile.this,loginActivity.class);
                         startActivity(intent);
                     case R.id.current_profile:
-                        Toast.makeText(DonatorProfile.this,"HOME",Toast.LENGTH_SHORT).show();
+                        return true;
                     case R.id.feed:
-
-                        Intent i = new Intent(DonatorProfile.this,FeedBase.class);
-                        startActivity(i);
+                    {Intent i = new Intent(DonatorProfile.this,FeedBase.class);
+                        startActivity(i);}
                 }
                 return true;
             }

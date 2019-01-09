@@ -1,5 +1,6 @@
  package com.thegorgeouscows.team.finalrev;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -21,6 +22,10 @@ import com.google.firebase.auth.FirebaseAuth;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_general_page);
 
+        ProgressDialog pd = new ProgressDialog(generalPage.this);
+        pd.setMessage("Logging in");
+        pd.show();
+
         mLogout= (Button) findViewById(R.id.logout);
 
         mAuth = FirebaseAuth.getInstance();
@@ -30,6 +35,7 @@ import com.google.firebase.auth.FirebaseAuth;
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
 
                 if(firebaseAuth.getCurrentUser()== null){
+
                     startActivity(new Intent(generalPage.this, loginActivity.class));
                 }
             }

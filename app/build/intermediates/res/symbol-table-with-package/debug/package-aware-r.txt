@@ -1213,11 +1213,10 @@ font roboto_slab_light
 font roboto_thin
 id ALT
 id BloodGroupSelector
+id Bloodbank
 id CTRL
 id CropOverlayView
 id CropProgressBar
-id Description
-id Description2
 id FUNCTION
 id ImageView_image
 id Likha1
@@ -1235,6 +1234,7 @@ id TextField1
 id TextField2
 id TextField3
 id TextTy
+id TextView
 id Textss
 id Textsss
 id action0
@@ -1269,7 +1269,6 @@ id all
 id always
 id async
 id auto
-id available
 id barrier
 id beginning
 id bevel
@@ -1279,11 +1278,17 @@ id blog_image
 id blog_list_view
 id blog_user_image
 id blog_user_name
+id blood_bank
+id blood_bank_card
+id blood_group
+id blood_list_view
+id blood_user_name
 id bottom
 id bottomNavigation
 id butt
 id button
 id buttonPanel
+id call_blood
 id call_button
 id call_button_cloth_org
 id cancel_action
@@ -1298,6 +1303,7 @@ id checkbox
 id chronometer
 id clip_horizontal
 id clip_vertical
+id cloth_butt
 id cloth_date
 id cloth_date_org
 id cloth_image
@@ -1359,6 +1365,7 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id expiration_date
+id expire_date
 id feed
 id fill
 id fill_horizontal
@@ -1366,6 +1373,7 @@ id fill_vertical
 id filled
 id fitCenter
 id fixed
+id food_butt
 id foods
 id forever
 id forgetpassword
@@ -1394,6 +1402,7 @@ id line1
 id line3
 id listMode
 id list_item
+id ll
 id location
 id login
 id logout
@@ -1401,11 +1410,14 @@ id logout_feed
 id mail_display
 id mail_display_org
 id mainBottomNav
+id mainBottomNav_blood
 id mainBottomNav_org
 id mainBottomNav_vol
 id main_blog_post
 id main_blog_post_don
+id main_cloth_post
 id main_container
+id main_container_blood
 id main_container_org
 id main_container_vol
 id main_dp
@@ -1442,7 +1454,8 @@ id parallax
 id parent
 id parentPanel
 id parent_matrix
-id pending
+id pending_tasks
+id pending_tasks_card
 id percent
 id photoButton
 id photoButton_cloth
@@ -1454,6 +1467,7 @@ id pop_user_location
 id pop_user_name
 id popup_bg
 id production
+id profile_Bg
 id progress_circular
 id progress_horizontal
 id quantity
@@ -1499,7 +1513,6 @@ id showCustom
 id showHome
 id showTitle
 id slidelinearlayout
-id slideviewpager
 id smallLabel
 id snackbar_action
 id snackbar_text
@@ -1535,6 +1548,7 @@ id textSpacerNoTitle
 id textView
 id textView2
 id textView3
+id textView4
 id textView5
 id textView6
 id textView7
@@ -1570,6 +1584,7 @@ id vol_location
 id vol_user_image
 id vol_user_name
 id volunteer
+id volunteer_list
 id wide
 id withText
 id wrap
@@ -1620,6 +1635,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_blood_feed_base
 layout activity_feed_base
 layout activity_feed_base_org
 layout activity_general_page
@@ -1632,6 +1648,7 @@ layout activity_register_volunteer
 layout activity_reset_password
 layout activity_slide
 layout activity_volunteer_list_feed_base
+layout blood_list_item
 layout cloth_donation_post
 layout cloth_list_items
 layout cloth_list_items_org
@@ -1653,6 +1670,7 @@ layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout donator_ui_skull
 layout food_donation_post
+layout fragment_blood
 layout fragment_cloth
 layout fragment_feed
 layout fragment_volunteer

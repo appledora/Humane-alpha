@@ -30,7 +30,7 @@ public class FoodRecyclerAdapter extends RecyclerView.Adapter<FoodRecyclerAdapte
     }
 
     public Context context;
-    String user_id,pickup_address,contact_numb, profile_photo;
+    String user_id,pickup_address,contact_numb, profile_photo,expire_date;
 
 
 
@@ -50,6 +50,9 @@ public class FoodRecyclerAdapter extends RecyclerView.Adapter<FoodRecyclerAdapte
         String image_url = posts_lists.get(position).getImage_url();
          contact_numb = posts_lists.get(position).getContact();
         profile_photo = posts_lists.get(position).getProfilePhoto();
+        expire_date = posts_lists.get(position).getExpirationdate();
+
+
         long millisec = posts_lists.get(position).getTimestamp().getTime();
         String dateString = DateFormat.format("MM/dd/yyyy", new Date(millisec)).toString();        //Log.i("my","recieved address: "+user_id);
         holder.setName(user_id);
@@ -58,6 +61,7 @@ public class FoodRecyclerAdapter extends RecyclerView.Adapter<FoodRecyclerAdapte
         holder.setTime(dateString);
         holder.setProfilePhoto(profile_photo);
         holder.setCallButton(contact_numb);
+        holder.setExpireDate(expire_date);
     }
 
     @Override
@@ -67,7 +71,7 @@ public class FoodRecyclerAdapter extends RecyclerView.Adapter<FoodRecyclerAdapte
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView addressText, postDate;
+        private TextView addressText, postDate,expDate;
         private View mView;
         private ImageView blogImage;
         private CircleImageView blogphoto;
@@ -134,6 +138,11 @@ public class FoodRecyclerAdapter extends RecyclerView.Adapter<FoodRecyclerAdapte
                 }
             });
 
+        }
+
+        public void setExpireDate(String expire_date) {
+            expDate = mView.findViewById(R.id.expiration_date);
+            expDate.setText(expire_date);
         }
     }
 }

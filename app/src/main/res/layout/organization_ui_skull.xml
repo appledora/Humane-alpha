@@ -9,12 +9,13 @@
     tools:context=".DonatorProfile">
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
+        android:orientation="vertical"
+        android:paddingBottom="50dp">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="350dp">
@@ -64,9 +65,9 @@
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/ll"
             android:layout_width="match_parent"
-            android:layout_height="402dp"
-            android:layout_marginBottom="50dp"
+            android:layout_height="match_parent"
             android:background="@color/colorAquaDark"
             android:gravity="center"
             android:orientation="vertical"
@@ -90,7 +91,7 @@
                 android:orientation="horizontal">
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/pending"
+                    android:id="@+id/pending_tasks_card"
                     android:layout_width="160dp"
                     android:layout_height="190dp"
                     android:layout_margin="10dp"
@@ -98,6 +99,7 @@
                     android:foreground="?android:attr/selectableItemBackground">
 
                     <LinearLayout
+                        android:id="@+id/pending_tasks"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@android:color/white"
@@ -114,14 +116,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:text="Pending Verification"
+                            android:text="Pending Task"
                             android:textStyle="bold" />
 
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/available"
+                    android:id="@+id/blood_bank_card"
                     android:layout_width="160dp"
                     android:layout_height="190dp"
                     android:layout_margin="10dp"
@@ -129,6 +131,7 @@
                     android:foreground="?android:attr/selectableItemBackground">
 
                     <LinearLayout
+                        android:id="@+id/blood_bank"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@android:color/white"
@@ -136,6 +139,7 @@
                         android:orientation="vertical">
 
                         <ImageView
+                            android:id="@+id/Bloodbank"
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:background="@drawable/tasks"
@@ -161,15 +165,16 @@
                 android:orientation="horizontal">
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/volunteer"
                     android:layout_width="340dp"
                     android:layout_height="150dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
+                    android:id="@+id/volunteer"
                     android:foreground="?android:attr/selectableItemBackground">
 
                     <LinearLayout
 
+                        android:id="@+id/volunteer_list"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@android:color/white"
@@ -191,11 +196,8 @@
 
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
-
-
             </LinearLayout>
         </LinearLayout>
-
     </LinearLayout>
     </ScrollView>
     <android.support.design.widget.BottomNavigationView

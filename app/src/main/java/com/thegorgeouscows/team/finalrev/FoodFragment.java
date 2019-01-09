@@ -34,8 +34,7 @@ import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
- */
-public class FoodFragment extends Fragment {
+ */public class FoodFragment extends Fragment {
     private RecyclerView post_list_view;
     List<Posts>posts_list;
     private FirebaseFirestore db;
@@ -63,30 +62,29 @@ public class FoodFragment extends Fragment {
         auth = FirebaseAuth.getInstance();
         uid = auth.getCurrentUser().getUid();
         ref = FirebaseDatabase.getInstance().getReference().child("Users").child(uid);
-        Log.i("my UID",uid);
         ref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                    tag = dataSnapshot.child("ID").getValue(String.class);
+                tag = dataSnapshot.child("ID").getValue(String.class);
 
 
-                    if(tag.equals("Organization")){
-                        cardView = view.findViewById(R.id.main_blog_post);
-                        post_list_view = view.findViewById(R.id.blog_list_view);
-                        foodRecyclerAdapter = new FoodRecyclerAdapter(posts_list);
-                        post_list_view.setLayoutManager(new LinearLayoutManager(container.getContext()));
-                        post_list_view.setAdapter(foodRecyclerAdapter);
-                        post_list_view.setHasFixedSize(true);
+                if(tag.equals("Organization")){
+                    cardView = view.findViewById(R.id.main_blog_post);
+                    post_list_view = view.findViewById(R.id.blog_list_view);
+                    foodRecyclerAdapter = new FoodRecyclerAdapter(posts_list);
+                    post_list_view.setLayoutManager(new LinearLayoutManager(container.getContext()));
+                    post_list_view.setAdapter(foodRecyclerAdapter);
+                    post_list_view.setHasFixedSize(true);
 
-                    }
-                    else if (tag.equals("Donator")){
-                        cardView = view.findViewById(R.id.main_blog_post_don);
-                        post_list_view = view.findViewById(R.id.blog_list_view);
-                        foodRecyclerAdapterDon = new FoodRecyclerAdapterDon(posts_list);
-                        post_list_view.setLayoutManager(new LinearLayoutManager(container.getContext()));
-                        post_list_view.setAdapter(foodRecyclerAdapterDon);
-                        post_list_view.setHasFixedSize(true);
-                    }
+                }
+                else if (tag.equals("Donator")){
+                    cardView = view.findViewById(R.id.main_blog_post_don);
+                    post_list_view = view.findViewById(R.id.blog_list_view);
+                    foodRecyclerAdapterDon = new FoodRecyclerAdapterDon(posts_list);
+                    post_list_view.setLayoutManager(new LinearLayoutManager(container.getContext()));
+                    post_list_view.setAdapter(foodRecyclerAdapterDon);
+                    post_list_view.setHasFixedSize(true);
+                }
 
             }
 

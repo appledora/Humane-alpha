@@ -152,7 +152,7 @@ public class FeedBase extends AppCompatActivity {
                         addPostBtn.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                Intent intent = new Intent(FeedBase.this, FoodPostForm.class);
+                                Intent intent = new Intent(FeedBase.this, SlideActivity.class);
                                 startActivity(intent);
                             }
                         });
