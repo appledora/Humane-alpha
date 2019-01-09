@@ -1575,6 +1575,8 @@ id textView3
 id textView4
 id textView5
 id textView6
+id textView7
+id textView8
 id text_input_password_toggle
 id textinput_counter
 id textinput_error

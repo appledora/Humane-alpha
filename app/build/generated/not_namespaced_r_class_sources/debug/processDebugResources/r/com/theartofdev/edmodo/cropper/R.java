@@ -760,17 +760,17 @@ public final class R {
         public static final int text2 = 0x7f0a013e;
         public static final int textSpacerNoButtons = 0x7f0a0142;
         public static final int textSpacerNoTitle = 0x7f0a0143;
-        public static final int time = 0x7f0a014e;
-        public static final int title = 0x7f0a0150;
-        public static final int titleDividerNoCustom = 0x7f0a0151;
-        public static final int title_template = 0x7f0a0152;
-        public static final int top = 0x7f0a0153;
-        public static final int topPanel = 0x7f0a0156;
-        public static final int uniform = 0x7f0a015d;
-        public static final int up = 0x7f0a015f;
-        public static final int useLogo = 0x7f0a0160;
-        public static final int withText = 0x7f0a016c;
-        public static final int wrap_content = 0x7f0a016e;
+        public static final int time = 0x7f0a0150;
+        public static final int title = 0x7f0a0152;
+        public static final int titleDividerNoCustom = 0x7f0a0153;
+        public static final int title_template = 0x7f0a0154;
+        public static final int top = 0x7f0a0155;
+        public static final int topPanel = 0x7f0a0158;
+        public static final int uniform = 0x7f0a015f;
+        public static final int up = 0x7f0a0161;
+        public static final int useLogo = 0x7f0a0162;
+        public static final int withText = 0x7f0a016e;
+        public static final int wrap_content = 0x7f0a0170;
     }
     public static final class integer {
         private integer() {}
